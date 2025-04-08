@@ -1,0 +1,47 @@
+#Timing report of worst 1 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: A[980].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:maj.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+A[980].inpad[0] (.input)                                         0.000     0.000
+new_n1466.in[1] (.names)                                         1.660     1.660
+new_n1466.out[0] (.names)                                        0.193     1.853
+new_n3078.in[0] (.names)                                         0.201     2.054
+new_n3078.out[0] (.names)                                        0.193     2.247
+new_n3576.in[4] (.names)                                         0.785     3.032
+new_n3576.out[0] (.names)                                        0.193     3.225
+new_n3730.in[3] (.names)                                         0.201     3.426
+new_n3730.out[0] (.names)                                        0.193     3.619
+new_n3770.in[4] (.names)                                         0.347     3.966
+new_n3770.out[0] (.names)                                        0.193     4.159
+new_n3769.in[0] (.names)                                         0.201     4.360
+new_n3769.out[0] (.names)                                        0.193     4.553
+new_n3800.in[0] (.names)                                         0.201     4.754
+new_n3800.out[0] (.names)                                        0.193     4.947
+maj.in[2] (.names)                                               0.201     5.148
+maj.out[0] (.names)                                              0.193     5.341
+out:maj.outpad[0] (.output)                                      1.932     7.273
+data arrival time                                                          7.273
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          7.273
+--------------------------------------------------------------------------------
+slack (MET)                                                                7.273
+
+
+#End of timing report

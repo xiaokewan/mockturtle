@@ -1,0 +1,380 @@
+VPR FPGA Placement and Routing.
+Version: 8.1.0-dev+unkown
+Revision: unkown
+Compiled: 2025-02-16T14:22:44
+Compiler: GNU 11.4.0 on Linux-6.8.0-47-generic x86_64
+Build Info: release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+vpr /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratix10_arch.timing.xml /media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/simple_spi.blif --route_chan_width 250
+
+Using up to 1 parallel worker(s)
+
+Architecture file: /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratix10_arch.timing.xml
+Circuit name: simple_spi
+
+# Loading Architecture Description
+Warning 1: Model 'fourteennm_fp_mac.opmode{sp_mult_add}.input_type{comb}.output_type{comb}' output port 'dftout' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 2: Model 'fourteennm_fp_mac.opmode{sp_vector1}.input_type{comb}.output_type{comb}' output port 'dftout' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 3: Model 'fourteennm_fp_mac.opmode{sp_vector2}.input_type{comb}.output_type{comb}' output port 'dftout' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+# Loading Architecture Description took 0.39 seconds (max_rss 47.1 MiB, delta_rss +31.5 MiB)
+
+Timing analysis: ON
+Circuit netlist file: simple_spi.net
+Circuit placement file: simple_spi.place
+Circuit routing file: simple_spi.route
+Circuit SDC file: simple_spi.sdc
+Vpr floorplanning constraints file: not specified
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+VPR was run with the following options:
+
+NetlistOpts.abosrb_buffer_luts            : true
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+NetlistOpts.netlist_verbosity             : 1
+NetlistOpts.const_gen_inference           : COMB_SEQ
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: CRITICALITY_TIMING_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.constraints_file: No constraints file given
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 250
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlacerOpts.delay_offset: 0.000000
+PlacerOpts.delay_ramp_delta_threshold: -1
+PlacerOpts.delay_ramp_slope: 0.000000
+PlacerOpts.tsu_rel_margin: 1.000000
+PlacerOpts.tsu_abs_margin: 0.000000
+PlacerOpts.post_place_timing_report_file: 
+PlacerOpts.allowed_tiles_for_delay_model: 
+PlacerOpts.delay_model_reducer: MIN
+PlacerOpts.delay_model_type: DELTA
+PlacerOpts.rlim_escape_fraction: 0.000000
+PlacerOpts.move_stats_file: 
+PlacerOpts.placement_saves_per_temperature: 0
+PlacerOpts.effort_scaling: CIRCUIT
+PlacerOpts.place_delta_delay_matrix_calculation_method: ASTAR_ROUTE
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 0.500000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.flat_routing: false
+RouterOpts.has_choking_spot: false
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 250
+RouterOpts.check_route: FULL
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.do_check_rr_graph: true
+RouterOpts.verify_binary_search: false
+RouterOpts.min_channel_width_hint: 0
+RouterOpts.read_rr_edge_metadata: false
+RouterOpts.exit_after_first_routing_iteration: false
+RouterOpts.astar_fac: 1.200000
+RouterOpts.router_profiler_astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.init_wirelength_abort_threshold: 0.850000
+RouterOpts.save_routing_per_iteration: false
+RouterOpts.congested_routing_iteration_threshold_frac: 1.000000
+RouterOpts.high_fanout_threshold: 64
+RouterOpts.router_debug_net: -2
+RouterOpts.router_debug_sink_rr: -2
+RouterOpts.router_debug_iteration: -2
+RouterOpts.max_convergence_count: 1
+RouterOpts.reconvergence_cpd_threshold: 0.990000
+RouterOpts.update_lower_bound_delays: true
+RouterOpts.first_iteration_timing_report_file: 
+RouterOpts.incr_reroute_delay_ripup: AUTO
+RouterOpts.route_bb_update: DYNAMIC
+RouterOpts.lookahead_type: MAP
+RouterOpts.initial_timing: LOOKAHEAD
+RouterOpts.router_heap: BINARY_HEAP
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+AnalysisOpts.timing_report_npaths: 100
+AnalysisOpts.timing_report_skew: false
+AnalysisOpts.echo_dot_timing_graph_node: -1
+AnalysisOpts.timing_report_detail: NETLIST
+AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
+AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
+
+# Building complex block graph
+Warning 4: MLAB[0].control_in[0] unconnected pin in architecture.
+Warning 5: MLAB[0].control_in[1] unconnected pin in architecture.
+Warning 6: MLAB[0].control_in[2] unconnected pin in architecture.
+Warning 7: MLAB[0].control_in[3] unconnected pin in architecture.
+Warning 8: MLAB[0].control_in[4] unconnected pin in architecture.
+Warning 9: MLAB[0].cin[0] unconnected pin in architecture.
+Warning 10: MLAB[0].cout[0] unconnected pin in architecture.
+# Building complex block graph took 1.78 seconds (max_rss 336.0 MiB, delta_rss +288.9 MiB)
+Circuit file: /media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/simple_spi.blif
+# Load circuit
+Found constant-one generator 'po012'
+# Load circuit took 0.00 seconds (max_rss 336.0 MiB, delta_rss +0.0 MiB)
+# Clean circuit
+Absorbed 14 LUT buffers
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 132
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 132
+Swept block(s)      : 0
+Constant Pins Marked: 0
+# Clean circuit took 0.00 seconds (max_rss 336.0 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.00 seconds (max_rss 336.0 MiB, delta_rss +0.0 MiB)
+# Verify circuit
+# Verify circuit took 0.00 seconds (max_rss 336.0 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 489
+    .input :     148
+    .output:     147
+    0-LUT  :       1
+    6-LUT  :     193
+  Nets  : 342
+    Avg Fanout:     3.1
+    Max Fanout:    38.0
+    Min Fanout:     1.0
+  Netlist Clocks: 0
+# Build Timing Graph
+  Timing Graph Nodes: 1415
+  Timing Graph Edges: 1999
+  Timing Graph Levels: 10
+# Build Timing Graph took 0.00 seconds (max_rss 336.0 MiB, delta_rss +0.0 MiB)
+Netlist contains 0 clocks
+# Load Timing Constraints
+
+SDC file 'simple_spi.sdc' not found
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on a virtual external clock 'virtual_io_clock'
+   * optimize virtual clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'virtual_io_clock' (Virtual Clock)
+
+# Load Timing Constraints took 0.00 seconds (max_rss 336.0 MiB, delta_rss +0.0 MiB)
+# Packing
+Warning 11: Block type 'DSP' grid location specification startx (20 = 20) falls outside device horizontal range [0,9]
+Begin packing '/media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/simple_spi.blif'.
+
+After removing unused inputs...
+	total blocks: 489, total nets: 342, total inputs: 148, total outputs: 147
+Begin prepacking.
+
+There is one chain in this architecture called "LAB_carry_chain" with the following starting points:
+	LAB[0]/alm[0]/comb_block[0]/lut[0]/lcell_comb[0].cin[0]
+	LAB[0]/alm[0]/comb_block[0]/lut[0]/lcell_comb[0].cin[0]
+
+0 attraction groups were created during prepacking.
+Finish prepacking.
+Using inter-cluster delay: 7.12e-10
+✅ Final Pin Utilization: io:1.00,1.00 LAB:0.80,1.00
+Packing with pin utilization targets: iolane:1,1 LAB:0.8,1 LABMLAB:1,1 PLL_OCT_CLK_CTRL:1,1 DSP:1,1 M20K:1,1
+Packing with high fanout thresholds: iolane:128 LAB:32 LABMLAB:128 PLL_OCT_CLK_CTRL:128 DSP:128 M20K:128
+Starting Clustering - Clustering Progress: 
+-------------------   --------------------------   ---------
+Molecules processed   Number of clusters created   FPGA size
+-------------------   --------------------------   ---------
+    19/489       3%                            2     4 x 3     
+    38/489       7%                            4     5 x 4     
+    57/489      11%                            6     7 x 5     
+    76/489      15%                            8     7 x 5     
+    95/489      19%                           10     8 x 6     
+   114/489      23%                           12     8 x 6     
+   133/489      27%                           14     9 x 7     
+   152/489      31%                           16     9 x 7     
+   171/489      34%                           17     9 x 7     
+   190/489      38%                           20     9 x 7     
+   209/489      42%                           36    10 x 7     
+   228/489      46%                           55    17 x 13    
+   247/489      50%                           74    39 x 29    
+   266/489      54%                           93    44 x 33    
+   285/489      58%                          112    52 x 39    
+   304/489      62%                          131    58 x 43    
+   323/489      66%                          150    66 x 49    
+   342/489      69%                          169    90 x 67    
+   361/489      73%                          188    96 x 71    
+   380/489      77%                          207   104 x 77    
+   399/489      81%                          226   109 x 81    
+   418/489      85%                          245   115 x 85    
+   437/489      89%                          264   142 x 105   
+   456/489      93%                          283   147 x 109   
+   475/489      97%                          302   155 x 115   
+
+Logic Element (alm) detailed count:
+  Total number of Logic Elements used : 194
+  LEs used for logic and registers    : 0
+  LEs used for logic only             : 194
+  LEs used for registers only         : 0
+
+Incr Slack updates 1 in 2.7842e-05 sec
+Full Max Req/Worst Slack updates 1 in 5.53e-06 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 4.303e-05 sec
+FPGA sized to 158 x 117 (auto)
+Device Utilization: 0.01 (target 1.00)
+	Block Utilization: 0.00 Type: LAB
+	Block Utilization: 1.00 Type: io_cell
+
+Start the iterative improvement process
+the iterative improvement process is done
+Final Clustering Statistics: 
+----------   --------   ------------------------------------   --------------------------
+Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output pins used
+----------   --------   ------------------------------------   --------------------------
+     EMPTY          0                                      0                            0   
+       PLL          0                                      0                            0   
+clock_gate          0                                      0                            0   
+ clock_div          0                                      0                            0   
+       LAB         22                                21.3182                      8.81818   
+      MLAB          0                                      0                            0   
+       OCT          0                                      0                            0   
+   io_cell        295                               0.498305                     0.501695   
+       DSP          0                                      0                            0   
+      M20K          0                                      0                            0   
+Absorbed logical nets 0 out of 342 nets, 342 nets not absorbed.
+
+Netlist conversion complete.
+
+# Packing took 1.94 seconds (max_rss 336.0 MiB, delta_rss +0.0 MiB)
+# Load packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'simple_spi.net'.
+Detected 1 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0.044892 seconds).
+Warning 12: Treated 1 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load packing took 0.05 seconds (max_rss 369.1 MiB, delta_rss +33.1 MiB)
+Warning 13: Netlist contains 1 global net to non-global architecture pin connections
+Warning 14: Logic block #21 (po012) has only 1 output pin 'po012.data_out[0]'. It may be a constant generator.
+
+Pb types usage...
+  LAB             : 22
+   alm            : 194
+    comb_block    : 194
+     lut          : 194
+      lut6        : 194
+       lut        : 194
+  io_cell         : 295
+   pad            : 295
+    inpad         : 148
+    outpad        : 147
+
+# Create Device
+## Build Device Grid
+FPGA sized to 158 x 117: 18486 grid tiles (auto)
+
+Resource usage...
+	Netlist
+		0	blocks of type: PLL
+	Architecture
+		24	blocks of type: PLL_OCT_CLK_CTRL
+	Netlist
+		0	blocks of type: clock_gate
+	Architecture
+		24	blocks of type: PLL_OCT_CLK_CTRL
+	Netlist
+		0	blocks of type: clock_div
+	Architecture
+		24	blocks of type: PLL_OCT_CLK_CTRL
+	Netlist
+		22	blocks of type: LAB
+	Architecture
+		11635	blocks of type: LAB
+		3463	blocks of type: LABMLAB
+	Netlist
+		0	blocks of type: MLAB
+	Architecture
+		3463	blocks of type: LABMLAB
+	Netlist
+		0	blocks of type: OCT
+	Architecture
+		24	blocks of type: PLL_OCT_CLK_CTRL
+	Netlist
+		295	blocks of type: io_cell
+	Architecture
+		296	blocks of type: iolane
+	Netlist
+		0	blocks of type: DSP
+	Architecture
+		798	blocks of type: DSP
+	Netlist
+		0	blocks of type: M20K
+	Architecture
+		1824	blocks of type: M20K
+
+Device Utilization: 0.01 (target 1.00)
+	Physical Tile iolane:
+	Block Utilization: 1.00 Logical Block: io_cell
+	Physical Tile LAB:
+	Block Utilization: 0.00 Logical Block: LAB
+	Physical Tile LABMLAB:
+	Block Utilization: 0.00 Logical Block: MLAB
+	Block Utilization: 0.01 Logical Block: LAB
+	Physical Tile PLL_OCT_CLK_CTRL:
+	Block Utilization: 0.00 Logical Block: OCT
+	Block Utilization: 0.00 Logical Block: clock_gate
+	Block Utilization: 0.00 Logical Block: clock_div
+	Block Utilization: 0.00 Logical Block: PLL
+	Physical Tile DSP:
+	Block Utilization: 0.00 Logical Block: DSP
+	Physical Tile M20K:
+	Block Utilization: 0.00 Logical Block: M20K
+
+FPGA size limited by block type(s): io_cell
+
+## Build Device Grid took 0.14 seconds (max_rss 369.8 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph
+SOURCE->OPIN and IPIN->SINK edge count:2357338
+OPIN->CHANX/CHANY edge count before creating direct connections: 13409400
+OPIN->CHANX/CHANY edge count after creating direct connections: 14962575
+CHAN->CHAN type edge count:32580919
+## Build routing resource graph took 45.55 seconds (max_rss 1851.5 MiB, delta_rss +1481.7 MiB)
+  RR Graph Nodes: 4623386
+  RR Graph Edges: 49900832
+# Create Device took 46.81 seconds (max_rss 1851.5 MiB, delta_rss +1481.7 MiB)
+
+# Computing router lookahead map
+## Computing wire lookahead

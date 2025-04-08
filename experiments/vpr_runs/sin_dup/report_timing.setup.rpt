@@ -1,0 +1,2545 @@
+#Timing report of worst 25 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po24.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1458.in[1] (.names)                                         0.296    22.253
+new_n1458.out[0] (.names)                                        0.261    22.514
+new_n1513.in[0] (.names)                                         0.296    22.810
+new_n1513.out[0] (.names)                                        0.261    23.071
+new_n1548.in[2] (.names)                                         0.201    23.272
+new_n1548.out[0] (.names)                                        0.261    23.533
+new_n1562.in[0] (.names)                                         0.201    23.734
+new_n1562.out[0] (.names)                                        0.261    23.995
+new_n1587.in[2] (.names)                                         0.347    24.342
+new_n1587.out[0] (.names)                                        0.261    24.603
+new_n1605.in[3] (.names)                                         0.347    24.950
+new_n1605.out[0] (.names)                                        0.261    25.211
+new_n1621.in[0] (.names)                                         0.347    25.558
+new_n1621.out[0] (.names)                                        0.261    25.819
+po24.in[3] (.names)                                              0.201    26.020
+po24.out[0] (.names)                                             0.261    26.281
+out:po24.outpad[0] (.output)                                     0.428    26.709
+data arrival time                                                         26.709
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -26.709
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -26.709
+
+
+#Path 2
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po22.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1458.in[1] (.names)                                         0.296    22.253
+new_n1458.out[0] (.names)                                        0.261    22.514
+new_n1513.in[0] (.names)                                         0.296    22.810
+new_n1513.out[0] (.names)                                        0.261    23.071
+new_n1548.in[2] (.names)                                         0.201    23.272
+new_n1548.out[0] (.names)                                        0.261    23.533
+new_n1562.in[0] (.names)                                         0.201    23.734
+new_n1562.out[0] (.names)                                        0.261    23.995
+new_n1587.in[2] (.names)                                         0.347    24.342
+new_n1587.out[0] (.names)                                        0.261    24.603
+new_n1605.in[3] (.names)                                         0.347    24.950
+new_n1605.out[0] (.names)                                        0.261    25.211
+new_n1614.in[0] (.names)                                         0.347    25.558
+new_n1614.out[0] (.names)                                        0.261    25.819
+po22.in[1] (.names)                                              0.201    26.020
+po22.out[0] (.names)                                             0.261    26.281
+out:po22.outpad[0] (.output)                                     0.428    26.709
+data arrival time                                                         26.709
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -26.709
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -26.709
+
+
+#Path 3
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po23.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1458.in[1] (.names)                                         0.296    22.253
+new_n1458.out[0] (.names)                                        0.261    22.514
+new_n1513.in[0] (.names)                                         0.296    22.810
+new_n1513.out[0] (.names)                                        0.261    23.071
+new_n1548.in[2] (.names)                                         0.201    23.272
+new_n1548.out[0] (.names)                                        0.261    23.533
+new_n1562.in[0] (.names)                                         0.201    23.734
+new_n1562.out[0] (.names)                                        0.261    23.995
+new_n1587.in[2] (.names)                                         0.347    24.342
+new_n1587.out[0] (.names)                                        0.261    24.603
+new_n1605.in[3] (.names)                                         0.347    24.950
+new_n1605.out[0] (.names)                                        0.261    25.211
+new_n1621.in[0] (.names)                                         0.347    25.558
+new_n1621.out[0] (.names)                                        0.261    25.819
+po23.in[2] (.names)                                              0.201    26.020
+po23.out[0] (.names)                                             0.261    26.281
+out:po23.outpad[0] (.output)                                     0.335    26.616
+data arrival time                                                         26.616
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -26.616
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -26.616
+
+
+#Path 4
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po21.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1458.in[1] (.names)                                         0.296    22.253
+new_n1458.out[0] (.names)                                        0.261    22.514
+new_n1513.in[0] (.names)                                         0.296    22.810
+new_n1513.out[0] (.names)                                        0.261    23.071
+new_n1548.in[2] (.names)                                         0.201    23.272
+new_n1548.out[0] (.names)                                        0.261    23.533
+new_n1562.in[0] (.names)                                         0.201    23.734
+new_n1562.out[0] (.names)                                        0.261    23.995
+new_n1587.in[2] (.names)                                         0.347    24.342
+new_n1587.out[0] (.names)                                        0.261    24.603
+new_n1605.in[3] (.names)                                         0.347    24.950
+new_n1605.out[0] (.names)                                        0.261    25.211
+po21.in[1] (.names)                                              0.480    25.691
+po21.out[0] (.names)                                             0.261    25.952
+out:po21.outpad[0] (.output)                                     0.519    26.471
+data arrival time                                                         26.471
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -26.471
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -26.471
+
+
+#Path 5
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po20.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1458.in[1] (.names)                                         0.296    22.253
+new_n1458.out[0] (.names)                                        0.261    22.514
+new_n1513.in[0] (.names)                                         0.296    22.810
+new_n1513.out[0] (.names)                                        0.261    23.071
+new_n1548.in[2] (.names)                                         0.201    23.272
+new_n1548.out[0] (.names)                                        0.261    23.533
+new_n1562.in[0] (.names)                                         0.201    23.734
+new_n1562.out[0] (.names)                                        0.261    23.995
+new_n1587.in[2] (.names)                                         0.347    24.342
+new_n1587.out[0] (.names)                                        0.261    24.603
+new_n1605.in[3] (.names)                                         0.347    24.950
+new_n1605.out[0] (.names)                                        0.261    25.211
+po20.in[2] (.names)                                              0.347    25.558
+po20.out[0] (.names)                                             0.261    25.819
+out:po20.outpad[0] (.output)                                     0.618    26.437
+data arrival time                                                         26.437
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -26.437
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -26.437
+
+
+#Path 6
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po19.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1458.in[1] (.names)                                         0.296    22.253
+new_n1458.out[0] (.names)                                        0.261    22.514
+new_n1513.in[0] (.names)                                         0.296    22.810
+new_n1513.out[0] (.names)                                        0.261    23.071
+new_n1511.in[0] (.names)                                         0.201    23.272
+new_n1511.out[0] (.names)                                        0.261    23.533
+new_n1575.in[0] (.names)                                         0.201    23.734
+new_n1575.out[0] (.names)                                        0.261    23.995
+new_n1592.in[5] (.names)                                         0.480    24.475
+new_n1592.out[0] (.names)                                        0.261    24.736
+new_n1599.in[5] (.names)                                         0.201    24.937
+new_n1599.out[0] (.names)                                        0.261    25.198
+po19.in[4] (.names)                                              0.201    25.399
+po19.out[0] (.names)                                             0.261    25.660
+out:po19.outpad[0] (.output)                                     0.447    26.107
+data arrival time                                                         26.107
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -26.107
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -26.107
+
+
+#Path 7
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po16.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1458.in[1] (.names)                                         0.296    22.253
+new_n1458.out[0] (.names)                                        0.261    22.514
+new_n1513.in[0] (.names)                                         0.296    22.810
+new_n1513.out[0] (.names)                                        0.261    23.071
+new_n1548.in[2] (.names)                                         0.201    23.272
+new_n1548.out[0] (.names)                                        0.261    23.533
+new_n1578.in[1] (.names)                                         0.201    23.734
+new_n1578.out[0] (.names)                                        0.261    23.995
+new_n1577.in[2] (.names)                                         0.296    24.291
+new_n1577.out[0] (.names)                                        0.261    24.552
+po16.in[4] (.names)                                              0.201    24.753
+po16.out[0] (.names)                                             0.261    25.014
+out:po16.outpad[0] (.output)                                     0.795    25.809
+data arrival time                                                         25.809
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -25.809
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -25.809
+
+
+#Path 8
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po17.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1458.in[1] (.names)                                         0.296    22.253
+new_n1458.out[0] (.names)                                        0.261    22.514
+new_n1513.in[0] (.names)                                         0.296    22.810
+new_n1513.out[0] (.names)                                        0.261    23.071
+new_n1511.in[0] (.names)                                         0.201    23.272
+new_n1511.out[0] (.names)                                        0.261    23.533
+new_n1575.in[0] (.names)                                         0.201    23.734
+new_n1575.out[0] (.names)                                        0.261    23.995
+new_n1592.in[5] (.names)                                         0.480    24.475
+new_n1592.out[0] (.names)                                        0.261    24.736
+po17.in[0] (.names)                                              0.201    24.937
+po17.out[0] (.names)                                             0.261    25.198
+out:po17.outpad[0] (.output)                                     0.535    25.733
+data arrival time                                                         25.733
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -25.733
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -25.733
+
+
+#Path 9
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po18.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1458.in[1] (.names)                                         0.296    22.253
+new_n1458.out[0] (.names)                                        0.261    22.514
+new_n1513.in[0] (.names)                                         0.296    22.810
+new_n1513.out[0] (.names)                                        0.261    23.071
+new_n1511.in[0] (.names)                                         0.201    23.272
+new_n1511.out[0] (.names)                                        0.261    23.533
+new_n1575.in[0] (.names)                                         0.201    23.734
+new_n1575.out[0] (.names)                                        0.261    23.995
+new_n1592.in[5] (.names)                                         0.480    24.475
+new_n1592.out[0] (.names)                                        0.261    24.736
+po18.in[0] (.names)                                              0.296    25.032
+po18.out[0] (.names)                                             0.261    25.293
+out:po18.outpad[0] (.output)                                     0.329    25.622
+data arrival time                                                         25.622
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -25.622
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -25.622
+
+
+#Path 10
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po14.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1457.in[1] (.names)                                         0.296    22.253
+new_n1457.out[0] (.names)                                        0.261    22.514
+new_n1456.in[0] (.names)                                         0.296    22.810
+new_n1456.out[0] (.names)                                        0.261    23.071
+new_n1527.in[0] (.names)                                         0.201    23.272
+new_n1527.out[0] (.names)                                        0.261    23.533
+new_n1529.in[1] (.names)                                         0.385    23.918
+new_n1529.out[0] (.names)                                        0.261    24.179
+po14.in[0] (.names)                                              0.201    24.380
+po14.out[0] (.names)                                             0.261    24.641
+out:po14.outpad[0] (.output)                                     0.700    25.341
+data arrival time                                                         25.341
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -25.341
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -25.341
+
+
+#Path 11
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po15.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1458.in[1] (.names)                                         0.296    22.253
+new_n1458.out[0] (.names)                                        0.261    22.514
+new_n1513.in[0] (.names)                                         0.296    22.810
+new_n1513.out[0] (.names)                                        0.261    23.071
+new_n1511.in[0] (.names)                                         0.201    23.272
+new_n1511.out[0] (.names)                                        0.261    23.533
+new_n1575.in[0] (.names)                                         0.201    23.734
+new_n1575.out[0] (.names)                                        0.261    23.995
+po15.in[0] (.names)                                              0.347    24.342
+po15.out[0] (.names)                                             0.261    24.603
+out:po15.outpad[0] (.output)                                     0.646    25.249
+data arrival time                                                         25.249
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -25.249
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -25.249
+
+
+#Path 12
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po13.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1457.in[1] (.names)                                         0.296    22.253
+new_n1457.out[0] (.names)                                        0.261    22.514
+new_n1456.in[0] (.names)                                         0.296    22.810
+new_n1456.out[0] (.names)                                        0.261    23.071
+new_n1527.in[0] (.names)                                         0.201    23.272
+new_n1527.out[0] (.names)                                        0.261    23.533
+new_n1529.in[1] (.names)                                         0.385    23.918
+new_n1529.out[0] (.names)                                        0.261    24.179
+po13.in[0] (.names)                                              0.201    24.380
+po13.out[0] (.names)                                             0.261    24.641
+out:po13.outpad[0] (.output)                                     0.491    25.132
+data arrival time                                                         25.132
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -25.132
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -25.132
+
+
+#Path 13
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po12.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1457.in[1] (.names)                                         0.296    22.253
+new_n1457.out[0] (.names)                                        0.261    22.514
+new_n1456.in[0] (.names)                                         0.296    22.810
+new_n1456.out[0] (.names)                                        0.261    23.071
+new_n1527.in[0] (.names)                                         0.201    23.272
+new_n1527.out[0] (.names)                                        0.261    23.533
+po12.in[0] (.names)                                              0.385    23.918
+po12.out[0] (.names)                                             0.261    24.179
+out:po12.outpad[0] (.output)                                     0.855    25.034
+data arrival time                                                         25.034
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -25.034
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -25.034
+
+
+#Path 14
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po09.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1457.in[1] (.names)                                         0.296    22.253
+new_n1457.out[0] (.names)                                        0.261    22.514
+new_n1456.in[0] (.names)                                         0.296    22.810
+new_n1456.out[0] (.names)                                        0.261    23.071
+po09.in[2] (.names)                                              0.480    23.551
+po09.out[0] (.names)                                             0.261    23.812
+out:po09.outpad[0] (.output)                                     1.030    24.842
+data arrival time                                                         24.842
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -24.842
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -24.842
+
+
+#Path 15
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po11.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1457.in[1] (.names)                                         0.296    22.253
+new_n1457.out[0] (.names)                                        0.261    22.514
+new_n1456.in[0] (.names)                                         0.296    22.810
+new_n1456.out[0] (.names)                                        0.261    23.071
+po11.in[0] (.names)                                              0.480    23.551
+po11.out[0] (.names)                                             0.261    23.812
+out:po11.outpad[0] (.output)                                     0.951    24.763
+data arrival time                                                         24.763
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -24.763
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -24.763
+
+
+#Path 16
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po10.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1412.in[1] (.names)                                         0.385    21.696
+new_n1412.out[0] (.names)                                        0.261    21.957
+new_n1457.in[1] (.names)                                         0.296    22.253
+new_n1457.out[0] (.names)                                        0.261    22.514
+new_n1456.in[0] (.names)                                         0.296    22.810
+new_n1456.out[0] (.names)                                        0.261    23.071
+po10.in[0] (.names)                                              0.480    23.551
+po10.out[0] (.names)                                             0.261    23.812
+out:po10.outpad[0] (.output)                                     0.770    24.582
+data arrival time                                                         24.582
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -24.582
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -24.582
+
+
+#Path 17
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po08.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1383.in[0] (.names)                                         0.385    21.696
+new_n1383.out[0] (.names)                                        0.261    21.957
+new_n1407.in[1] (.names)                                         0.296    22.253
+new_n1407.out[0] (.names)                                        0.261    22.514
+po08.in[2] (.names)                                              0.201    22.715
+po08.out[0] (.names)                                             0.261    22.976
+out:po08.outpad[0] (.output)                                     0.989    23.965
+data arrival time                                                         23.965
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -23.965
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -23.965
+
+
+#Path 18
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po07.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1383.in[0] (.names)                                         0.385    21.696
+new_n1383.out[0] (.names)                                        0.261    21.957
+new_n1407.in[1] (.names)                                         0.296    22.253
+new_n1407.out[0] (.names)                                        0.261    22.514
+po07.in[2] (.names)                                              0.201    22.715
+po07.out[0] (.names)                                             0.261    22.976
+out:po07.outpad[0] (.output)                                     0.679    23.655
+data arrival time                                                         23.655
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -23.655
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -23.655
+
+
+#Path 19
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po05.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1297.in[3] (.names)                                         0.480    21.050
+new_n1297.out[0] (.names)                                        0.261    21.311
+new_n1356.in[1] (.names)                                         0.201    21.512
+new_n1356.out[0] (.names)                                        0.261    21.773
+po05.in[0] (.names)                                              0.334    22.107
+po05.out[0] (.names)                                             0.261    22.368
+out:po05.outpad[0] (.output)                                     1.070    23.438
+data arrival time                                                         23.438
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -23.438
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -23.438
+
+
+#Path 20
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po06.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1331.in[2] (.names)                                         0.480    21.050
+new_n1331.out[0] (.names)                                        0.261    21.311
+new_n1383.in[0] (.names)                                         0.385    21.696
+new_n1383.out[0] (.names)                                        0.261    21.957
+po06.in[5] (.names)                                              0.296    22.253
+po06.out[0] (.names)                                             0.261    22.514
+out:po06.outpad[0] (.output)                                     0.887    23.401
+data arrival time                                                         23.401
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -23.401
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -23.401
+
+
+#Path 21
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po04.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1297.in[3] (.names)                                         0.480    21.050
+new_n1297.out[0] (.names)                                        0.261    21.311
+new_n1356.in[1] (.names)                                         0.201    21.512
+new_n1356.out[0] (.names)                                        0.261    21.773
+po04.in[0] (.names)                                              0.334    22.107
+po04.out[0] (.names)                                             0.261    22.368
+out:po04.outpad[0] (.output)                                     0.825    23.193
+data arrival time                                                         23.193
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -23.193
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -23.193
+
+
+#Path 22
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po02.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1268.in[1] (.names)                                         0.550    20.525
+new_n1268.out[0] (.names)                                        0.261    20.786
+new_n1266.in[0] (.names)                                         0.347    21.133
+new_n1266.out[0] (.names)                                        0.261    21.394
+po02.in[4] (.names)                                              0.201    21.595
+po02.out[0] (.names)                                             0.261    21.856
+out:po02.outpad[0] (.output)                                     1.026    22.882
+data arrival time                                                         22.882
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -22.882
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -22.882
+
+
+#Path 23
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po03.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1269.in[0] (.names)                                         0.201    19.714
+new_n1269.out[0] (.names)                                        0.261    19.975
+new_n1298.in[0] (.names)                                         0.334    20.309
+new_n1298.out[0] (.names)                                        0.261    20.570
+new_n1297.in[3] (.names)                                         0.480    21.050
+new_n1297.out[0] (.names)                                        0.261    21.311
+po03.in[3] (.names)                                              0.201    21.512
+po03.out[0] (.names)                                             0.261    21.773
+out:po03.outpad[0] (.output)                                     0.937    22.710
+data arrival time                                                         22.710
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -22.710
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -22.710
+
+
+#Path 24
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po01.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1179.in[0] (.names)                                         0.201    19.714
+new_n1179.out[0] (.names)                                        0.261    19.975
+po00.in[3] (.names)                                              0.480    20.455
+po00.out[0] (.names)                                             0.261    20.716
+po01.in[1] (.names)                                              0.385    21.101
+po01.out[0] (.names)                                             0.261    21.362
+out:po01.outpad[0] (.output)                                     0.815    22.177
+data arrival time                                                         22.177
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -22.177
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -22.177
+
+
+#Path 25
+Startpoint: pi03.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:po00.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+pi03.inpad[0] (.input)                                           0.000     0.000
+new_n82.in[3] (.names)                                           0.786     0.786
+new_n82.out[0] (.names)                                          0.261     1.047
+new_n81.in[5] (.names)                                           0.201     1.248
+new_n81.out[0] (.names)                                          0.261     1.509
+new_n80.in[5] (.names)                                           0.201     1.710
+new_n80.out[0] (.names)                                          0.261     1.971
+new_n114.in[0] (.names)                                          0.296     2.267
+new_n114.out[0] (.names)                                         0.261     2.528
+new_n317.in[5] (.names)                                          0.693     3.221
+new_n317.out[0] (.names)                                         0.261     3.482
+new_n316.in[3] (.names)                                          0.696     4.178
+new_n316.out[0] (.names)                                         0.261     4.439
+new_n312.in[5] (.names)                                          0.201     4.640
+new_n312.out[0] (.names)                                         0.261     4.901
+new_n311.in[5] (.names)                                          0.201     5.102
+new_n311.out[0] (.names)                                         0.261     5.363
+new_n307.in[1] (.names)                                          0.347     5.710
+new_n307.out[0] (.names)                                         0.261     5.971
+new_n306.in[4] (.names)                                          0.201     6.172
+new_n306.out[0] (.names)                                         0.261     6.433
+new_n375.in[4] (.names)                                          0.404     6.837
+new_n375.out[0] (.names)                                         0.261     7.098
+new_n594.in[0] (.names)                                          0.429     7.527
+new_n594.out[0] (.names)                                         0.261     7.788
+new_n591.in[1] (.names)                                          0.334     8.122
+new_n591.out[0] (.names)                                         0.261     8.383
+new_n615.in[5] (.names)                                          0.347     8.730
+new_n615.out[0] (.names)                                         0.261     8.991
+new_n586.in[3] (.names)                                          0.347     9.338
+new_n586.out[0] (.names)                                         0.261     9.599
+new_n568.in[1] (.names)                                          0.296     9.895
+new_n568.out[0] (.names)                                         0.261    10.156
+new_n519.in[1] (.names)                                          0.347    10.503
+new_n519.out[0] (.names)                                         0.261    10.764
+new_n733.in[0] (.names)                                          0.493    11.257
+new_n733.out[0] (.names)                                         0.261    11.518
+new_n732.in[0] (.names)                                          0.201    11.719
+new_n732.out[0] (.names)                                         0.261    11.980
+new_n720.in[0] (.names)                                          0.296    12.276
+new_n720.out[0] (.names)                                         0.261    12.537
+new_n705.in[1] (.names)                                          0.404    12.941
+new_n705.out[0] (.names)                                         0.261    13.202
+new_n704.in[0] (.names)                                          0.347    13.549
+new_n704.out[0] (.names)                                         0.261    13.810
+new_n60.in[2] (.names)                                           0.296    14.106
+new_n60.out[0] (.names)                                          0.261    14.367
+new_n59.in[0] (.names)                                           0.385    14.752
+new_n59.out[0] (.names)                                          0.261    15.013
+new_n945.in[1] (.names)                                          0.201    15.214
+new_n945.out[0] (.names)                                         0.261    15.475
+new_n960.in[0] (.names)                                          0.429    15.904
+new_n960.out[0] (.names)                                         0.261    16.165
+new_n942.in[4] (.names)                                          0.296    16.461
+new_n942.out[0] (.names)                                         0.261    16.722
+new_n941.in[3] (.names)                                          0.550    17.272
+new_n941.out[0] (.names)                                         0.261    17.533
+new_n1093.in[1] (.names)                                         0.784    18.317
+new_n1093.out[0] (.names)                                        0.261    18.578
+new_n1180.in[2] (.names)                                         0.674    19.252
+new_n1180.out[0] (.names)                                        0.261    19.513
+new_n1179.in[0] (.names)                                         0.201    19.714
+new_n1179.out[0] (.names)                                        0.261    19.975
+po00.in[3] (.names)                                              0.480    20.455
+po00.out[0] (.names)                                             0.261    20.716
+out:po00.outpad[0] (.output)                                     0.802    21.518
+data arrival time                                                         21.518
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -21.518
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -21.518
+
+
+#End of timing report

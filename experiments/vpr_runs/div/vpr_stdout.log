@@ -1,0 +1,24 @@
+VPR FPGA Placement and Routing.
+Version: 8.1.0-dev+unkown
+Revision: unkown
+Compiled: 2025-02-16T14:22:44
+Compiler: GNU 11.4.0 on Linux-6.8.0-47-generic x86_64
+Build Info: release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+vpr /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratix10_arch.timing.xml ./benchmarks/blif_folder/div.blif --route_chan_width 250
+
+Using up to 1 parallel worker(s)
+
+Architecture file: /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratix10_arch.timing.xml
+Circuit name: div
+
+# Loading Architecture Description
+Warning 1: Model 'fourteennm_fp_mac.opmode{sp_mult_add}.input_type{comb}.output_type{comb}' output port 'dftout' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 2: Model 'fourteennm_fp_mac.opmode{sp_vector1}.input_type{comb}.output_type{comb}' output port 'dftout' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)
+Warning 3: Model 'fourteennm_fp_mac.opmode{sp_vector2}.input_type{comb}.output_type{comb}' output port 'dftout' has no timing specification (no clock specified to create a sequential output port, not combinationally connected to any inputs, not a clock output)

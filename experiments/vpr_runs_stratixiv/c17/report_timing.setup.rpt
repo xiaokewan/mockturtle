@@ -1,0 +1,61 @@
+#Timing report of worst 2 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: G4.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G17.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G4.inpad[0] (.input)                                             0.000     0.000
+G17.in[3] (.names)                                               1.819     1.819
+G17.out[0] (.names)                                              0.261     2.080
+out:G17.outpad[0] (.output)                                      3.422     5.502
+data arrival time                                                          5.502
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -5.502
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -5.502
+
+
+#Path 2
+Startpoint: G4.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G16.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G4.inpad[0] (.input)                                             0.000     0.000
+G16.in[0] (.names)                                               1.819     1.819
+G16.out[0] (.names)                                              0.261     2.080
+out:G16.outpad[0] (.output)                                      3.396     5.476
+data arrival time                                                          5.476
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -5.476
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -5.476
+
+
+#End of timing report

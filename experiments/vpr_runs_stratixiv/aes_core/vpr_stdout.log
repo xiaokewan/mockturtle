@@ -1,0 +1,346 @@
+VPR FPGA Placement and Routing.
+Version: 8.1.0-dev+unkown
+Revision: unkown
+Compiled: 2025-02-16T14:22:44
+Compiler: GNU 11.4.0 on Linux-6.8.0-47-generic x86_64
+Build Info: release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+vpr /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratixiv_arch.timing.xml /media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/aes_core.blif --route_chan_width 250
+
+Using up to 1 parallel worker(s)
+
+Architecture file: /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratixiv_arch.timing.xml
+Circuit name: aes_core
+
+# Loading Architecture Description
+# Loading Architecture Description took 0.37 seconds (max_rss 79.1 MiB, delta_rss +65.1 MiB)
+
+Timing analysis: ON
+Circuit netlist file: aes_core.net
+Circuit placement file: aes_core.place
+Circuit routing file: aes_core.route
+Circuit SDC file: aes_core.sdc
+Vpr floorplanning constraints file: not specified
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+VPR was run with the following options:
+
+NetlistOpts.abosrb_buffer_luts            : true
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+NetlistOpts.netlist_verbosity             : 1
+NetlistOpts.const_gen_inference           : COMB_SEQ
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: CRITICALITY_TIMING_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.constraints_file: No constraints file given
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 250
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlacerOpts.delay_offset: 0.000000
+PlacerOpts.delay_ramp_delta_threshold: -1
+PlacerOpts.delay_ramp_slope: 0.000000
+PlacerOpts.tsu_rel_margin: 1.000000
+PlacerOpts.tsu_abs_margin: 0.000000
+PlacerOpts.post_place_timing_report_file: 
+PlacerOpts.allowed_tiles_for_delay_model: 
+PlacerOpts.delay_model_reducer: MIN
+PlacerOpts.delay_model_type: DELTA
+PlacerOpts.rlim_escape_fraction: 0.000000
+PlacerOpts.move_stats_file: 
+PlacerOpts.placement_saves_per_temperature: 0
+PlacerOpts.effort_scaling: CIRCUIT
+PlacerOpts.place_delta_delay_matrix_calculation_method: ASTAR_ROUTE
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 0.500000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.flat_routing: false
+RouterOpts.has_choking_spot: false
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 250
+RouterOpts.check_route: FULL
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.do_check_rr_graph: true
+RouterOpts.verify_binary_search: false
+RouterOpts.min_channel_width_hint: 0
+RouterOpts.read_rr_edge_metadata: false
+RouterOpts.exit_after_first_routing_iteration: false
+RouterOpts.astar_fac: 1.200000
+RouterOpts.router_profiler_astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.init_wirelength_abort_threshold: 0.850000
+RouterOpts.save_routing_per_iteration: false
+RouterOpts.congested_routing_iteration_threshold_frac: 1.000000
+RouterOpts.high_fanout_threshold: 64
+RouterOpts.router_debug_net: -2
+RouterOpts.router_debug_sink_rr: -2
+RouterOpts.router_debug_iteration: -2
+RouterOpts.max_convergence_count: 1
+RouterOpts.reconvergence_cpd_threshold: 0.990000
+RouterOpts.update_lower_bound_delays: true
+RouterOpts.first_iteration_timing_report_file: 
+RouterOpts.incr_reroute_delay_ripup: AUTO
+RouterOpts.route_bb_update: DYNAMIC
+RouterOpts.lookahead_type: MAP
+RouterOpts.initial_timing: LOOKAHEAD
+RouterOpts.router_heap: BINARY_HEAP
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+AnalysisOpts.timing_report_npaths: 100
+AnalysisOpts.timing_report_skew: false
+AnalysisOpts.echo_dot_timing_graph_node: -1
+AnalysisOpts.timing_report_detail: NETLIST
+AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
+AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
+
+# Building complex block graph
+# Building complex block graph took 7.15 seconds (max_rss 952.9 MiB, delta_rss +873.8 MiB)
+Circuit file: /media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/aes_core.blif
+# Load circuit
+Found constant-one generator 'po140'
+# Load circuit took 0.03 seconds (max_rss 952.9 MiB, delta_rss +0.0 MiB)
+# Clean circuit
+Absorbed 135 LUT buffers
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 530
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 530
+Swept block(s)      : 0
+Constant Pins Marked: 0
+# Clean circuit took 0.00 seconds (max_rss 952.9 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.01 seconds (max_rss 952.9 MiB, delta_rss +0.0 MiB)
+# Verify circuit
+# Verify circuit took 0.00 seconds (max_rss 952.9 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 5207
+    .input :     789
+    .output:     668
+    0-LUT  :       1
+    6-LUT  :    3749
+  Nets  : 4539
+    Avg Fanout:     4.3
+    Max Fanout:   273.0
+    Min Fanout:     1.0
+  Netlist Clocks: 0
+# Build Timing Graph
+  Timing Graph Nodes: 24209
+  Timing Graph Edges: 38672
+  Timing Graph Levels: 14
+# Build Timing Graph took 0.02 seconds (max_rss 952.9 MiB, delta_rss +0.0 MiB)
+Netlist contains 0 clocks
+# Load Timing Constraints
+
+SDC file 'aes_core.sdc' not found
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on a virtual external clock 'virtual_io_clock'
+   * optimize virtual clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'virtual_io_clock' (Virtual Clock)
+
+# Load Timing Constraints took 0.00 seconds (max_rss 952.9 MiB, delta_rss +0.0 MiB)
+# Packing
+Warning 1: Block type 'M144K' grid location specification startx (33 = 33) falls outside device horizontal range [0,9]
+Warning 2: Block type 'EMPTY' grid location specification startx (33 = 33) falls outside device horizontal range [0,9]
+Begin packing '/media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/aes_core.blif'.
+
+After removing unused inputs...
+	total blocks: 5207, total nets: 4539, total inputs: 789, total outputs: 668
+Begin prepacking.
+
+There is one chain in this architecture called "LAB_carry_chain" with the following starting points:
+	LAB[0]/alm[0]/lut[0]/lcell_comb[0].cin[0]
+
+
+There is one chain in this architecture called "share_chain" with the following starting points:
+	LAB[0]/alm[0]/lut[0]/lcell_comb[0].sharein[0]
+
+0 attraction groups were created during prepacking.
+Finish prepacking.
+Using inter-cluster delay: 1.01382e-09
+✅ Final Pin Utilization: io:1.00,1.00 LAB:0.80,1.00
+Packing with pin utilization targets: io:1,1 PLL:1,1 LAB:0.8,1 DSP:1,1 M9K:1,1 M144K:1,1
+Packing with high fanout thresholds: io:128 PLL:128 LAB:32 DSP:128 M9K:128 M144K:128
+Starting Clustering - Clustering Progress: 
+-------------------   --------------------------   ---------
+Molecules processed   Number of clusters created   FPGA size
+-------------------   --------------------------   ---------
+   208/5207      3%                           11    10 x 7     
+   416/5207      7%                           22    12 x 9     
+   624/5207     11%                           32    13 x 10    
+   832/5207     15%                           43    14 x 10    
+  1040/5207     19%                           53    15 x 11    
+  1248/5207     23%                           64    16 x 12    
+  1456/5207     27%                           76    16 x 12    
+  1664/5207     31%                           87    17 x 13    
+  1872/5207     35%                           99    17 x 13    
+  2080/5207     39%                          111    19 x 14    
+  2288/5207     43%                          122    19 x 14    
+  2496/5207     47%                          135    20 x 15    
+  2704/5207     51%                          147    20 x 15    
+  2912/5207     55%                          158    21 x 16    
+  3120/5207     59%                          172    21 x 16    
+  3328/5207     63%                          185    22 x 16    
+  3536/5207     67%                          201    23 x 17    
+  3744/5207     71%                          220    23 x 17    
+  3952/5207     75%                          424    38 x 28    
+  4160/5207     79%                          632    67 x 50    
+  4368/5207     83%                          840    97 x 72    
+  4576/5207     87%                         1048   127 x 94    
+  4784/5207     91%                         1256   157 x 116   
+  4992/5207     95%                         1464   187 x 139   
+  5200/5207     99%                         1672   217 x 161   
+Incr Slack updates 1 in 0.000240629 sec
+Full Max Req/Worst Slack updates 1 in 1.0811e-05 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 0.000467494 sec
+FPGA sized to 218 x 161 (auto)
+Device Utilization: 0.03 (target 1.00)
+	Block Utilization: 1.00 Type: io
+	Block Utilization: 0.01 Type: LAB
+
+Start the iterative improvement process
+the iterative improvement process is done
+Final Clustering Statistics: 
+----------   --------   ------------------------------------   --------------------------
+Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output pins used
+----------   --------   ------------------------------------   --------------------------
+     EMPTY          0                                      0                            0   
+        io       1457                               0.458476                     0.541524   
+       PLL          0                                      0                            0   
+       LAB        223                                21.3274                      8.59193   
+       DSP          0                                      0                            0   
+       M9K          0                                      0                            0   
+     M144K          0                                      0                            0   
+Absorbed logical nets 1834 out of 4539 nets, 2705 nets not absorbed.
+
+Netlist conversion complete.
+
+# Packing took 14.44 seconds (max_rss 982.0 MiB, delta_rss +29.1 MiB)
+# Load packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'aes_core.net'.
+Detected 1 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0.222391 seconds).
+Warning 3: Treated 1 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load packing took 0.24 seconds (max_rss 1020.0 MiB, delta_rss +38.1 MiB)
+Warning 4: Netlist contains 1 global net to non-global architecture pin connections
+Warning 5: Logic block #222 (po140) has only 1 output pin 'po140.data_out[6]'. It may be a constant generator.
+
+Pb types usage...
+  io         : 1457
+   pad       : 1457
+    inpad    : 789
+    outpad   : 668
+  LAB        : 223
+   alm       : 2023
+    lut      : 3750
+     lut6    : 3750
+      lut    : 3750
+
+# Create Device
+## Build Device Grid
+FPGA sized to 218 x 161: 35098 grid tiles (auto)
+
+Resource usage...
+	Netlist
+		1457	blocks of type: io
+	Architecture
+		1460	blocks of type: io
+	Netlist
+		0	blocks of type: PLL
+	Architecture
+		16	blocks of type: PLL
+	Netlist
+		223	blocks of type: LAB
+	Architecture
+		30458	blocks of type: LAB
+	Netlist
+		0	blocks of type: DSP
+	Architecture
+		234	blocks of type: DSP
+	Netlist
+		0	blocks of type: M9K
+	Architecture
+		1413	blocks of type: M9K
+	Netlist
+		0	blocks of type: M144K
+	Architecture
+		95	blocks of type: M144K
+
+Device Utilization: 0.03 (target 1.00)
+	Physical Tile io:
+	Block Utilization: 1.00 Logical Block: io
+	Physical Tile PLL:
+	Block Utilization: 0.00 Logical Block: PLL
+	Physical Tile LAB:
+	Block Utilization: 0.01 Logical Block: LAB
+	Physical Tile DSP:
+	Block Utilization: 0.00 Logical Block: DSP
+	Physical Tile M9K:
+	Block Utilization: 0.00 Logical Block: M9K
+	Physical Tile M144K:
+	Block Utilization: 0.00 Logical Block: M144K
+
+FPGA size limited by block type(s): io
+
+## Build Device Grid took 0.18 seconds (max_rss 1020.8 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph
+SOURCE->OPIN and IPIN->SINK edge count:4583828
+OPIN->CHANX/CHANY edge count before creating direct connections: 22747432
+OPIN->CHANX/CHANY edge count after creating direct connections: 24123357
+CHAN->CHAN type edge count:65188700
+## Build routing resource graph took 55.48 seconds (max_rss 4201.6 MiB, delta_rss +3180.8 MiB)
+  RR Graph Nodes: 9340118
+  RR Graph Edges: 93895885
+# Create Device took 57.13 seconds (max_rss 4201.6 MiB, delta_rss +3180.8 MiB)
+
+# Computing router lookahead map
+## Computing wire lookahead

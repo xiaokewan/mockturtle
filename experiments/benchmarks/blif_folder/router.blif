@@ -1,0 +1,309 @@
+# Benchmark "./benchmarks/router" written by ABC on Wed Apr  2 16:03:41 2025
+.model ./benchmarks/router
+.inputs dest_x[0] dest_x[1] dest_x[2] dest_x[3] dest_x[4] dest_x[5] \
+ dest_x[6] dest_x[7] dest_x[8] dest_x[9] dest_x[10] dest_x[11] dest_x[12] \
+ dest_x[13] dest_x[14] dest_x[15] dest_x[16] dest_x[17] dest_x[18] \
+ dest_x[19] dest_x[20] dest_x[21] dest_x[22] dest_x[23] dest_x[24] \
+ dest_x[25] dest_x[26] dest_x[27] dest_x[28] dest_x[29] dest_y[0] dest_y[1] \
+ dest_y[2] dest_y[3] dest_y[4] dest_y[5] dest_y[6] dest_y[7] dest_y[8] \
+ dest_y[9] dest_y[10] dest_y[11] dest_y[12] dest_y[13] dest_y[14] \
+ dest_y[15] dest_y[16] dest_y[17] dest_y[18] dest_y[19] dest_y[20] \
+ dest_y[21] dest_y[22] dest_y[23] dest_y[24] dest_y[25] dest_y[26] \
+ dest_y[27] dest_y[28] dest_y[29]
+.outputs outport[0] outport[1] outport[2] outport[3] outport[4] outport[5] \
+ outport[6] outport[7] outport[8] outport[9] outport[10] outport[11] \
+ outport[12] outport[13] outport[14] outport[15] outport[16] outport[17] \
+ outport[18] outport[19] outport[20] outport[21] outport[22] outport[23] \
+ outport[24] outport[25] outport[26] outport[27] outport[28] outport[29]
+.names new_n93 new_n124 outport[0]
+00 0
+.names new_n94 dest_x[0] dest_x[1] dest_x[2] dest_x[3] new_n123 new_n93
+-----1 0
+11111- 0
+.names new_n95 dest_x[4] dest_x[5] dest_x[6] dest_x[7] dest_x[8] new_n94
+111111 1
+.names new_n117 new_n119 new_n121 new_n120 new_n96 new_n122 new_n95
+000111 1
+.names new_n112 new_n113 new_n115 new_n114 new_n97 new_n116 new_n96
+000111 1
+.names new_n107 new_n108 new_n109 new_n111 new_n110 new_n98 new_n97
+000011 1
+.names new_n99 new_n103 new_n105 new_n106 dest_x[9] new_n104 new_n98
+000001 1
+.names new_n100 dest_x[25] new_n99
+00 1
+11 1
+.names new_n101 dest_x[20] dest_x[22] dest_x[21] dest_x[23] dest_x[24] \
+ new_n100
+---111 1
+--1-11 1
+11--11 1
+.names dest_x[15] new_n102 dest_x[16] dest_x[18] dest_x[17] dest_x[19] \
+ new_n101
+---1-1 1
+--1-11 1
+11--11 1
+.names dest_x[10] dest_x[9] dest_x[11] dest_x[14] dest_x[13] dest_x[12] \
+ new_n102
+---0-- 0
+--0-00 0
+00--00 0
+.names new_n100 dest_x[25] dest_x[26] new_n103
+-01 1
+0-1 1
+110 1
+.names new_n100 dest_x[25] dest_x[26] dest_x[27] new_n104
+--10 1
+-001 1
+0-01 1
+11-0 1
+.names new_n100 dest_x[25] dest_x[26] dest_x[27] dest_x[28] new_n105
+---00 1
+--111 1
+-00-0 1
+0-0-0 1
+11-11 1
+.names new_n100 dest_x[25] dest_x[26] dest_x[27] dest_x[28] dest_x[29] \
+ new_n106
+----00 1
+---0-0 1
+--1111 1
+-00--0 1
+0-0--0 1
+11-111 1
+.names new_n101 dest_x[20] new_n107
+00 1
+11 1
+.names new_n101 dest_x[20] dest_x[21] new_n108
+-01 1
+0-1 1
+110 1
+.names new_n101 dest_x[20] dest_x[21] dest_x[22] new_n109
+--10 1
+-001 1
+0-01 1
+11-0 1
+.names new_n101 dest_x[20] dest_x[21] dest_x[22] dest_x[23] new_n110
+---10 1
+--1-0 1
+-0001 1
+0-001 1
+11--0 1
+.names new_n101 dest_x[20] dest_x[21] dest_x[22] dest_x[23] dest_x[24] \
+ new_n111
+----00 1
+---111 1
+--1-11 1
+-000-0 1
+0-00-0 1
+11--11 1
+.names new_n102 dest_x[15] new_n112
+00 1
+11 1
+.names new_n102 dest_x[15] dest_x[16] new_n113
+-01 1
+0-1 1
+110 1
+.names new_n102 dest_x[15] dest_x[16] dest_x[17] new_n114
+--10 1
+-001 1
+0-01 1
+11-0 1
+.names new_n102 dest_x[15] dest_x[16] dest_x[17] dest_x[18] new_n115
+---01 1
+--110 1
+-00-1 1
+0-0-1 1
+11-10 1
+.names new_n102 dest_x[15] dest_x[17] dest_x[16] dest_x[18] dest_x[19] \
+ new_n116
+----10 1
+--0-01 1
+--11-0 1
+-0-001 1
+0--001 1
+111--0 1
+.names new_n118 dest_x[12] new_n117
+01 1
+10 1
+.names dest_x[10] dest_x[9] dest_x[11] new_n118
+-11 1
+1-1 1
+.names new_n118 dest_x[12] dest_x[13] new_n119
+-10 1
+001 1
+1-0 1
+.names new_n118 dest_x[12] dest_x[13] dest_x[14] new_n120
+--10 1
+-1-0 1
+0001 1
+1--0 1
+.names dest_x[9] dest_x[10] new_n121
+01 1
+10 1
+.names dest_x[9] dest_x[10] dest_x[11] new_n122
+-10 1
+001 1
+1-0 1
+.names dest_x[25] new_n100 dest_x[26] dest_x[27] dest_x[28] dest_x[29] \
+ new_n123
+--1111 1
+11-111 1
+.names new_n104 new_n105 new_n125 dest_x[9] new_n123 new_n124
+----0 0
+0111- 0
+.names new_n110 new_n99 new_n103 new_n126 new_n111 new_n125
+01111 1
+.names new_n116 new_n107 new_n108 new_n109 new_n127 new_n126
+01111 1
+.names new_n114 new_n113 new_n128 new_n115 new_n127
+0111 1
+.names new_n120 new_n119 new_n117 new_n112 new_n129 new_n128
+01111 1
+.names new_n122 dest_x[7] dest_x[8] new_n121 new_n130 new_n129
+00011 1
+.names dest_x[1] dest_x[2] dest_x[3] dest_x[4] dest_x[5] dest_x[6] new_n130
+000000 1
+.names dest_y[0] new_n93 new_n154 dest_x[0] new_n132 new_n124 outport[1]
+--0-10 1
+--01-0 1
+-1---0 1
+0--010 1
+.names new_n133 dest_y[1] dest_y[2] dest_y[3] new_n146 new_n132
+----1 0
+1111- 0
+.names new_n134 dest_y[4] dest_y[5] dest_y[6] dest_y[7] dest_y[8] new_n133
+111111 1
+.names dest_y[12] dest_y[13] dest_y[10] dest_y[9] dest_y[11] new_n135 \
+ new_n134
+000011 1
+001101 1
+.names dest_y[16] new_n145 dest_y[14] dest_y[15] new_n136 dest_y[17] \
+ new_n135
+000111 1
+011111 1
+.names dest_y[21] new_n144 dest_y[18] dest_y[19] dest_y[20] new_n137 \
+ new_n136
+000111 1
+011011 1
+.names new_n143 dest_y[23] dest_y[22] new_n138 dest_y[24] new_n137
+00111 1
+11011 1
+.names dest_y[26] new_n139 dest_y[25] new_n142 dest_y[27] dest_y[28] \
+ new_n138
+001111 1
+010111 1
+.names new_n140 dest_y[20] dest_y[22] dest_y[21] dest_y[23] dest_y[24] \
+ new_n139
+---111 1
+--1-11 1
+11--11 1
+.names dest_y[15] new_n141 dest_y[16] dest_y[18] dest_y[17] dest_y[19] \
+ new_n140
+---1-1 1
+--1-11 1
+11--11 1
+.names dest_y[10] dest_y[9] dest_y[11] dest_y[14] dest_y[13] dest_y[12] \
+ new_n141
+---0-- 0
+--0-00 0
+00--00 0
+.names dest_y[9] dest_y[0] dest_y[29] new_n142
+011 1
+.names dest_y[20] new_n140 dest_y[21] new_n143
+-00 1
+0-0 1
+.names dest_y[15] new_n141 dest_y[16] dest_y[17] new_n144
+--11 1
+11-1 1
+.names dest_y[10] dest_y[9] dest_y[11] dest_y[12] dest_y[13] new_n145
+--000 1
+00-00 1
+.names dest_y[9] new_n147 new_n154 new_n146
+-01 1
+0-1 1
+.names new_n139 dest_y[25] dest_y[26] new_n148 dest_y[27] dest_y[28] \
+ new_n147
+001111 1
+110111 1
+.names new_n143 dest_y[22] new_n149 dest_y[23] dest_y[24] new_n148
+00111 1
+11111 1
+.names dest_y[21] new_n144 dest_y[18] dest_y[19] dest_y[20] new_n150 \
+ new_n149
+001111 1
+010111 1
+.names new_n145 dest_y[16] dest_y[14] dest_y[15] new_n151 dest_y[17] \
+ new_n150
+001111 1
+110011 1
+.names dest_y[12] dest_y[13] dest_y[9] dest_y[10] new_n152 dest_y[11] \
+ new_n151
+000111 1
+001011 1
+.names dest_y[7] dest_y[8] new_n153 new_n152
+001 1
+.names dest_y[1] dest_y[2] dest_y[3] dest_y[4] dest_y[5] dest_y[6] new_n153
+000000 1
+.names dest_y[25] new_n139 dest_y[26] dest_y[27] dest_y[28] dest_y[29] \
+ new_n154
+--1111 1
+11-111 1
+.names new_n154 dest_x[0] dest_y[0] new_n146 new_n124 new_n93 outport[2]
+---100 1
+111-00 1
+.names outport[3]
+ 0
+.names outport[4]
+ 0
+.names outport[5]
+ 0
+.names outport[6]
+ 0
+.names outport[7]
+ 0
+.names outport[8]
+ 0
+.names outport[9]
+ 0
+.names outport[10]
+ 0
+.names outport[11]
+ 0
+.names outport[12]
+ 0
+.names outport[13]
+ 0
+.names outport[14]
+ 0
+.names outport[15]
+ 0
+.names outport[16]
+ 0
+.names outport[17]
+ 0
+.names outport[18]
+ 0
+.names outport[19]
+ 0
+.names outport[20]
+ 0
+.names outport[21]
+ 0
+.names outport[22]
+ 0
+.names outport[23]
+ 0
+.names outport[24]
+ 0
+.names outport[25]
+ 0
+.names outport[26]
+ 0
+.names outport[27]
+ 0
+.names outport[28]
+ 0
+.names outport[29]
+ 0
+.end

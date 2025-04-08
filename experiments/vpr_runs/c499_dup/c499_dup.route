@@ -1,0 +1,1553 @@
+Placement_File: c499_dup.place Placement_ID: SHA256:63b46b5a2c0fad7f0d0484b2d7ccfbc018089dd8d9310bce194b03ef60e3d68e
+Array size: 47 x 35 logic blocks.
+
+Routing:
+
+Net 0 (new_n125)
+
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77328	  OPIN (0,17,22)  Pin: 77   LAB.data_out[11] Switch: 0
+Node:	81100	  IPIN (0,18,22)  Pin: 21   LAB.data_in[21] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 4
+Node:	77328	  OPIN (0,17,22)  Pin: 77   LAB.data_out[11] Switch: 6
+Node:	357372	 CHANY (0,16,22) to (16,23)  Track: 14  Switch: 1
+Node:	77414	  IPIN (0,17,23)  Pin: 47   LAB.data_in[47] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77354	  OPIN (0,17,22)  Pin: 103   LAB.data_out[37] Switch: 0
+Node:	77308	  IPIN (0,17,22)  Pin: 57   LAB.data_in[57] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	77354	  OPIN (0,17,22)  Pin: 103   LAB.data_out[37] Switch: 8
+Node:	358600	 CHANY (0,17,22) to (17,25)  Track: 76  Switch: 1
+Node:	81236	  IPIN (0,18,23)  Pin: 41   LAB.data_in[41] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 5
+Node:	358600	 CHANY (0,17,22) to (17,25)  Track: 76  Switch: 1
+Node:	77491	  IPIN (0,17,24)  Pin: 8   LAB.data_in[8] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 1 (new_n85)
+
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77435	  OPIN (0,17,23)  Pin: 68   LAB.data_out[2] Switch: 2
+Node:	314082	 CHANX (0,17,23) to (18,23)  Track: 18  Switch: 6
+Node:	359783	 CHANY (0,18,22) to (18,23)  Track: 11  Switch: 1
+Node:	84950	  IPIN (0,19,22)  Pin: 43   LAB.data_in[43] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 4
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77446	  OPIN (0,17,23)  Pin: 79   LAB.data_out[13] Switch: 0
+Node:	81218	  IPIN (0,18,23)  Pin: 23   LAB.data_in[23] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	77446	  OPIN (0,17,23)  Pin: 79   LAB.data_out[13] Switch: 6
+Node:	357369	 CHANY (0,16,22) to (16,23)  Track: 7  Switch: 1
+Node:	77283	  IPIN (0,17,22)  Pin: 32   LAB.data_in[32] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	77446	  OPIN (0,17,23)  Pin: 79   LAB.data_out[13] Switch: 6
+Node:	357402	 CHANY (0,16,23) to (16,24)  Track: 4  Switch: 1
+Node:	77516	  IPIN (0,17,24)  Pin: 33   LAB.data_in[33] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 2 (pi19)
+
+Node:	39204	SOURCE (0,9,22) to (9,23)  Pad: 40  Switch: 0
+Node:	39376	  OPIN (0,9,22)  Pad: 40  Switch: 6
+Node:	348928	 CHANY (0,9,22) to (9,23)  Track: 4  Switch: 4
+Node:	311618	 CHANX (0,10,22) to (19,22)  Track: 122  Switch: 8
+Node:	358632	 CHANY (0,17,23) to (17,26)  Track: 70  Switch: 1
+Node:	77488	  IPIN (0,17,24)  Pin: 5   LAB.data_in[5] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	311618	 CHANX (0,10,22) to (19,22)  Track: 122  Switch: 1
+Node:	81091	  IPIN (0,18,22)  Pin: 12   LAB.data_in[12] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	311618	 CHANX (0,10,22) to (19,22)  Track: 122  Switch: 1
+Node:	84952	  IPIN (0,19,22)  Pin: 45   LAB.data_in[45] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 3
+
+
+Net 3 (new_n104): global net connecting:
+
+Block new_n104 (#7) at (2,4), Pin class 3.
+Block po16 (#0) at (17,24), Pin class 0.
+Block new_n125 (#1) at (17,22), Pin class 0.
+Block po17 (#2) at (17,23), Pin class 0.
+Block po25 (#4) at (18,23), Pin class 0.
+Block po03 (#5) at (18,24), Pin class 0.
+
+
+Net 4 (new_n128): global net connecting:
+
+Block po11 (#6) at (19,22), Pin class 3.
+Block po16 (#0) at (17,24), Pin class 0.
+Block po24 (#3) at (18,22), Pin class 0.
+
+
+Net 5 (new_n117)
+
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81152	  OPIN (0,18,22)  Pin: 73   LAB.data_out[7] Switch: 0
+Node:	84924	  IPIN (0,19,22)  Pin: 17   LAB.data_in[17] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 7
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81171	  OPIN (0,18,22)  Pin: 92   LAB.data_out[26] Switch: 0
+Node:	77289	  IPIN (0,17,22)  Pin: 38   LAB.data_in[38] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	81171	  OPIN (0,18,22)  Pin: 92   LAB.data_out[26] Switch: 6
+Node:	359782	 CHANY (0,18,22) to (18,23)  Track: 10  Switch: 1
+Node:	81200	  IPIN (0,18,23)  Pin: 5   LAB.data_in[5] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 5
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81148	  OPIN (0,18,22)  Pin: 69   LAB.data_out[3] Switch: 0
+Node:	81083	  IPIN (0,18,22)  Pin: 4   LAB.data_in[4] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 4
+Node:	81148	  OPIN (0,18,22)  Pin: 69   LAB.data_out[3] Switch: 8
+Node:	358602	 CHANY (0,17,22) to (17,25)  Track: 84  Switch: 1
+Node:	81353	  IPIN (0,18,24)  Pin: 42   LAB.data_in[42] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 6
+Node:	358602	 CHANY (0,17,22) to (17,25)  Track: 84  Switch: 1
+Node:	77382	  IPIN (0,17,23)  Pin: 15   LAB.data_in[15] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	358602	 CHANY (0,17,22) to (17,25)  Track: 84  Switch: 1
+Node:	77495	  IPIN (0,17,24)  Pin: 12   LAB.data_in[12] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 6 (new_n77)
+
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77443	  OPIN (0,17,23)  Pin: 76   LAB.data_out[10] Switch: 0
+Node:	77381	  IPIN (0,17,23)  Pin: 14   LAB.data_in[14] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	77443	  OPIN (0,17,23)  Pin: 76   LAB.data_out[10] Switch: 6
+Node:	357404	 CHANY (0,16,23) to (16,24)  Track: 8  Switch: 1
+Node:	77527	  IPIN (0,17,24)  Pin: 44   LAB.data_in[44] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77456	  OPIN (0,17,23)  Pin: 89   LAB.data_out[23] Switch: 6
+Node:	358579	 CHANY (0,17,22) to (17,23)  Track: 13  Switch: 1
+Node:	77257	  IPIN (0,17,22)  Pin: 6   LAB.data_in[6] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	358579	 CHANY (0,17,22) to (17,23)  Track: 13  Switch: 1
+Node:	81115	  IPIN (0,18,22)  Pin: 36   LAB.data_in[36] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 4
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77436	  OPIN (0,17,23)  Pin: 69   LAB.data_out[3] Switch: 0
+Node:	81208	  IPIN (0,18,23)  Pin: 13   LAB.data_in[13] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 5
+
+
+Net 7 (pi24)
+
+Node:	38172	SOURCE (0,9,16) to (9,17)  Pad: 40  Switch: 0
+Node:	38344	  OPIN (0,9,16)  Pad: 40  Switch: 3
+Node:	298430	 CHANX (0,9,16) to (12,16)  Track: 72  Switch: 3
+Node:	298602	 CHANX (0,13,16) to (16,16)  Track: 48  Switch: 8
+Node:	357220	 CHANY (0,16,17) to (16,20)  Track: 64  Switch: 8
+Node:	357358	 CHANY (0,16,21) to (16,24)  Track: 80  Switch: 2
+Node:	313995	 CHANX (0,15,23) to (16,23)  Track: 23  Switch: 6
+Node:	355026	 CHANY (0,14,24) to (14,25)  Track: 14  Switch: 3
+Node:	316196	 CHANX (0,15,24) to (18,24)  Track: 76  Switch: 1
+Node:	81337	  IPIN (0,18,24)  Pin: 26   LAB.data_in[26] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	357358	 CHANY (0,16,21) to (16,24)  Track: 80  Switch: 1
+Node:	77426	  IPIN (0,17,23)  Pin: 59   LAB.data_in[59] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	357358	 CHANY (0,16,21) to (16,24)  Track: 80  Switch: 1
+Node:	77522	  IPIN (0,17,24)  Pin: 39   LAB.data_in[39] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 8 (pi00)
+
+Node:	40021	SOURCE (0,9,26) to (9,27)  Pad: 169  Switch: 0
+Node:	40193	  OPIN (0,9,26)  Pad: 169  Switch: 7
+Node:	349013	 CHANY (0,9,24) to (9,26)  Track: 59  Switch: 4
+Node:	315994	 CHANX (0,10,24) to (19,24)  Track: 166  Switch: 7
+Node:	358585	 CHANY (0,17,22) to (17,24)  Track: 29  Switch: 1
+Node:	81253	  IPIN (0,18,23)  Pin: 58   LAB.data_in[58] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	358585	 CHANY (0,17,22) to (17,24)  Track: 29  Switch: 1
+Node:	81117	  IPIN (0,18,22)  Pin: 38   LAB.data_in[38] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	315994	 CHANX (0,10,24) to (19,24)  Track: 166  Switch: 1
+Node:	77487	  IPIN (0,17,24)  Pin: 4   LAB.data_in[4] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 9 (pi22)
+
+Node:	39677	SOURCE (0,9,24) to (9,25)  Pad: 169  Switch: 0
+Node:	39849	  OPIN (0,9,24)  Pad: 169  Switch: 4
+Node:	315952	 CHANX (0,9,24) to (18,24)  Track: 164  Switch: 1
+Node:	77518	  IPIN (0,17,24)  Pin: 35   LAB.data_in[35] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	315952	 CHANX (0,9,24) to (18,24)  Track: 164  Switch: 7
+Node:	359799	 CHANY (0,18,22) to (18,24)  Track: 55  Switch: 1
+Node:	81098	  IPIN (0,18,22)  Pin: 19   LAB.data_in[19] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 10 (pi31)
+
+Node:	40924	SOURCE (0,9,32) to (9,33)  Pad: 40  Switch: 0
+Node:	41096	  OPIN (0,9,32)  Pad: 40  Switch: 3
+Node:	333470	 CHANX (0,9,32) to (12,32)  Track: 80  Switch: 9
+Node:	349997	 CHANY (0,10,17) to (10,32)  Track: 117  Switch: 4
+Node:	307288	 CHANX (0,11,20) to (20,20)  Track: 100  Switch: 8
+Node:	357360	 CHANY (0,16,21) to (16,24)  Track: 88  Switch: 1
+Node:	77409	  IPIN (0,17,23)  Pin: 42   LAB.data_in[42] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	349997	 CHANY (0,10,17) to (10,32)  Track: 117  Switch: 4
+Node:	316032	 CHANX (0,11,24) to (20,24)  Track: 108  Switch: 1
+Node:	77489	  IPIN (0,17,24)  Pin: 6   LAB.data_in[6] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 11 (pi05)
+
+Node:	194461	SOURCE (0,37,18) to (37,19)  Pad: 169  Switch: 0
+Node:	194633	  OPIN (0,37,18)  Pad: 169  Switch: 4
+Node:	303659	 CHANX (0,28,18) to (37,18)  Track: 151  Switch: 4
+Node:	303213	 CHANX (0,18,18) to (27,18)  Track: 111  Switch: 6
+Node:	358468	 CHANY (0,17,19) to (17,20)  Track: 2  Switch: 6
+Node:	358542	 CHANY (0,17,21) to (17,22)  Track: 10  Switch: 1
+Node:	81133	  IPIN (0,18,22)  Pin: 54   LAB.data_in[54] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 4
+Node:	358542	 CHANY (0,17,21) to (17,22)  Track: 10  Switch: 1
+Node:	77256	  IPIN (0,17,22)  Pin: 5   LAB.data_in[5] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	358542	 CHANY (0,17,21) to (17,22)  Track: 10  Switch: 6
+Node:	358610	 CHANY (0,17,23) to (17,24)  Track: 6  Switch: 1
+Node:	77369	  IPIN (0,17,23)  Pin: 2   LAB.data_in[2] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	358610	 CHANY (0,17,23) to (17,24)  Track: 6  Switch: 1
+Node:	77504	  IPIN (0,17,24)  Pin: 21   LAB.data_in[21] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 12 (pi26)
+
+Node:	38602	SOURCE (0,9,18) to (9,19)  Pad: 126  Switch: 0
+Node:	38774	  OPIN (0,9,18)  Pad: 126  Switch: 4
+Node:	302824	 CHANX (0,9,18) to (18,18)  Track: 152  Switch: 7
+Node:	357270	 CHANY (0,16,19) to (16,21)  Track: 20  Switch: 7
+Node:	357376	 CHANY (0,16,22) to (16,24)  Track: 26  Switch: 3
+Node:	314098	 CHANX (0,17,23) to (20,23)  Track: 78  Switch: 1
+Node:	81221	  IPIN (0,18,23)  Pin: 26   LAB.data_in[26] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	357376	 CHANY (0,16,22) to (16,24)  Track: 26  Switch: 1
+Node:	77401	  IPIN (0,17,23)  Pin: 34   LAB.data_in[34] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	357376	 CHANY (0,16,22) to (16,24)  Track: 26  Switch: 1
+Node:	77540	  IPIN (0,17,24)  Pin: 57   LAB.data_in[57] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 13 (new_n96)
+
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77331	  OPIN (0,17,22)  Pin: 80   LAB.data_out[14] Switch: 0
+Node:	77272	  IPIN (0,17,22)  Pin: 21   LAB.data_in[21] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	77331	  OPIN (0,17,22)  Pin: 80   LAB.data_out[14] Switch: 8
+Node:	357396	 CHANY (0,16,22) to (16,25)  Track: 98  Switch: 1
+Node:	77531	  IPIN (0,17,24)  Pin: 48   LAB.data_in[48] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 14 (pi28)
+
+Node:	38989	SOURCE (0,9,20) to (9,21)  Pad: 169  Switch: 0
+Node:	39161	  OPIN (0,9,20)  Pad: 169  Switch: 4
+Node:	307202	 CHANX (0,9,20) to (18,20)  Track: 156  Switch: 6
+Node:	357338	 CHANY (0,16,21) to (16,22)  Track: 12  Switch: 6
+Node:	357400	 CHANY (0,16,23) to (16,24)  Track: 0  Switch: 1
+Node:	77523	  IPIN (0,17,24)  Pin: 40   LAB.data_in[40] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	307202	 CHANX (0,9,20) to (18,20)  Track: 156  Switch: 7
+Node:	357350	 CHANY (0,16,21) to (16,23)  Track: 48  Switch: 1
+Node:	77412	  IPIN (0,17,23)  Pin: 45   LAB.data_in[45] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	307202	 CHANX (0,9,20) to (18,20)  Track: 156  Switch: 6
+Node:	359748	 CHANY (0,18,21) to (18,22)  Track: 12  Switch: 1
+Node:	84944	  IPIN (0,19,22)  Pin: 37   LAB.data_in[37] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 3
+
+
+Net 15 (new_n87): global net connecting:
+
+Block po11 (#6) at (19,22), Pin class 3.
+Block po16 (#0) at (17,24), Pin class 0.
+Block new_n125 (#1) at (17,22), Pin class 0.
+Block po25 (#4) at (18,23), Pin class 0.
+
+
+Net 16 (pi37)
+
+Node:	196482	SOURCE (0,37,30) to (37,31)  Pad: 126  Switch: 0
+Node:	196654	  OPIN (0,37,30)  Pad: 126  Switch: 7
+Node:	382899	 CHANY (0,37,28) to (37,30)  Track: 51  Switch: 2
+Node:	323679	 CHANX (0,36,27) to (37,27)  Track: 13  Switch: 5
+Node:	322703	 CHANX (0,13,27) to (36,27)  Track: 223  Switch: 6
+Node:	363531	 CHANY (0,21,26) to (21,27)  Track: 5  Switch: 3
+Node:	318517	 CHANX (0,18,25) to (21,25)  Track: 45  Switch: 6
+Node:	358645	 CHANY (0,17,24) to (17,25)  Track: 5  Switch: 1
+Node:	77494	  IPIN (0,17,24)  Pin: 11   LAB.data_in[11] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 17 (pi09)
+
+Node:	37914	SOURCE (0,9,14) to (9,15)  Pad: 126  Switch: 0
+Node:	38086	  OPIN (0,9,14)  Pad: 126  Switch: 7
+Node:	348670	 CHANY (0,9,14) to (9,16)  Track: 50  Switch: 4
+Node:	298490	 CHANX (0,10,16) to (19,16)  Track: 210  Switch: 8
+Node:	358424	 CHANY (0,17,17) to (17,20)  Track: 66  Switch: 8
+Node:	358568	 CHANY (0,17,21) to (17,24)  Track: 98  Switch: 1
+Node:	81243	  IPIN (0,18,23)  Pin: 48   LAB.data_in[48] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	358568	 CHANY (0,17,21) to (17,24)  Track: 98  Switch: 1
+Node:	77385	  IPIN (0,17,23)  Pin: 18   LAB.data_in[18] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	358568	 CHANY (0,17,21) to (17,24)  Track: 98  Switch: 1
+Node:	77502	  IPIN (0,17,24)  Pin: 19   LAB.data_in[19] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 18 (new_n127)
+
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77581	  OPIN (0,17,24)  Pin: 98   LAB.data_out[32] Switch: 0
+Node:	77533	  IPIN (0,17,24)  Pin: 50   LAB.data_in[50] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	77581	  OPIN (0,17,24)  Pin: 98   LAB.data_out[32] Switch: 8
+Node:	358565	 CHANY (0,17,21) to (17,24)  Track: 83  Switch: 1
+Node:	81235	  IPIN (0,18,23)  Pin: 40   LAB.data_in[40] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 4
+Node:	358565	 CHANY (0,17,21) to (17,24)  Track: 83  Switch: 1
+Node:	81118	  IPIN (0,18,22)  Pin: 39   LAB.data_in[39] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77588	  OPIN (0,17,24)  Pin: 105   LAB.data_out[39] Switch: 8
+Node:	358569	 CHANY (0,17,21) to (17,24)  Track: 99  Switch: 1
+Node:	77268	  IPIN (0,17,22)  Pin: 17   LAB.data_in[17] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 19 (pi13)
+
+Node:	38516	SOURCE (0,9,18) to (9,19)  Pad: 40  Switch: 0
+Node:	38688	  OPIN (0,9,18)  Pad: 40  Switch: 4
+Node:	302826	 CHANX (0,9,18) to (18,18)  Track: 172  Switch: 6
+Node:	359678	 CHANY (0,18,19) to (18,20)  Track: 8  Switch: 6
+Node:	359746	 CHANY (0,18,21) to (18,22)  Track: 8  Switch: 1
+Node:	81084	  IPIN (0,18,22)  Pin: 5   LAB.data_in[5] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	38688	  OPIN (0,9,18)  Pad: 40  Switch: 2
+Node:	302790	 CHANX (0,9,18) to (10,18)  Track: 4  Switch: 2
+Node:	302888	 CHANX (0,11,18) to (12,18)  Track: 20  Switch: 6
+Node:	352440	 CHANY (0,12,19) to (12,20)  Track: 0  Switch: 3
+Node:	307364	 CHANX (0,13,20) to (16,20)  Track: 64  Switch: 8
+Node:	357356	 CHANY (0,16,21) to (16,24)  Track: 72  Switch: 1
+Node:	77539	  IPIN (0,17,24)  Pin: 56   LAB.data_in[56] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 20 (new_n90)
+
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77551	  OPIN (0,17,24)  Pin: 68   LAB.data_out[2] Switch: 0
+Node:	77486	  IPIN (0,17,24)  Pin: 3   LAB.data_in[3] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 21 (new_n91)
+
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77549	  OPIN (0,17,24)  Pin: 66   LAB.data_out[0] Switch: 0
+Node:	77483	  IPIN (0,17,24)  Pin: 0   LAB.data_in[0] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 22 (pi02)
+
+Node:	38645	SOURCE (0,9,18) to (9,19)  Pad: 169  Switch: 0
+Node:	38817	  OPIN (0,9,18)  Pad: 169  Switch: 6
+Node:	348796	 CHANY (0,9,18) to (9,19)  Track: 12  Switch: 6
+Node:	348860	 CHANY (0,9,20) to (9,21)  Track: 0  Switch: 4
+Node:	309440	 CHANX (0,10,21) to (19,21)  Track: 180  Switch: 7
+Node:	358594	 CHANY (0,17,22) to (17,24)  Track: 58  Switch: 1
+Node:	81362	  IPIN (0,18,24)  Pin: 51   LAB.data_in[51] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	358594	 CHANY (0,17,22) to (17,24)  Track: 58  Switch: 1
+Node:	81130	  IPIN (0,18,22)  Pin: 51   LAB.data_in[51] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	358594	 CHANY (0,17,22) to (17,24)  Track: 58  Switch: 1
+Node:	77505	  IPIN (0,17,24)  Pin: 22   LAB.data_in[22] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 23 (pi15)
+
+Node:	39591	SOURCE (0,9,24) to (9,25)  Pad: 83  Switch: 0
+Node:	39763	  OPIN (0,9,24)  Pad: 83  Switch: 4
+Node:	315950	 CHANX (0,9,24) to (18,24)  Track: 144  Switch: 1
+Node:	81336	  IPIN (0,18,24)  Pin: 25   LAB.data_in[25] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	315950	 CHANX (0,9,24) to (18,24)  Track: 144  Switch: 2
+Node:	316354	 CHANX (0,19,24) to (20,24)  Track: 4  Switch: 6
+Node:	362225	 CHANY (0,20,23) to (20,24)  Track: 1  Switch: 3
+Node:	311909	 CHANX (0,17,22) to (20,22)  Track: 77  Switch: 1
+Node:	81103	  IPIN (0,18,22)  Pin: 24   LAB.data_in[24] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	315950	 CHANX (0,9,24) to (18,24)  Track: 144  Switch: 1
+Node:	77507	  IPIN (0,17,24)  Pin: 24   LAB.data_in[24] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 24 (pi33)
+
+Node:	40322	SOURCE (0,9,28) to (9,29)  Pad: 126  Switch: 0
+Node:	40494	  OPIN (0,9,28)  Pad: 126  Switch: 7
+Node:	349067	 CHANY (0,9,26) to (9,28)  Track: 27  Switch: 4
+Node:	320370	 CHANX (0,10,26) to (19,26)  Track: 150  Switch: 8
+Node:	358631	 CHANY (0,17,23) to (17,26)  Track: 63  Switch: 1
+Node:	81342	  IPIN (0,18,24)  Pin: 31   LAB.data_in[31] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	358631	 CHANY (0,17,23) to (17,26)  Track: 63  Switch: 1
+Node:	77367	  IPIN (0,17,23)  Pin: 0   LAB.data_in[0] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	358631	 CHANY (0,17,23) to (17,26)  Track: 63  Switch: 1
+Node:	77484	  IPIN (0,17,24)  Pin: 1   LAB.data_in[1] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 25 (new_n124)
+
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77576	  OPIN (0,17,24)  Pin: 93   LAB.data_out[27] Switch: 0
+Node:	77525	  IPIN (0,17,24)  Pin: 42   LAB.data_in[42] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	77576	  OPIN (0,17,24)  Pin: 93   LAB.data_out[27] Switch: 6
+Node:	358615	 CHANY (0,17,23) to (17,24)  Track: 15  Switch: 1
+Node:	77392	  IPIN (0,17,23)  Pin: 25   LAB.data_in[25] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77556	  OPIN (0,17,24)  Pin: 73   LAB.data_out[7] Switch: 8
+Node:	357359	 CHANY (0,16,21) to (16,24)  Track: 81  Switch: 1
+Node:	77292	  IPIN (0,17,22)  Pin: 41   LAB.data_in[41] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 26 (pi17)
+
+Node:	39892	SOURCE (0,9,26) to (9,27)  Pad: 40  Switch: 0
+Node:	40064	  OPIN (0,9,26)  Pad: 40  Switch: 7
+Node:	349003	 CHANY (0,9,24) to (9,26)  Track: 29  Switch: 4
+Node:	315992	 CHANX (0,10,24) to (19,24)  Track: 146  Switch: 8
+Node:	358563	 CHANY (0,17,21) to (17,24)  Track: 75  Switch: 1
+Node:	81231	  IPIN (0,18,23)  Pin: 36   LAB.data_in[36] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	358563	 CHANY (0,17,21) to (17,24)  Track: 75  Switch: 1
+Node:	81135	  IPIN (0,18,22)  Pin: 56   LAB.data_in[56] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	315992	 CHANX (0,10,24) to (19,24)  Track: 146  Switch: 1
+Node:	77508	  IPIN (0,17,24)  Pin: 25   LAB.data_in[25] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 27 (new_n92)
+
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77565	  OPIN (0,17,24)  Pin: 82   LAB.data_out[16] Switch: 6
+Node:	357401	 CHANY (0,16,23) to (16,24)  Track: 1  Switch: 1
+Node:	77406	  IPIN (0,17,23)  Pin: 39   LAB.data_in[39] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77550	  OPIN (0,17,24)  Pin: 67   LAB.data_out[1] Switch: 0
+Node:	77485	  IPIN (0,17,24)  Pin: 2   LAB.data_in[2] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 28 (pi35)
+
+Node:	41053	SOURCE (0,9,32) to (9,33)  Pad: 169  Switch: 0
+Node:	41225	  OPIN (0,9,32)  Pad: 169  Switch: 3
+Node:	333464	 CHANX (0,9,32) to (12,32)  Track: 56  Switch: 9
+Node:	348789	 CHANY (0,9,17) to (9,32)  Track: 115  Switch: 4
+Node:	315996	 CHANX (0,10,24) to (19,24)  Track: 186  Switch: 1
+Node:	77497	  IPIN (0,17,24)  Pin: 14   LAB.data_in[14] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	315996	 CHANX (0,10,24) to (19,24)  Track: 186  Switch: 6
+Node:	358613	 CHANY (0,17,23) to (17,24)  Track: 11  Switch: 1
+Node:	81229	  IPIN (0,18,23)  Pin: 34   LAB.data_in[34] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	358613	 CHANY (0,17,23) to (17,24)  Track: 11  Switch: 1
+Node:	77371	  IPIN (0,17,23)  Pin: 4   LAB.data_in[4] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 29 (pi40)
+
+Node:	196525	SOURCE (0,37,30) to (37,31)  Pad: 169  Switch: 0
+Node:	196697	  OPIN (0,37,30)  Pad: 169  Switch: 2
+Node:	330249	 CHANX (0,36,30) to (37,30)  Track: 11  Switch: 5
+Node:	329275	 CHANX (0,13,30) to (36,30)  Track: 229  Switch: 6
+Node:	363629	 CHANY (0,21,29) to (21,30)  Track: 7  Switch: 6
+Node:	363561	 CHANY (0,21,27) to (21,28)  Track: 3  Switch: 3
+Node:	322909	 CHANX (0,18,27) to (21,27)  Track: 81  Switch: 8
+Node:	358673	 CHANY (0,17,24) to (17,27)  Track: 97  Switch: 1
+Node:	77501	  IPIN (0,17,24)  Pin: 18   LAB.data_in[18] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 30 (new_n95)
+
+Node:	84903	SOURCE (0,19,22)  Class: 3  Switch: 0
+Node:	84996	  OPIN (0,19,22)  Pin: 89   LAB.data_out[23] Switch: 2
+Node:	311941	 CHANX (0,18,22) to (19,22)  Track: 23  Switch: 6
+Node:	358608	 CHANY (0,17,23) to (17,24)  Track: 2  Switch: 1
+Node:	77493	  IPIN (0,17,24)  Pin: 10   LAB.data_in[10] Switch: 0
+Node:	77476	  SINK (0,17,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 31 (po20)
+
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77585	  OPIN (0,17,24)  Pin: 102   LAB.data_out[36] Switch: 2
+Node:	316268	 CHANX (0,17,24) to (18,24)  Track: 8  Switch: 5
+Node:	316396	 CHANX (0,19,24) to (42,24)  Track: 228  Switch: 6
+Node:	377966	 CHANY (0,33,25) to (33,26)  Track: 10  Switch: 3
+Node:	321408	 CHANX (0,34,26) to (37,26)  Track: 30  Switch: 1
+Node:	195926	  IPIN (0,37,26)  Pad: 86  Switch: 0
+Node:	195754	  SINK (0,37,26) to (37,27)  Pad: 86  Switch: -1 Net_pin_index: 1
+
+
+Net 32 (new_n94)
+
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77569	  OPIN (0,17,24)  Pin: 86   LAB.data_out[20] Switch: 8
+Node:	358561	 CHANY (0,17,21) to (17,24)  Track: 67  Switch: 1
+Node:	81110	  IPIN (0,18,22)  Pin: 31   LAB.data_in[31] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77552	  OPIN (0,17,24)  Pin: 69   LAB.data_out[3] Switch: 0
+Node:	81324	  IPIN (0,18,24)  Pin: 13   LAB.data_in[13] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 4
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77577	  OPIN (0,17,24)  Pin: 94   LAB.data_out[28] Switch: 6
+Node:	358609	 CHANY (0,17,23) to (17,24)  Track: 3  Switch: 1
+Node:	81225	  IPIN (0,18,23)  Pin: 30   LAB.data_in[30] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77553	  OPIN (0,17,24)  Pin: 70   LAB.data_out[4] Switch: 8
+Node:	357363	 CHANY (0,16,21) to (16,24)  Track: 97  Switch: 1
+Node:	77301	  IPIN (0,17,22)  Pin: 50   LAB.data_in[50] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 33 (po19)
+
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77570	  OPIN (0,17,24)  Pin: 87   LAB.data_out[21] Switch: 2
+Node:	316221	 CHANX (0,16,24) to (17,24)  Track: 7  Switch: 9
+Node:	357502	 CHANY (0,16,25) to (16,33)  Track: 112  Switch: 2
+Node:	333711	 CHANX (0,15,32) to (16,32)  Track: 1  Switch: 2
+Node:	333631	 CHANX (0,13,32) to (14,32)  Track: 17  Switch: 2
+Node:	333539	 CHANX (0,11,32) to (12,32)  Track: 13  Switch: 2
+Node:	333453	 CHANX (0,9,32) to (10,32)  Track: 17  Switch: 1
+Node:	41099	  IPIN (0,9,32)  Pad: 43  Switch: 0
+Node:	40927	  SINK (0,9,32) to (9,33)  Pad: 43  Switch: -1 Net_pin_index: 1
+
+
+Net 34 (po16)
+
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77555	  OPIN (0,17,24)  Pin: 72   LAB.data_out[6] Switch: 6
+Node:	357405	 CHANY (0,16,23) to (16,24)  Track: 9  Switch: 4
+Node:	313685	 CHANX (0,7,23) to (16,23)  Track: 219  Switch: 8
+Node:	347816	 CHANY (0,8,24) to (8,27)  Track: 86  Switch: 8
+Node:	347952	 CHANY (0,8,28) to (8,31)  Track: 94  Switch: 1
+Node:	40755	  IPIN (0,9,30)  Pad: 43  Switch: 0
+Node:	40583	  SINK (0,9,30) to (9,31)  Pad: 43  Switch: -1 Net_pin_index: 1
+
+
+Net 35 (po23)
+
+Node:	77479	SOURCE (0,17,24)  Class: 3  Switch: 0
+Node:	77566	  OPIN (0,17,24)  Pin: 83   LAB.data_out[17] Switch: 2
+Node:	316227	 CHANX (0,16,24) to (17,24)  Track: 19  Switch: 9
+Node:	356294	 CHANY (0,15,25) to (15,33)  Track: 110  Switch: 5
+Node:	335325	 CHANX (0,1,33) to (15,33)  Track: 241  Switch: 8
+Node:	348055	 CHANY (0,8,31) to (8,33)  Track: 85  Switch: 1
+Node:	41142	  IPIN (0,9,32)  Pad: 86  Switch: 0
+Node:	40970	  SINK (0,9,32) to (9,33)  Pad: 86  Switch: -1 Net_pin_index: 1
+
+
+Net 36 (new_n101): global net connecting:
+
+Block po11 (#6) at (19,22), Pin class 3.
+Block new_n125 (#1) at (17,22), Pin class 0.
+Block po25 (#4) at (18,23), Pin class 0.
+Block po03 (#5) at (18,24), Pin class 0.
+Block po11 (#6) at (19,22), Pin class 0.
+
+
+Net 37 (new_n97): global net connecting:
+
+Block po11 (#6) at (19,22), Pin class 3.
+Block new_n125 (#1) at (17,22), Pin class 0.
+Block po25 (#4) at (18,23), Pin class 0.
+Block po03 (#5) at (18,24), Pin class 0.
+
+
+Net 38 (pi08)
+
+Node:	40709	SOURCE (0,9,30) to (9,31)  Pad: 169  Switch: 0
+Node:	40881	  OPIN (0,9,30)  Pad: 169  Switch: 4
+Node:	329086	 CHANX (0,9,30) to (18,30)  Track: 156  Switch: 8
+Node:	357569	 CHANY (0,16,27) to (16,30)  Track: 85  Switch: 8
+Node:	357427	 CHANY (0,16,23) to (16,26)  Track: 69  Switch: 1
+Node:	77403	  IPIN (0,17,23)  Pin: 36   LAB.data_in[36] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	357427	 CHANY (0,16,23) to (16,26)  Track: 69  Switch: 2
+Node:	311890	 CHANX (0,17,22) to (18,22)  Track: 16  Switch: 1
+Node:	77259	  IPIN (0,17,22)  Pin: 8   LAB.data_in[8] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 39 (pi12)
+
+Node:	194332	SOURCE (0,37,18) to (37,19)  Pad: 40  Switch: 0
+Node:	194504	  OPIN (0,37,18)  Pad: 40  Switch: 4
+Node:	303661	 CHANX (0,28,18) to (37,18)  Track: 171  Switch: 4
+Node:	303215	 CHANX (0,18,18) to (27,18)  Track: 131  Switch: 8
+Node:	358496	 CHANY (0,17,19) to (17,22)  Track: 78  Switch: 1
+Node:	81120	  IPIN (0,18,22)  Pin: 41   LAB.data_in[41] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	358496	 CHANY (0,17,19) to (17,22)  Track: 78  Switch: 1
+Node:	77262	  IPIN (0,17,22)  Pin: 11   LAB.data_in[11] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 40 (pi21)
+
+Node:	39247	SOURCE (0,9,22) to (9,23)  Pad: 83  Switch: 0
+Node:	39419	  OPIN (0,9,22)  Pad: 83  Switch: 4
+Node:	311578	 CHANX (0,9,22) to (18,22)  Track: 140  Switch: 1
+Node:	77271	  IPIN (0,17,22)  Pin: 20   LAB.data_in[20] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	311578	 CHANX (0,9,22) to (18,22)  Track: 140  Switch: 1
+Node:	81132	  IPIN (0,18,22)  Pin: 53   LAB.data_in[53] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 41 (pi38)
+
+Node:	193730	SOURCE (0,37,14) to (37,15)  Pad: 126  Switch: 0
+Node:	193902	  OPIN (0,37,14)  Pad: 126  Switch: 3
+Node:	295272	 CHANX (0,37,14) to (40,14)  Track: 52  Switch: 9
+Node:	386086	 CHANY (0,40,15) to (40,30)  Track: 108  Switch: 5
+Node:	311929	 CHANX (0,17,22) to (40,22)  Track: 221  Switch: 6
+Node:	357337	 CHANY (0,16,21) to (16,22)  Track: 9  Switch: 1
+Node:	77286	  IPIN (0,17,22)  Pin: 35   LAB.data_in[35] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 42 (pi16)
+
+Node:	38903	SOURCE (0,9,20) to (9,21)  Pad: 83  Switch: 0
+Node:	39075	  OPIN (0,9,20)  Pad: 83  Switch: 4
+Node:	307208	 CHANX (0,9,20) to (18,20)  Track: 216  Switch: 6
+Node:	359744	 CHANY (0,18,21) to (18,22)  Track: 4  Switch: 1
+Node:	84949	  IPIN (0,19,22)  Pin: 42   LAB.data_in[42] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	359744	 CHANY (0,18,21) to (18,22)  Track: 4  Switch: 1
+Node:	81082	  IPIN (0,18,22)  Pin: 3   LAB.data_in[3] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	307208	 CHANX (0,9,20) to (18,20)  Track: 216  Switch: 8
+Node:	357362	 CHANY (0,16,21) to (16,24)  Track: 96  Switch: 1
+Node:	77300	  IPIN (0,17,22)  Pin: 49   LAB.data_in[49] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 43 (pi34)
+
+Node:	38215	SOURCE (0,9,16) to (9,17)  Pad: 83  Switch: 0
+Node:	38387	  OPIN (0,9,16)  Pad: 83  Switch: 6
+Node:	348724	 CHANY (0,9,16) to (9,17)  Track: 4  Switch: 6
+Node:	348790	 CHANY (0,9,18) to (9,19)  Track: 0  Switch: 4
+Node:	305060	 CHANX (0,10,19) to (19,19)  Track: 176  Switch: 7
+Node:	360930	 CHANY (0,19,20) to (19,22)  Track: 40  Switch: 1
+Node:	84920	  IPIN (0,19,22)  Pin: 13   LAB.data_in[13] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	305060	 CHANX (0,10,19) to (19,19)  Track: 176  Switch: 6
+Node:	358504	 CHANY (0,17,20) to (17,21)  Track: 0  Switch: 6
+Node:	358572	 CHANY (0,17,22) to (17,23)  Track: 0  Switch: 1
+Node:	77251	  IPIN (0,17,22)  Pin: 0   LAB.data_in[0] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	358572	 CHANY (0,17,22) to (17,23)  Track: 0  Switch: 1
+Node:	77368	  IPIN (0,17,23)  Pin: 1   LAB.data_in[1] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 44 (pi14)
+
+Node:	39978	SOURCE (0,9,26) to (9,27)  Pad: 126  Switch: 0
+Node:	40150	  OPIN (0,9,26)  Pad: 126  Switch: 4
+Node:	320330	 CHANX (0,9,26) to (18,26)  Track: 168  Switch: 8
+Node:	357429	 CHANY (0,16,23) to (16,26)  Track: 77  Switch: 4
+Node:	316298	 CHANX (0,17,24) to (26,24)  Track: 140  Switch: 1
+Node:	81334	  IPIN (0,18,24)  Pin: 23   LAB.data_in[23] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	357429	 CHANY (0,16,23) to (16,26)  Track: 77  Switch: 2
+Node:	311888	 CHANX (0,17,22) to (18,22)  Track: 12  Switch: 1
+Node:	81128	  IPIN (0,18,22)  Pin: 49   LAB.data_in[49] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	311888	 CHANX (0,17,22) to (18,22)  Track: 12  Switch: 1
+Node:	77285	  IPIN (0,17,22)  Pin: 34   LAB.data_in[34] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 45 (pi30)
+
+Node:	40236	SOURCE (0,9,28) to (9,29)  Pad: 40  Switch: 0
+Node:	40408	  OPIN (0,9,28)  Pad: 40  Switch: 7
+Node:	349073	 CHANY (0,9,26) to (9,28)  Track: 45  Switch: 4
+Node:	318178	 CHANX (0,10,25) to (19,25)  Track: 108  Switch: 6
+Node:	358649	 CHANY (0,17,24) to (17,25)  Track: 13  Switch: 6
+Node:	358577	 CHANY (0,17,22) to (17,23)  Track: 9  Switch: 1
+Node:	77264	  IPIN (0,17,22)  Pin: 13   LAB.data_in[13] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	40408	  OPIN (0,9,28)  Pad: 40  Switch: 3
+Node:	324696	 CHANX (0,9,28) to (12,28)  Track: 72  Switch: 3
+Node:	324872	 CHANX (0,13,28) to (16,28)  Track: 64  Switch: 6
+Node:	357545	 CHANY (0,16,27) to (16,28)  Track: 9  Switch: 6
+Node:	357477	 CHANY (0,16,25) to (16,26)  Track: 13  Switch: 6
+Node:	357407	 CHANY (0,16,23) to (16,24)  Track: 13  Switch: 1
+Node:	77413	  IPIN (0,17,23)  Pin: 46   LAB.data_in[46] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 46 (new_n126)
+
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77320	  OPIN (0,17,22)  Pin: 69   LAB.data_out[3] Switch: 0
+Node:	77255	  IPIN (0,17,22)  Pin: 4   LAB.data_in[4] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 47 (pi32)
+
+Node:	38258	SOURCE (0,9,16) to (9,17)  Pad: 126  Switch: 0
+Node:	38430	  OPIN (0,9,16)  Pad: 126  Switch: 4
+Node:	298440	 CHANX (0,9,16) to (18,16)  Track: 148  Switch: 9
+Node:	359636	 CHANY (0,18,17) to (18,32)  Track: 100  Switch: 2
+Node:	316267	 CHANX (0,17,24) to (18,24)  Track: 5  Switch: 1
+Node:	81314	  IPIN (0,18,24)  Pin: 3   LAB.data_in[3] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	298440	 CHANX (0,9,16) to (18,16)  Track: 148  Switch: 8
+Node:	357226	 CHANY (0,16,17) to (16,20)  Track: 88  Switch: 8
+Node:	357354	 CHANY (0,16,21) to (16,24)  Track: 64  Switch: 1
+Node:	77418	  IPIN (0,17,23)  Pin: 51   LAB.data_in[51] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	357354	 CHANY (0,16,21) to (16,24)  Track: 64  Switch: 1
+Node:	77305	  IPIN (0,17,22)  Pin: 54   LAB.data_in[54] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 48 (new_n89): global net connecting:
+
+Block po11 (#6) at (19,22), Pin class 3.
+Block new_n125 (#1) at (17,22), Pin class 0.
+Block po25 (#4) at (18,23), Pin class 0.
+
+
+Net 49 (pi03)
+
+Node:	38559	SOURCE (0,9,18) to (9,19)  Pad: 83  Switch: 0
+Node:	38731	  OPIN (0,9,18)  Pad: 83  Switch: 6
+Node:	348792	 CHANY (0,9,18) to (9,19)  Track: 4  Switch: 6
+Node:	348864	 CHANY (0,9,20) to (9,21)  Track: 8  Switch: 4
+Node:	309434	 CHANX (0,10,21) to (19,21)  Track: 120  Switch: 8
+Node:	361014	 CHANY (0,19,22) to (19,25)  Track: 96  Switch: 1
+Node:	84925	  IPIN (0,19,22)  Pin: 18   LAB.data_in[18] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	309434	 CHANX (0,10,21) to (19,21)  Track: 120  Switch: 6
+Node:	358578	 CHANY (0,17,22) to (17,23)  Track: 12  Switch: 1
+Node:	81124	  IPIN (0,18,22)  Pin: 45   LAB.data_in[45] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	358578	 CHANY (0,17,22) to (17,23)  Track: 12  Switch: 1
+Node:	77266	  IPIN (0,17,22)  Pin: 15   LAB.data_in[15] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 50 (pi25)
+
+Node:	38301	SOURCE (0,9,16) to (9,17)  Pad: 169  Switch: 0
+Node:	38473	  OPIN (0,9,16)  Pad: 169  Switch: 6
+Node:	348722	 CHANY (0,9,16) to (9,17)  Track: 0  Switch: 6
+Node:	348794	 CHANY (0,9,18) to (9,19)  Track: 8  Switch: 6
+Node:	348866	 CHANY (0,9,20) to (9,21)  Track: 12  Switch: 6
+Node:	348932	 CHANY (0,9,22) to (9,23)  Track: 12  Switch: 4
+Node:	313802	 CHANX (0,10,23) to (19,23)  Track: 104  Switch: 1
+Node:	81199	  IPIN (0,18,23)  Pin: 4   LAB.data_in[4] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	313802	 CHANX (0,10,23) to (19,23)  Track: 104  Switch: 1
+Node:	77370	  IPIN (0,17,23)  Pin: 3   LAB.data_in[3] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	348794	 CHANY (0,9,18) to (9,19)  Track: 8  Switch: 4
+Node:	305054	 CHANX (0,10,19) to (19,19)  Track: 116  Switch: 7
+Node:	358516	 CHANY (0,17,20) to (17,22)  Track: 30  Switch: 1
+Node:	77280	  IPIN (0,17,22)  Pin: 29   LAB.data_in[29] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 51 (pi01)
+
+Node:	37828	SOURCE (0,9,14) to (9,15)  Pad: 40  Switch: 0
+Node:	38000	  OPIN (0,9,14)  Pad: 40  Switch: 4
+Node:	294048	 CHANX (0,9,14) to (18,14)  Track: 144  Switch: 6
+Node:	354722	 CHANY (0,14,15) to (14,16)  Track: 4  Switch: 6
+Node:	354792	 CHANY (0,14,17) to (14,18)  Track: 12  Switch: 3
+Node:	303072	 CHANX (0,15,18) to (18,18)  Track: 48  Switch: 8
+Node:	359696	 CHANY (0,18,19) to (18,22)  Track: 64  Switch: 8
+Node:	359842	 CHANY (0,18,23) to (18,26)  Track: 96  Switch: 1
+Node:	81330	  IPIN (0,18,24)  Pin: 19   LAB.data_in[19] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	359696	 CHANY (0,18,19) to (18,22)  Track: 64  Switch: 1
+Node:	81101	  IPIN (0,18,22)  Pin: 22   LAB.data_in[22] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	294048	 CHANX (0,9,14) to (18,14)  Track: 144  Switch: 8
+Node:	357162	 CHANY (0,16,15) to (16,18)  Track: 92  Switch: 8
+Node:	357290	 CHANY (0,16,19) to (16,22)  Track: 84  Switch: 1
+Node:	77294	  IPIN (0,17,22)  Pin: 43   LAB.data_in[43] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 52 (pi23)
+
+Node:	39935	SOURCE (0,9,26) to (9,27)  Pad: 83  Switch: 0
+Node:	40107	  OPIN (0,9,26)  Pad: 83  Switch: 7
+Node:	349005	 CHANY (0,9,24) to (9,26)  Track: 35  Switch: 4
+Node:	313810	 CHANX (0,10,23) to (19,23)  Track: 184  Switch: 6
+Node:	358648	 CHANY (0,17,24) to (17,25)  Track: 12  Switch: 1
+Node:	81347	  IPIN (0,18,24)  Pin: 36   LAB.data_in[36] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	313810	 CHANX (0,10,23) to (19,23)  Track: 184  Switch: 1
+Node:	77379	  IPIN (0,17,23)  Pin: 12   LAB.data_in[12] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	313810	 CHANX (0,10,23) to (19,23)  Track: 184  Switch: 8
+Node:	358535	 CHANY (0,17,20) to (17,23)  Track: 97  Switch: 1
+Node:	77267	  IPIN (0,17,22)  Pin: 16   LAB.data_in[16] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 53 (new_n102)
+
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77317	  OPIN (0,17,22)  Pin: 66   LAB.data_out[0] Switch: 0
+Node:	77252	  IPIN (0,17,22)  Pin: 1   LAB.data_in[1] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 54 (new_n99)
+
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77319	  OPIN (0,17,22)  Pin: 68   LAB.data_out[2] Switch: 6
+Node:	357370	 CHANY (0,16,22) to (16,23)  Track: 10  Switch: 1
+Node:	77411	  IPIN (0,17,23)  Pin: 44   LAB.data_in[44] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	77319	  OPIN (0,17,22)  Pin: 68   LAB.data_out[2] Switch: 0
+Node:	77254	  IPIN (0,17,22)  Pin: 3   LAB.data_in[3] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 55 (new_n138)
+
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77347	  OPIN (0,17,22)  Pin: 96   LAB.data_out[30] Switch: 6
+Node:	358576	 CHANY (0,17,22) to (17,23)  Track: 8  Switch: 1
+Node:	81230	  IPIN (0,18,23)  Pin: 35   LAB.data_in[35] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77318	  OPIN (0,17,22)  Pin: 67   LAB.data_out[1] Switch: 0
+Node:	77253	  IPIN (0,17,22)  Pin: 2   LAB.data_in[2] Switch: 0
+Node:	77244	  SINK (0,17,22)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	77318	  OPIN (0,17,22)  Pin: 67   LAB.data_out[1] Switch: 0
+Node:	81090	  IPIN (0,18,22)  Pin: 11   LAB.data_in[11] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 56 (po30)
+
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77321	  OPIN (0,17,22)  Pin: 70   LAB.data_out[4] Switch: 6
+Node:	357333	 CHANY (0,16,21) to (16,22)  Track: 1  Switch: 6
+Node:	357263	 CHANY (0,16,19) to (16,20)  Track: 1  Switch: 6
+Node:	357197	 CHANY (0,16,17) to (16,18)  Track: 1  Switch: 4
+Node:	300553	 CHANX (0,7,17) to (16,17)  Track: 207  Switch: 6
+Node:	347519	 CHANY (0,8,16) to (8,17)  Track: 7  Switch: 6
+Node:	347449	 CHANY (0,8,14) to (8,15)  Track: 3  Switch: 1
+Node:	38089	  IPIN (0,9,14)  Pad: 129  Switch: 0
+Node:	37917	  SINK (0,9,14) to (9,15)  Pad: 129  Switch: -1 Net_pin_index: 1
+
+
+Net 57 (po18)
+
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77348	  OPIN (0,17,22)  Pin: 97   LAB.data_out[31] Switch: 2
+Node:	311847	 CHANX (0,16,22) to (17,22)  Track: 15  Switch: 9
+Node:	356224	 CHANY (0,15,23) to (15,33)  Track: 106  Switch: 3
+Node:	329213	 CHANX (0,12,30) to (15,30)  Track: 83  Switch: 4
+Node:	328789	 CHANX (0,2,30) to (11,30)  Track: 163  Switch: 1
+Node:	40712	  IPIN (0,9,30)  Pad: 0  Switch: 0
+Node:	40540	  SINK (0,9,30) to (9,31)  Pad: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 58 (po26)
+
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77322	  OPIN (0,17,22)  Pin: 71   LAB.data_out[5] Switch: 3
+Node:	311773	 CHANX (0,14,22) to (17,22)  Track: 47  Switch: 3
+Node:	311615	 CHANX (0,10,22) to (13,22)  Track: 95  Switch: 3
+Node:	311435	 CHANX (0,6,22) to (9,22)  Track: 87  Switch: 8
+Node:	347651	 CHANY (0,8,19) to (8,22)  Track: 85  Switch: 1
+Node:	39078	  IPIN (0,9,20)  Pad: 86  Switch: 0
+Node:	38906	  SINK (0,9,20) to (9,21)  Pad: 86  Switch: -1 Net_pin_index: 1
+
+
+Net 59 (po22)
+
+Node:	77247	SOURCE (0,17,22)  Class: 3  Switch: 0
+Node:	77341	  OPIN (0,17,22)  Pin: 90   LAB.data_out[24] Switch: 6
+Node:	358539	 CHANY (0,17,21) to (17,22)  Track: 3  Switch: 6
+Node:	358469	 CHANY (0,17,19) to (17,20)  Track: 3  Switch: 6
+Node:	358407	 CHANY (0,17,17) to (17,18)  Track: 11  Switch: 6
+Node:	358341	 CHANY (0,17,15) to (17,16)  Track: 11  Switch: 4
+Node:	294005	 CHANX (0,8,14) to (17,14)  Track: 163  Switch: 1
+Node:	38003	  IPIN (0,9,14)  Pad: 43  Switch: 0
+Node:	37831	  SINK (0,9,14) to (9,15)  Pad: 43  Switch: -1 Net_pin_index: 1
+
+
+Net 60 (pi11)
+
+Node:	193988	SOURCE (0,37,16) to (37,17)  Pad: 40  Switch: 0
+Node:	194160	  OPIN (0,37,16)  Pad: 40  Switch: 4
+Node:	299279	 CHANX (0,28,16) to (37,16)  Track: 167  Switch: 4
+Node:	298837	 CHANX (0,18,16) to (27,16)  Track: 147  Switch: 8
+Node:	358428	 CHANY (0,17,17) to (17,20)  Track: 82  Switch: 8
+Node:	358560	 CHANY (0,17,21) to (17,24)  Track: 66  Switch: 1
+Node:	77390	  IPIN (0,17,23)  Pin: 23   LAB.data_in[23] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	358560	 CHANY (0,17,21) to (17,24)  Track: 66  Switch: 1
+Node:	81131	  IPIN (0,18,22)  Pin: 52   LAB.data_in[52] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 61 (new_n130)
+
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77434	  OPIN (0,17,23)  Pin: 67   LAB.data_out[1] Switch: 0
+Node:	81206	  IPIN (0,18,23)  Pin: 11   LAB.data_in[11] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77465	  OPIN (0,17,23)  Pin: 98   LAB.data_out[32] Switch: 0
+Node:	77417	  IPIN (0,17,23)  Pin: 50   LAB.data_in[50] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	77465	  OPIN (0,17,23)  Pin: 98   LAB.data_out[32] Switch: 6
+Node:	358573	 CHANY (0,17,22) to (17,23)  Track: 1  Switch: 1
+Node:	81109	  IPIN (0,18,22)  Pin: 30   LAB.data_in[30] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 62 (pi29)
+
+Node:	40279	SOURCE (0,9,28) to (9,29)  Pad: 83  Switch: 0
+Node:	40451	  OPIN (0,9,28)  Pad: 83  Switch: 7
+Node:	349065	 CHANY (0,9,26) to (9,28)  Track: 21  Switch: 4
+Node:	320376	 CHANX (0,10,26) to (19,26)  Track: 210  Switch: 8
+Node:	358635	 CHANY (0,17,23) to (17,26)  Track: 79  Switch: 1
+Node:	77396	  IPIN (0,17,23)  Pin: 29   LAB.data_in[29] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 63 (pi06)
+
+Node:	38860	SOURCE (0,9,20) to (9,21)  Pad: 40  Switch: 0
+Node:	39032	  OPIN (0,9,20)  Pad: 40  Switch: 4
+Node:	307198	 CHANX (0,9,20) to (18,20)  Track: 116  Switch: 7
+Node:	359760	 CHANY (0,18,21) to (18,23)  Track: 46  Switch: 2
+Node:	314075	 CHANX (0,17,23) to (18,23)  Track: 3  Switch: 1
+Node:	77395	  IPIN (0,17,23)  Pin: 28   LAB.data_in[28] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	307198	 CHANX (0,9,20) to (18,20)  Track: 116  Switch: 6
+Node:	359742	 CHANY (0,18,21) to (18,22)  Track: 0  Switch: 1
+Node:	81080	  IPIN (0,18,22)  Pin: 1   LAB.data_in[1] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	359742	 CHANY (0,18,21) to (18,22)  Track: 0  Switch: 1
+Node:	84938	  IPIN (0,19,22)  Pin: 31   LAB.data_in[31] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 3
+
+
+Net 64 (pi07)
+
+Node:	194418	SOURCE (0,37,18) to (37,19)  Pad: 126  Switch: 0
+Node:	194590	  OPIN (0,37,18)  Pad: 126  Switch: 3
+Node:	304048	 CHANX (0,37,18) to (40,18)  Track: 60  Switch: 9
+Node:	386224	 CHANY (0,40,19) to (40,33)  Track: 116  Switch: 5
+Node:	320689	 CHANX (0,17,26) to (40,26)  Track: 229  Switch: 7
+Node:	357445	 CHANY (0,16,24) to (16,26)  Track: 19  Switch: 2
+Node:	314080	 CHANX (0,17,23) to (18,23)  Track: 14  Switch: 1
+Node:	81202	  IPIN (0,18,23)  Pin: 7   LAB.data_in[7] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	320689	 CHANX (0,17,26) to (40,26)  Track: 229  Switch: 8
+Node:	357425	 CHANY (0,16,23) to (16,26)  Track: 61  Switch: 1
+Node:	77420	  IPIN (0,17,23)  Pin: 53   LAB.data_in[53] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 65 (pi20)
+
+Node:	39333	SOURCE (0,9,22) to (9,23)  Pad: 169  Switch: 0
+Node:	39505	  OPIN (0,9,22)  Pad: 169  Switch: 6
+Node:	348926	 CHANY (0,9,22) to (9,23)  Track: 0  Switch: 4
+Node:	313804	 CHANX (0,10,23) to (19,23)  Track: 124  Switch: 1
+Node:	77380	  IPIN (0,17,23)  Pin: 13   LAB.data_in[13] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	39505	  OPIN (0,9,22)  Pad: 169  Switch: 4
+Node:	311580	 CHANX (0,9,22) to (18,22)  Track: 160  Switch: 1
+Node:	81111	  IPIN (0,18,22)  Pin: 32   LAB.data_in[32] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 66 (new_n80)
+
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77438	  OPIN (0,17,23)  Pin: 71   LAB.data_out[5] Switch: 0
+Node:	77374	  IPIN (0,17,23)  Pin: 7   LAB.data_in[7] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 67 (pi36)
+
+Node:	196396	SOURCE (0,37,30) to (37,31)  Pad: 40  Switch: 0
+Node:	196568	  OPIN (0,37,30)  Pad: 40  Switch: 6
+Node:	382913	 CHANY (0,37,29) to (37,30)  Track: 3  Switch: 2
+Node:	325875	 CHANX (0,36,28) to (37,28)  Track: 23  Switch: 5
+Node:	324849	 CHANX (0,12,28) to (35,28)  Track: 223  Switch: 6
+Node:	362363	 CHANY (0,20,27) to (20,28)  Track: 9  Switch: 3
+Node:	320667	 CHANX (0,17,26) to (20,26)  Track: 61  Switch: 6
+Node:	358677	 CHANY (0,17,25) to (17,26)  Track: 3  Switch: 6
+Node:	358611	 CHANY (0,17,23) to (17,24)  Track: 7  Switch: 1
+Node:	77378	  IPIN (0,17,23)  Pin: 11   LAB.data_in[11] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 68 (new_n84)
+
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81154	  OPIN (0,18,22)  Pin: 75   LAB.data_out[9] Switch: 0
+Node:	81092	  IPIN (0,18,22)  Pin: 13   LAB.data_in[13] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	81154	  OPIN (0,18,22)  Pin: 75   LAB.data_out[9] Switch: 6
+Node:	358574	 CHANY (0,17,22) to (17,23)  Track: 4  Switch: 1
+Node:	77388	  IPIN (0,17,23)  Pin: 21   LAB.data_in[21] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 69 (pi39)
+
+Node:	196439	SOURCE (0,37,30) to (37,31)  Pad: 83  Switch: 0
+Node:	196611	  OPIN (0,37,30)  Pad: 83  Switch: 6
+Node:	382917	 CHANY (0,37,29) to (37,30)  Track: 11  Switch: 4
+Node:	325557	 CHANX (0,28,28) to (37,28)  Track: 191  Switch: 6
+Node:	370791	 CHANY (0,27,27) to (27,28)  Track: 11  Switch: 4
+Node:	320727	 CHANX (0,18,26) to (27,26)  Track: 167  Switch: 8
+Node:	358639	 CHANY (0,17,23) to (17,26)  Track: 95  Switch: 1
+Node:	77383	  IPIN (0,17,23)  Pin: 16   LAB.data_in[16] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 70 (new_n86)
+
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77439	  OPIN (0,17,23)  Pin: 72   LAB.data_out[6] Switch: 0
+Node:	77375	  IPIN (0,17,23)  Pin: 8   LAB.data_in[8] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 71 (pi27)
+
+Node:	194074	SOURCE (0,37,16) to (37,17)  Pad: 126  Switch: 0
+Node:	194246	  OPIN (0,37,16)  Pad: 126  Switch: 3
+Node:	299664	 CHANX (0,37,16) to (40,16)  Track: 48  Switch: 9
+Node:	386156	 CHANY (0,40,17) to (40,32)  Track: 112  Switch: 5
+Node:	316307	 CHANX (0,17,24) to (40,24)  Track: 225  Switch: 6
+Node:	357403	 CHANY (0,16,23) to (16,24)  Track: 5  Switch: 1
+Node:	77399	  IPIN (0,17,23)  Pin: 32   LAB.data_in[32] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 72 (new_n98)
+
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77440	  OPIN (0,17,23)  Pin: 73   LAB.data_out[7] Switch: 0
+Node:	77376	  IPIN (0,17,23)  Pin: 9   LAB.data_in[9] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 73 (new_n79)
+
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77441	  OPIN (0,17,23)  Pin: 74   LAB.data_out[8] Switch: 0
+Node:	77377	  IPIN (0,17,23)  Pin: 10   LAB.data_in[10] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 74 (new_n78)
+
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77458	  OPIN (0,17,23)  Pin: 91   LAB.data_out[25] Switch: 6
+Node:	358575	 CHANY (0,17,22) to (17,23)  Track: 5  Switch: 1
+Node:	81129	  IPIN (0,18,22)  Pin: 50   LAB.data_in[50] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77437	  OPIN (0,17,23)  Pin: 70   LAB.data_out[4] Switch: 0
+Node:	77373	  IPIN (0,17,23)  Pin: 6   LAB.data_in[6] Switch: 0
+Node:	77360	  SINK (0,17,23)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 75 (po17)
+
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77445	  OPIN (0,17,23)  Pin: 78   LAB.data_out[12] Switch: 4
+Node:	313719	 CHANX (0,8,23) to (17,23)  Track: 101  Switch: 8
+Node:	349022	 CHANY (0,9,24) to (9,27)  Track: 96  Switch: 8
+Node:	349154	 CHANY (0,9,28) to (9,31)  Track: 88  Switch: 2
+Node:	331209	 CHANX (0,8,31) to (9,31)  Track: 21  Switch: 6
+Node:	347991	 CHANY (0,8,30) to (8,31)  Track: 3  Switch: 1
+Node:	40798	  IPIN (0,9,30)  Pad: 86  Switch: 0
+Node:	40626	  SINK (0,9,30) to (9,31)  Pad: 86  Switch: -1 Net_pin_index: 1
+
+
+Net 76 (po21)
+
+Node:	77363	SOURCE (0,17,23)  Class: 3  Switch: 0
+Node:	77466	  OPIN (0,17,23)  Pin: 99   LAB.data_out[33] Switch: 8
+Node:	358636	 CHANY (0,17,23) to (17,26)  Track: 86  Switch: 4
+Node:	318093	 CHANX (0,8,25) to (17,25)  Track: 105  Switch: 6
+Node:	346656	 CHANY (0,7,26) to (7,27)  Track: 12  Switch: 6
+Node:	346718	 CHANY (0,7,28) to (7,29)  Track: 4  Switch: 2
+Node:	324638	 CHANX (0,8,28) to (9,28)  Track: 18  Switch: 1
+Node:	40497	  IPIN (0,9,28)  Pad: 129  Switch: 0
+Node:	40325	  SINK (0,9,28) to (9,29)  Pad: 129  Switch: -1 Net_pin_index: 1
+
+
+Net 77 (pi10)
+
+Node:	39290	SOURCE (0,9,22) to (9,23)  Pad: 126  Switch: 0
+Node:	39462	  OPIN (0,9,22)  Pad: 126  Switch: 6
+Node:	348930	 CHANY (0,9,22) to (9,23)  Track: 8  Switch: 4
+Node:	311624	 CHANX (0,10,22) to (19,22)  Track: 182  Switch: 1
+Node:	81122	  IPIN (0,18,22)  Pin: 43   LAB.data_in[43] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	311624	 CHANX (0,10,22) to (19,22)  Track: 182  Switch: 1
+Node:	84919	  IPIN (0,19,22)  Pin: 12   LAB.data_in[12] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 78 (pi18)
+
+Node:	194117	SOURCE (0,37,16) to (37,17)  Pad: 169  Switch: 0
+Node:	194289	  OPIN (0,37,16)  Pad: 169  Switch: 3
+Node:	299531	 CHANX (0,34,16) to (37,16)  Track: 59  Switch: 4
+Node:	299103	 CHANX (0,24,16) to (33,16)  Track: 199  Switch: 3
+Node:	298901	 CHANX (0,20,16) to (23,16)  Track: 31  Switch: 3
+Node:	298747	 CHANX (0,16,16) to (19,16)  Track: 95  Switch: 8
+Node:	359626	 CHANY (0,18,17) to (18,20)  Track: 60  Switch: 8
+Node:	359768	 CHANY (0,18,21) to (18,24)  Track: 68  Switch: 1
+Node:	81107	  IPIN (0,18,22)  Pin: 28   LAB.data_in[28] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 79 (new_n88)
+
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81150	  OPIN (0,18,22)  Pin: 71   LAB.data_out[5] Switch: 0
+Node:	81086	  IPIN (0,18,22)  Pin: 7   LAB.data_in[7] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 80 (new_n82)
+
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81145	  OPIN (0,18,22)  Pin: 66   LAB.data_out[0] Switch: 0
+Node:	81079	  IPIN (0,18,22)  Pin: 0   LAB.data_in[0] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 81 (pi04)
+
+Node:	194031	SOURCE (0,37,16) to (37,17)  Pad: 83  Switch: 0
+Node:	194203	  OPIN (0,37,16)  Pad: 83  Switch: 3
+Node:	299529	 CHANX (0,34,16) to (37,16)  Track: 51  Switch: 4
+Node:	299097	 CHANX (0,24,16) to (33,16)  Track: 139  Switch: 3
+Node:	298907	 CHANX (0,20,16) to (23,16)  Track: 55  Switch: 3
+Node:	298743	 CHANX (0,16,16) to (19,16)  Track: 79  Switch: 8
+Node:	358432	 CHANY (0,17,17) to (17,20)  Track: 98  Switch: 8
+Node:	358562	 CHANY (0,17,21) to (17,24)  Track: 74  Switch: 1
+Node:	81114	  IPIN (0,18,22)  Pin: 35   LAB.data_in[35] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 82 (new_n83)
+
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81146	  OPIN (0,18,22)  Pin: 67   LAB.data_out[1] Switch: 0
+Node:	81081	  IPIN (0,18,22)  Pin: 2   LAB.data_in[2] Switch: 0
+Node:	81072	  SINK (0,18,22)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 83 (po31)
+
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81173	  OPIN (0,18,22)  Pin: 94   LAB.data_out[28] Switch: 8
+Node:	359703	 CHANY (0,18,19) to (18,22)  Track: 89  Switch: 3
+Node:	303248	 CHANX (0,19,18) to (22,18)  Track: 72  Switch: 3
+Node:	303428	 CHANX (0,23,18) to (26,18)  Track: 80  Switch: 4
+Node:	303620	 CHANX (0,27,18) to (36,18)  Track: 208  Switch: 2
+Node:	304034	 CHANX (0,37,18) to (38,18)  Track: 16  Switch: 1
+Node:	194507	  IPIN (0,37,18)  Pad: 43  Switch: 0
+Node:	194335	  SINK (0,37,18) to (37,19)  Pad: 43  Switch: -1 Net_pin_index: 1
+
+
+Net 84 (new_n100)
+
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81168	  OPIN (0,18,22)  Pin: 89   LAB.data_out[23] Switch: 0
+Node:	84940	  IPIN (0,19,22)  Pin: 33   LAB.data_in[33] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 3
+Node:	81168	  OPIN (0,18,22)  Pin: 89   LAB.data_out[23] Switch: 6
+Node:	359784	 CHANY (0,18,22) to (18,23)  Track: 14  Switch: 1
+Node:	81212	  IPIN (0,18,23)  Pin: 17   LAB.data_in[17] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81183	  OPIN (0,18,22)  Pin: 104   LAB.data_out[38] Switch: 8
+Node:	359806	 CHANY (0,18,22) to (18,25)  Track: 86  Switch: 1
+Node:	81325	  IPIN (0,18,24)  Pin: 14   LAB.data_in[14] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 85 (po29)
+
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81149	  OPIN (0,18,22)  Pin: 70   LAB.data_out[4] Switch: 3
+Node:	311942	 CHANX (0,18,22) to (21,22)  Track: 30  Switch: 3
+Node:	312132	 CHANX (0,22,22) to (25,22)  Track: 70  Switch: 3
+Node:	312306	 CHANX (0,26,22) to (29,22)  Track: 54  Switch: 4
+Node:	312506	 CHANX (0,30,22) to (39,22)  Track: 162  Switch: 1
+Node:	195152	  IPIN (0,37,22)  Pad: 0  Switch: 0
+Node:	194980	  SINK (0,37,22) to (37,23)  Pad: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 86 (po28)
+
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81170	  OPIN (0,18,22)  Pin: 91   LAB.data_out[25] Switch: 4
+Node:	311968	 CHANX (0,18,22) to (27,22)  Track: 178  Switch: 4
+Node:	312412	 CHANX (0,28,22) to (37,22)  Track: 138  Switch: 6
+Node:	382651	 CHANY (0,37,21) to (37,22)  Track: 11  Switch: 2
+Node:	308367	 CHANX (0,36,20) to (37,20)  Track: 19  Switch: 1
+Node:	194937	  IPIN (0,37,20)  Pad: 129  Switch: 0
+Node:	194765	  SINK (0,37,20) to (37,21)  Pad: 129  Switch: -1 Net_pin_index: 1
+
+
+Net 87 (po24)
+
+Node:	81075	SOURCE (0,18,22)  Class: 3  Switch: 0
+Node:	81161	  OPIN (0,18,22)  Pin: 82   LAB.data_out[16] Switch: 4
+Node:	311583	 CHANX (0,9,22) to (18,22)  Track: 181  Switch: 8
+Node:	347784	 CHANY (0,8,23) to (8,26)  Track: 84  Switch: 1
+Node:	39766	  IPIN (0,9,24)  Pad: 86  Switch: 0
+Node:	39594	  SINK (0,9,24) to (9,25)  Pad: 86  Switch: -1 Net_pin_index: 1
+
+
+Net 88 (new_n81): global net connecting:
+
+Block po11 (#6) at (19,22), Pin class 3.
+Block po25 (#4) at (18,23), Pin class 0.
+Block po03 (#5) at (18,24), Pin class 0.
+
+
+Net 89 (new_n106): global net connecting:
+
+Block po03 (#5) at (18,24), Pin class 3.
+Block po25 (#4) at (18,23), Pin class 0.
+Block po03 (#5) at (18,24), Pin class 0.
+
+
+Net 90 (new_n93)
+
+Node:	81191	SOURCE (0,18,23)  Class: 3  Switch: 0
+Node:	81288	  OPIN (0,18,23)  Pin: 93   LAB.data_out[27] Switch: 0
+Node:	81237	  IPIN (0,18,23)  Pin: 42   LAB.data_in[42] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	81288	  OPIN (0,18,23)  Pin: 93   LAB.data_out[27] Switch: 6
+Node:	359785	 CHANY (0,18,22) to (18,23)  Track: 15  Switch: 1
+Node:	84943	  IPIN (0,19,22)  Pin: 36   LAB.data_in[36] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 91 (new_n108)
+
+Node:	81191	SOURCE (0,18,23)  Class: 3  Switch: 0
+Node:	81297	  OPIN (0,18,23)  Pin: 102   LAB.data_out[36] Switch: 0
+Node:	81250	  IPIN (0,18,23)  Pin: 55   LAB.data_in[55] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	81297	  OPIN (0,18,23)  Pin: 102   LAB.data_out[36] Switch: 6
+Node:	359812	 CHANY (0,18,23) to (18,24)  Track: 0  Switch: 1
+Node:	81312	  IPIN (0,18,24)  Pin: 1   LAB.data_in[1] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 2
+Node:	81297	  OPIN (0,18,23)  Pin: 102   LAB.data_out[36] Switch: 6
+Node:	359779	 CHANY (0,18,22) to (18,23)  Track: 3  Switch: 1
+Node:	84937	  IPIN (0,19,22)  Pin: 30   LAB.data_in[30] Switch: 0
+Node:	84900	  SINK (0,19,22)  Class: 0  Switch: -1 Net_pin_index: 3
+
+
+Net 92 (new_n76)
+
+Node:	81191	SOURCE (0,18,23)  Class: 3  Switch: 0
+Node:	81267	  OPIN (0,18,23)  Pin: 72   LAB.data_out[6] Switch: 0
+Node:	81203	  IPIN (0,18,23)  Pin: 8   LAB.data_in[8] Switch: 0
+Node:	81188	  SINK (0,18,23)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	81267	  OPIN (0,18,23)  Pin: 72   LAB.data_out[6] Switch: 6
+Node:	358612	 CHANY (0,17,23) to (17,24)  Track: 10  Switch: 1
+Node:	81355	  IPIN (0,18,24)  Pin: 44   LAB.data_in[44] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 2
+
+
+Net 93 (po27)
+
+Node:	81191	SOURCE (0,18,23)  Class: 3  Switch: 0
+Node:	81298	  OPIN (0,18,23)  Pin: 103   LAB.data_out[37] Switch: 6
+Node:	359814	 CHANY (0,18,23) to (18,24)  Track: 4  Switch: 4
+Node:	316388	 CHANX (0,19,24) to (28,24)  Track: 144  Switch: 4
+Node:	316832	 CHANX (0,29,24) to (38,24)  Track: 104  Switch: 1
+Node:	195539	  IPIN (0,37,24)  Pad: 43  Switch: 0
+Node:	195367	  SINK (0,37,24) to (37,25)  Pad: 43  Switch: -1 Net_pin_index: 1
+
+
+Net 94 (po25)
+
+Node:	81191	SOURCE (0,18,23)  Class: 3  Switch: 0
+Node:	81271	  OPIN (0,18,23)  Pin: 76   LAB.data_out[10] Switch: 2
+Node:	314132	 CHANX (0,18,23) to (19,23)  Track: 24  Switch: 5
+Node:	314206	 CHANX (0,19,23) to (42,23)  Track: 226  Switch: 6
+Node:	377928	 CHANY (0,33,24) to (33,25)  Track: 4  Switch: 3
+Node:	317028	 CHANX (0,34,24) to (37,24)  Track: 26  Switch: 1
+Node:	195496	  IPIN (0,37,24)  Pad: 0  Switch: 0
+Node:	195324	  SINK (0,37,24) to (37,25)  Pad: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 95 (po15)
+
+Node:	81191	SOURCE (0,18,23)  Class: 3  Switch: 0
+Node:	81280	  OPIN (0,18,23)  Pin: 85   LAB.data_out[19] Switch: 3
+Node:	314148	 CHANX (0,18,23) to (21,23)  Track: 88  Switch: 5
+Node:	314296	 CHANX (0,21,23) to (44,23)  Track: 230  Switch: 6
+Node:	380338	 CHANY (0,35,24) to (35,25)  Track: 0  Switch: 6
+Node:	380414	 CHANY (0,35,26) to (35,27)  Track: 12  Switch: 2
+Node:	321490	 CHANX (0,36,26) to (37,26)  Track: 18  Switch: 1
+Node:	195969	  IPIN (0,37,26)  Pad: 129  Switch: 0
+Node:	195797	  SINK (0,37,26) to (37,27)  Pad: 129  Switch: -1 Net_pin_index: 1
+
+
+Net 96 (po02)
+
+Node:	81191	SOURCE (0,18,23)  Class: 3  Switch: 0
+Node:	81281	  OPIN (0,18,23)  Pin: 86   LAB.data_out[20] Switch: 7
+Node:	359753	 CHANY (0,18,21) to (18,23)  Track: 23  Switch: 3
+Node:	307610	 CHANX (0,19,20) to (22,20)  Track: 28  Switch: 5
+Node:	307776	 CHANX (0,22,20) to (45,20)  Track: 226  Switch: 8
+Node:	381468	 CHANY (0,36,21) to (36,24)  Track: 88  Switch: 1
+Node:	195238	  IPIN (0,37,22)  Pad: 86  Switch: 0
+Node:	195066	  SINK (0,37,22) to (37,23)  Pad: 86  Switch: -1 Net_pin_index: 1
+
+
+Net 97 (po13)
+
+Node:	81191	SOURCE (0,18,23)  Class: 3  Switch: 0
+Node:	81264	  OPIN (0,18,23)  Pin: 69   LAB.data_out[3] Switch: 6
+Node:	358614	 CHANY (0,17,23) to (17,24)  Track: 14  Switch: 6
+Node:	358676	 CHANY (0,17,25) to (17,26)  Track: 2  Switch: 3
+Node:	320702	 CHANX (0,18,26) to (21,26)  Track: 30  Switch: 5
+Node:	320910	 CHANX (0,22,26) to (45,26)  Track: 238  Switch: 8
+Node:	381672	 CHANY (0,36,27) to (36,30)  Track: 84  Switch: 1
+Node:	196270	  IPIN (0,37,28)  Pad: 86  Switch: 0
+Node:	196098	  SINK (0,37,28) to (37,29)  Pad: 86  Switch: -1 Net_pin_index: 1
+
+
+Net 98 (po01)
+
+Node:	81191	SOURCE (0,18,23)  Class: 3  Switch: 0
+Node:	81287	  OPIN (0,18,23)  Pin: 92   LAB.data_out[26] Switch: 3
+Node:	314144	 CHANX (0,18,23) to (21,23)  Track: 72  Switch: 3
+Node:	314320	 CHANX (0,22,23) to (25,23)  Track: 64  Switch: 4
+Node:	314516	 CHANX (0,26,23) to (35,23)  Track: 196  Switch: 2
+Node:	314922	 CHANX (0,36,23) to (37,23)  Track: 16  Switch: 6
+Node:	381475	 CHANY (0,36,22) to (36,23)  Track: 3  Switch: 1
+Node:	195195	  IPIN (0,37,22)  Pad: 43  Switch: 0
+Node:	195023	  SINK (0,37,22) to (37,23)  Pad: 43  Switch: -1 Net_pin_index: 1
+
+
+Net 99 (po00)
+
+Node:	81191	SOURCE (0,18,23)  Class: 3  Switch: 0
+Node:	81293	  OPIN (0,18,23)  Pin: 98   LAB.data_out[32] Switch: 3
+Node:	314134	 CHANX (0,18,23) to (21,23)  Track: 32  Switch: 5
+Node:	314340	 CHANX (0,22,23) to (45,23)  Track: 232  Switch: 8
+Node:	381574	 CHANY (0,36,24) to (36,27)  Track: 94  Switch: 1
+Node:	195883	  IPIN (0,37,26)  Pad: 43  Switch: 0
+Node:	195711	  SINK (0,37,26) to (37,27)  Pad: 43  Switch: -1 Net_pin_index: 1
+
+
+Net 100 (new_n109)
+
+Node:	81307	SOURCE (0,18,24)  Class: 3  Switch: 0
+Node:	81377	  OPIN (0,18,24)  Pin: 66   LAB.data_out[0] Switch: 0
+Node:	81311	  IPIN (0,18,24)  Pin: 0   LAB.data_in[0] Switch: 0
+Node:	81304	  SINK (0,18,24)  Class: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 101 (po07)
+
+Node:	81307	SOURCE (0,18,24)  Class: 3  Switch: 0
+Node:	81408	  OPIN (0,18,24)  Pin: 97   LAB.data_out[31] Switch: 2
+Node:	316314	 CHANX (0,18,24) to (19,24)  Track: 14  Switch: 5
+Node:	316440	 CHANX (0,20,24) to (43,24)  Track: 230  Switch: 6
+Node:	379168	 CHANY (0,34,25) to (34,26)  Track: 0  Switch: 2
+Node:	319260	 CHANX (0,35,25) to (36,25)  Track: 22  Switch: 6
+Node:	381543	 CHANY (0,36,24) to (36,25)  Track: 3  Switch: 1
+Node:	195582	  IPIN (0,37,24)  Pad: 86  Switch: 0
+Node:	195410	  SINK (0,37,24) to (37,25)  Pad: 86  Switch: -1 Net_pin_index: 1
+
+
+Net 102 (po03)
+
+Node:	81307	SOURCE (0,18,24)  Class: 3  Switch: 0
+Node:	81402	  OPIN (0,18,24)  Pin: 91   LAB.data_out[25] Switch: 2
+Node:	316269	 CHANX (0,17,24) to (18,24)  Track: 9  Switch: 2
+Node:	316171	 CHANX (0,15,24) to (16,24)  Track: 1  Switch: 2
+Node:	316097	 CHANX (0,13,24) to (14,24)  Track: 21  Switch: 2
+Node:	316001	 CHANX (0,11,24) to (12,24)  Track: 1  Switch: 2
+Node:	315917	 CHANX (0,9,24) to (10,24)  Track: 1  Switch: 1
+Node:	39680	  IPIN (0,9,24)  Pad: 0  Switch: 0
+Node:	39508	  SINK (0,9,24) to (9,25)  Pad: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 103 (po05)
+
+Node:	81307	SOURCE (0,18,24)  Class: 3  Switch: 0
+Node:	81397	  OPIN (0,18,24)  Pin: 86   LAB.data_out[20] Switch: 6
+Node:	359846	 CHANY (0,18,24) to (18,25)  Track: 2  Switch: 3
+Node:	318570	 CHANX (0,19,25) to (22,25)  Track: 86  Switch: 5
+Node:	318764	 CHANX (0,23,25) to (45,25)  Track: 238  Switch: 8
+Node:	382844	 CHANY (0,37,26) to (37,29)  Track: 84  Switch: 3
+Node:	325789	 CHANX (0,34,28) to (37,28)  Track: 27  Switch: 1
+Node:	196227	  IPIN (0,37,28)  Pad: 43  Switch: 0
+Node:	196055	  SINK (0,37,28) to (37,29)  Pad: 43  Switch: -1 Net_pin_index: 1
+
+
+Net 104 (po10)
+
+Node:	81307	SOURCE (0,18,24)  Class: 3  Switch: 0
+Node:	81398	  OPIN (0,18,24)  Pin: 87   LAB.data_out[21] Switch: 6
+Node:	359848	 CHANY (0,18,24) to (18,25)  Track: 6  Switch: 6
+Node:	359922	 CHANY (0,18,26) to (18,27)  Track: 14  Switch: 3
+Node:	322938	 CHANX (0,19,27) to (22,27)  Track: 26  Switch: 5
+Node:	323104	 CHANX (0,22,27) to (45,27)  Track: 240  Switch: 6
+Node:	381676	 CHANY (0,36,28) to (36,29)  Track: 2  Switch: 1
+Node:	196184	  IPIN (0,37,28)  Pad: 0  Switch: 0
+Node:	196012	  SINK (0,37,28) to (37,29)  Pad: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 105 (po09)
+
+Node:	81307	SOURCE (0,18,24)  Class: 3  Switch: 0
+Node:	81412	  OPIN (0,18,24)  Pin: 101   LAB.data_out[35] Switch: 7
+Node:	359791	 CHANY (0,18,22) to (18,24)  Track: 31  Switch: 3
+Node:	309810	 CHANX (0,19,21) to (22,21)  Track: 70  Switch: 5
+Node:	309966	 CHANX (0,22,21) to (45,21)  Track: 228  Switch: 8
+Node:	381502	 CHANY (0,36,22) to (36,25)  Track: 90  Switch: 1
+Node:	195281	  IPIN (0,37,22)  Pad: 129  Switch: 0
+Node:	195109	  SINK (0,37,22) to (37,23)  Pad: 129  Switch: -1 Net_pin_index: 1
+
+
+Net 106 (po08)
+
+Node:	81307	SOURCE (0,18,24)  Class: 3  Switch: 0
+Node:	81405	  OPIN (0,18,24)  Pin: 94   LAB.data_out[28] Switch: 3
+Node:	316326	 CHANX (0,18,24) to (21,24)  Track: 50  Switch: 5
+Node:	316528	 CHANX (0,22,24) to (45,24)  Track: 234  Switch: 6
+Node:	381580	 CHANY (0,36,25) to (36,26)  Track: 4  Switch: 2
+Node:	321524	 CHANX (0,37,26) to (38,26)  Track: 0  Switch: 1
+Node:	195840	  IPIN (0,37,26)  Pad: 0  Switch: 0
+Node:	195668	  SINK (0,37,26) to (37,27)  Pad: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 107 (po06)
+
+Node:	81307	SOURCE (0,18,24)  Class: 3  Switch: 0
+Node:	81411	  OPIN (0,18,24)  Pin: 100   LAB.data_out[34] Switch: 6
+Node:	359850	 CHANY (0,18,24) to (18,25)  Track: 10  Switch: 3
+Node:	318564	 CHANX (0,19,25) to (22,25)  Track: 62  Switch: 5
+Node:	318720	 CHANX (0,22,25) to (45,25)  Track: 236  Switch: 7
+Node:	381622	 CHANY (0,36,26) to (36,28)  Track: 32  Switch: 1
+Node:	196313	  IPIN (0,37,28)  Pad: 129  Switch: 0
+Node:	196141	  SINK (0,37,28) to (37,29)  Pad: 129  Switch: -1 Net_pin_index: 1
+
+
+Net 108 (po04)
+
+Node:	81307	SOURCE (0,18,24)  Class: 3  Switch: 0
+Node:	81378	  OPIN (0,18,24)  Pin: 67   LAB.data_out[1] Switch: 4
+Node:	316340	 CHANX (0,18,24) to (27,24)  Track: 122  Switch: 4
+Node:	316796	 CHANX (0,28,24) to (37,24)  Track: 182  Switch: 1
+Node:	195625	  IPIN (0,37,24)  Pad: 129  Switch: 0
+Node:	195453	  SINK (0,37,24) to (37,25)  Pad: 129  Switch: -1 Net_pin_index: 1
+
+
+Net 109 (po14)
+
+Node:	84903	SOURCE (0,19,22)  Class: 3  Switch: 0
+Node:	85002	  OPIN (0,19,22)  Pin: 95   LAB.data_out[29] Switch: 7
+Node:	360927	 CHANY (0,19,20) to (19,22)  Track: 29  Switch: 4
+Node:	307674	 CHANX (0,20,20) to (29,20)  Track: 98  Switch: 3
+Node:	308104	 CHANX (0,30,20) to (33,20)  Track: 26  Switch: 3
+Node:	308284	 CHANX (0,34,20) to (37,20)  Track: 26  Switch: 1
+Node:	194851	  IPIN (0,37,20)  Pad: 43  Switch: 0
+Node:	194679	  SINK (0,37,20) to (37,21)  Pad: 43  Switch: -1 Net_pin_index: 1
+
+
+Net 110 (po12)
+
+Node:	84903	SOURCE (0,19,22)  Class: 3  Switch: 0
+Node:	84999	  OPIN (0,19,22)  Pin: 92   LAB.data_out[26] Switch: 4
+Node:	312010	 CHANX (0,19,22) to (28,22)  Track: 140  Switch: 4
+Node:	312456	 CHANX (0,29,22) to (38,22)  Track: 100  Switch: 8
+Node:	381399	 CHANY (0,36,19) to (36,22)  Track: 85  Switch: 1
+Node:	194894	  IPIN (0,37,20)  Pad: 86  Switch: 0
+Node:	194722	  SINK (0,37,20) to (37,21)  Pad: 86  Switch: -1 Net_pin_index: 1
+
+
+Net 111 (po11)
+
+Node:	84903	SOURCE (0,19,22)  Class: 3  Switch: 0
+Node:	84998	  OPIN (0,19,22)  Pin: 91   LAB.data_out[25] Switch: 3
+Node:	311996	 CHANX (0,19,22) to (22,22)  Track: 56  Switch: 4
+Node:	312192	 CHANX (0,23,22) to (32,22)  Track: 188  Switch: 3
+Node:	312626	 CHANX (0,33,22) to (36,22)  Track: 76  Switch: 7
+Node:	381413	 CHANY (0,36,20) to (36,22)  Track: 21  Switch: 1
+Node:	194808	  IPIN (0,37,20)  Pad: 0  Switch: 0
+Node:	194636	  SINK (0,37,20) to (37,21)  Pad: 0  Switch: -1 Net_pin_index: 1

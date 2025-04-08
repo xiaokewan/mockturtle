@@ -1,0 +1,711 @@
+#Timing report of worst 25 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: op_ext[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:invB.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+op_ext[0].inpad[0] (.input)                                      0.000     0.000
+new_n60.in[0] (.names)                                           0.712     0.712
+new_n60.out[0] (.names)                                          0.261     0.973
+invB.in[0] (.names)                                              0.712     1.685
+invB.out[0] (.names)                                             0.261     1.946
+out:invB.outpad[0] (.output)                                     0.712     2.658
+data arrival time                                                          2.658
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -2.658
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.658
+
+
+#Path 2
+Startpoint: op_ext[1].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:invA.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+op_ext[1].inpad[0] (.input)                                      0.000     0.000
+new_n58.in[0] (.names)                                           0.712     0.712
+new_n58.out[0] (.names)                                          0.261     0.973
+invA.in[1] (.names)                                              0.712     1.685
+invA.out[0] (.names)                                             0.261     1.946
+out:invA.outpad[0] (.output)                                     0.712     2.658
+data arrival time                                                          2.658
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -2.658
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.658
+
+
+#Path 3
+Startpoint: op_ext[1].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:alu_op[0].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+op_ext[1].inpad[0] (.input)                                      0.000     0.000
+new_n40.in[0] (.names)                                           0.712     0.712
+new_n40.out[0] (.names)                                          0.261     0.973
+alu_op[0].in[3] (.names)                                         0.712     1.685
+alu_op[0].out[0] (.names)                                        0.261     1.946
+out:alu_op[0].outpad[0] (.output)                                0.712     2.658
+data arrival time                                                          2.658
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -2.658
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.658
+
+
+#Path 4
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:sel_pc_opB.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+sel_pc_opB.in[0] (.names)                                        0.712     0.712
+sel_pc_opB.out[0] (.names)                                       0.261     0.973
+out:sel_pc_opB.outpad[0] (.output)                               0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 5
+Startpoint: op_ext[1].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:alu_op[1].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+op_ext[1].inpad[0] (.input)                                      0.000     0.000
+alu_op[1].in[0] (.names)                                         0.712     0.712
+alu_op[1].out[0] (.names)                                        0.261     0.973
+out:alu_op[1].outpad[0] (.output)                                0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 6
+Startpoint: op_ext[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:Cin.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+op_ext[0].inpad[0] (.input)                                      0.000     0.000
+Cin.in[0] (.names)                                               0.712     0.712
+Cin.out[0] (.names)                                              0.261     0.973
+out:Cin.outpad[0] (.output)                                      0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 7
+Startpoint: opcode[1].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:sel_wb.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[1].inpad[0] (.input)                                      0.000     0.000
+sel_wb.in[0] (.names)                                            0.712     0.712
+sel_wb.out[0] (.names)                                           0.261     0.973
+out:sel_wb.outpad[0] (.output)                                   0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 8
+Startpoint: opcode[2].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:mem_write.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[2].inpad[0] (.input)                                      0.000     0.000
+mem_write.in[0] (.names)                                         0.712     0.712
+mem_write.out[0] (.names)                                        0.261     0.973
+out:mem_write.outpad[0] (.output)                                0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 9
+Startpoint: opcode[3].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:jump.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[3].inpad[0] (.input)                                      0.000     0.000
+jump.in[0] (.names)                                              0.712     0.712
+jump.out[0] (.names)                                             0.261     0.973
+out:jump.outpad[0] (.output)                                     0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 10
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:bltz.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+bltz.in[0] (.names)                                              0.712     0.712
+bltz.out[0] (.names)                                             0.261     0.973
+out:bltz.outpad[0] (.output)                                     0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 11
+Startpoint: opcode[4].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:bgez.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[4].inpad[0] (.input)                                      0.000     0.000
+bgez.in[0] (.names)                                              0.712     0.712
+bgez.out[0] (.names)                                             0.261     0.973
+out:bgez.outpad[0] (.output)                                     0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 12
+Startpoint: opcode[1].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:bnez.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[1].inpad[0] (.input)                                      0.000     0.000
+bnez.in[0] (.names)                                              0.712     0.712
+bnez.out[0] (.names)                                             0.261     0.973
+out:bnez.outpad[0] (.output)                                     0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 13
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:beqz.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+beqz.in[0] (.names)                                              0.712     0.712
+beqz.out[0] (.names)                                             0.261     0.973
+out:beqz.outpad[0] (.output)                                     0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 14
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:sel_reg_dst[0].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+sel_reg_dst[0].in[0] (.names)                                    0.712     0.712
+sel_reg_dst[0].out[0] (.names)                                   0.261     0.973
+out:sel_reg_dst[0].outpad[0] (.output)                           0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 15
+Startpoint: opcode[3].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:sel_pc_opA.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[3].inpad[0] (.input)                                      0.000     0.000
+sel_pc_opA.in[0] (.names)                                        0.712     0.712
+sel_pc_opA.out[0] (.names)                                       0.261     0.973
+out:sel_pc_opA.outpad[0] (.output)                               0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 16
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:reg_write.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+reg_write.in[0] (.names)                                         0.712     0.712
+reg_write.out[0] (.names)                                        0.261     0.973
+out:reg_write.outpad[0] (.output)                                0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 17
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:halt.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+halt.in[0] (.names)                                              0.712     0.712
+halt.out[0] (.names)                                             0.261     0.973
+out:halt.outpad[0] (.output)                                     0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 18
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:alu_op_ext[3].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+alu_op_ext[3].in[0] (.names)                                     0.712     0.712
+alu_op_ext[3].out[0] (.names)                                    0.261     0.973
+out:alu_op_ext[3].outpad[0] (.output)                            0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 19
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:alu_op_ext[2].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+alu_op_ext[2].in[0] (.names)                                     0.712     0.712
+alu_op_ext[2].out[0] (.names)                                    0.261     0.973
+out:alu_op_ext[2].outpad[0] (.output)                            0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 20
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:alu_op_ext[1].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+alu_op_ext[1].in[0] (.names)                                     0.712     0.712
+alu_op_ext[1].out[0] (.names)                                    0.261     0.973
+out:alu_op_ext[1].outpad[0] (.output)                            0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 21
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:alu_op_ext[0].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+alu_op_ext[0].in[0] (.names)                                     0.712     0.712
+alu_op_ext[0].out[0] (.names)                                    0.261     0.973
+out:alu_op_ext[0].outpad[0] (.output)                            0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 22
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:alu_op[2].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+alu_op[2].in[0] (.names)                                         0.712     0.712
+alu_op[2].out[0] (.names)                                        0.261     0.973
+out:alu_op[2].outpad[0] (.output)                                0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 23
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:sel_alu_opB[1].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+sel_alu_opB[1].in[0] (.names)                                    0.712     0.712
+sel_alu_opB[1].out[0] (.names)                                   0.261     0.973
+out:sel_alu_opB[1].outpad[0] (.output)                           0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 24
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:sel_alu_opB[0].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+sel_alu_opB[0].in[0] (.names)                                    0.712     0.712
+sel_alu_opB[0].out[0] (.names)                                   0.261     0.973
+out:sel_alu_opB[0].outpad[0] (.output)                           0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#Path 25
+Startpoint: opcode[0].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:sel_reg_dst[1].outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+opcode[0].inpad[0] (.input)                                      0.000     0.000
+sel_reg_dst[1].in[0] (.names)                                    0.712     0.712
+sel_reg_dst[1].out[0] (.names)                                   0.261     0.973
+out:sel_reg_dst[1].outpad[0] (.output)                           0.712     1.685
+data arrival time                                                          1.685
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -1.685
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.685
+
+
+#End of timing report

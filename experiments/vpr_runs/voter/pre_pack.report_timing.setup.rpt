@@ -1,0 +1,65 @@
+#Timing report of worst 1 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: A[199].inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:maj.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+A[199].inpad[0] (.input)                                         0.000     0.000
+new_n1851.in[0] (.names)                                         0.712     0.712
+new_n1851.out[0] (.names)                                        0.261     0.973
+new_n2391.in[0] (.names)                                         0.712     1.685
+new_n2391.out[0] (.names)                                        0.261     1.946
+new_n2949.in[0] (.names)                                         0.712     2.658
+new_n2949.out[0] (.names)                                        0.261     2.919
+new_n2956.in[0] (.names)                                         0.712     3.631
+new_n2956.out[0] (.names)                                        0.261     3.892
+new_n2946.in[0] (.names)                                         0.712     4.604
+new_n2946.out[0] (.names)                                        0.261     4.865
+new_n3396.in[0] (.names)                                         0.712     5.577
+new_n3396.out[0] (.names)                                        0.261     5.838
+new_n3529.in[0] (.names)                                         0.712     6.550
+new_n3529.out[0] (.names)                                        0.261     6.811
+new_n3672.in[0] (.names)                                         0.712     7.523
+new_n3672.out[0] (.names)                                        0.261     7.784
+new_n3739.in[0] (.names)                                         0.712     8.496
+new_n3739.out[0] (.names)                                        0.261     8.757
+new_n3738.in[0] (.names)                                         0.712     9.469
+new_n3738.out[0] (.names)                                        0.261     9.730
+new_n3752.in[0] (.names)                                         0.712    10.442
+new_n3752.out[0] (.names)                                        0.261    10.703
+new_n3770.in[0] (.names)                                         0.712    11.415
+new_n3770.out[0] (.names)                                        0.261    11.676
+new_n3769.in[0] (.names)                                         0.712    12.388
+new_n3769.out[0] (.names)                                        0.261    12.649
+new_n1007.in[0] (.names)                                         0.712    13.361
+new_n1007.out[0] (.names)                                        0.261    13.622
+new_n1006.in[0] (.names)                                         0.712    14.334
+new_n1006.out[0] (.names)                                        0.261    14.595
+new_n1005.in[1] (.names)                                         0.712    15.307
+new_n1005.out[0] (.names)                                        0.261    15.568
+maj.in[1] (.names)                                               0.712    16.280
+maj.out[0] (.names)                                              0.261    16.541
+out:maj.outpad[0] (.output)                                      0.712    17.253
+data arrival time                                                         17.253
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -17.253
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -17.253
+
+
+#End of timing report
