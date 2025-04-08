@@ -1,0 +1,1423 @@
+#Timing report of worst 32 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6287.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+new_n510.in[2] (.names)                                          0.332     7.877
+new_n510.out[0] (.names)                                         0.261     8.138
+new_n537.in[3] (.names)                                          0.196     8.334
+new_n537.out[0] (.names)                                         0.261     8.595
+new_n559.in[1] (.names)                                          0.332     8.927
+new_n559.out[0] (.names)                                         0.261     9.188
+new_n574.in[1] (.names)                                          0.100     9.288
+new_n574.out[0] (.names)                                         0.261     9.549
+G6287.in[2] (.names)                                             0.100     9.649
+G6287.out[0] (.names)                                            0.261     9.910
+out:G6287.outpad[0] (.output)                                    3.569    13.479
+data arrival time                                                         13.479
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -13.479
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -13.479
+
+
+#Path 2
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6286.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+new_n510.in[2] (.names)                                          0.332     7.877
+new_n510.out[0] (.names)                                         0.261     8.138
+new_n537.in[3] (.names)                                          0.196     8.334
+new_n537.out[0] (.names)                                         0.261     8.595
+new_n559.in[1] (.names)                                          0.332     8.927
+new_n559.out[0] (.names)                                         0.261     9.188
+new_n574.in[1] (.names)                                          0.100     9.288
+new_n574.out[0] (.names)                                         0.261     9.549
+G6286.in[0] (.names)                                             0.100     9.649
+G6286.out[0] (.names)                                            0.261     9.910
+out:G6286.outpad[0] (.output)                                    3.545    13.455
+data arrival time                                                         13.455
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -13.455
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -13.455
+
+
+#Path 3
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6288.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+new_n510.in[2] (.names)                                          0.332     7.877
+new_n510.out[0] (.names)                                         0.261     8.138
+new_n537.in[3] (.names)                                          0.196     8.334
+new_n537.out[0] (.names)                                         0.261     8.595
+new_n559.in[1] (.names)                                          0.332     8.927
+new_n559.out[0] (.names)                                         0.261     9.188
+new_n574.in[1] (.names)                                          0.100     9.288
+new_n574.out[0] (.names)                                         0.261     9.549
+G6288.in[0] (.names)                                             0.100     9.649
+G6288.out[0] (.names)                                            0.261     9.910
+out:G6288.outpad[0] (.output)                                    3.527    13.437
+data arrival time                                                         13.437
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -13.437
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -13.437
+
+
+#Path 4
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6285.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+new_n510.in[2] (.names)                                          0.332     7.877
+new_n510.out[0] (.names)                                         0.261     8.138
+new_n537.in[3] (.names)                                          0.196     8.334
+new_n537.out[0] (.names)                                         0.261     8.595
+new_n559.in[1] (.names)                                          0.332     8.927
+new_n559.out[0] (.names)                                         0.261     9.188
+G6285.in[0] (.names)                                             0.100     9.288
+G6285.out[0] (.names)                                            0.261     9.549
+out:G6285.outpad[0] (.output)                                    3.664    13.212
+data arrival time                                                         13.212
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -13.212
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -13.212
+
+
+#Path 5
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6284.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+new_n510.in[2] (.names)                                          0.332     7.877
+new_n510.out[0] (.names)                                         0.261     8.138
+new_n537.in[3] (.names)                                          0.196     8.334
+new_n537.out[0] (.names)                                         0.261     8.595
+new_n559.in[1] (.names)                                          0.332     8.927
+new_n559.out[0] (.names)                                         0.261     9.188
+G6284.in[0] (.names)                                             0.100     9.288
+G6284.out[0] (.names)                                            0.261     9.549
+out:G6284.outpad[0] (.output)                                    3.534    13.083
+data arrival time                                                         13.083
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -13.083
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -13.083
+
+
+#Path 6
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6283.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+new_n510.in[2] (.names)                                          0.332     7.877
+new_n510.out[0] (.names)                                         0.261     8.138
+new_n537.in[3] (.names)                                          0.196     8.334
+new_n537.out[0] (.names)                                         0.261     8.595
+G6283.in[0] (.names)                                             0.469     9.064
+G6283.out[0] (.names)                                            0.261     9.325
+out:G6283.outpad[0] (.output)                                    3.582    12.907
+data arrival time                                                         12.907
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -12.907
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -12.907
+
+
+#Path 7
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6282.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+new_n510.in[2] (.names)                                          0.332     7.877
+new_n510.out[0] (.names)                                         0.261     8.138
+new_n537.in[3] (.names)                                          0.196     8.334
+new_n537.out[0] (.names)                                         0.261     8.595
+G6282.in[0] (.names)                                             0.332     8.927
+G6282.out[0] (.names)                                            0.261     9.188
+out:G6282.outpad[0] (.output)                                    3.626    12.814
+data arrival time                                                         12.814
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -12.814
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -12.814
+
+
+#Path 8
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6279.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+new_n510.in[2] (.names)                                          0.332     7.877
+new_n510.out[0] (.names)                                         0.261     8.138
+G6279.in[1] (.names)                                             0.196     8.334
+G6279.out[0] (.names)                                            0.261     8.595
+out:G6279.outpad[0] (.output)                                    3.611    12.206
+data arrival time                                                         12.206
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -12.206
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -12.206
+
+
+#Path 9
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6280.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+new_n510.in[2] (.names)                                          0.332     7.877
+new_n510.out[0] (.names)                                         0.261     8.138
+G6280.in[1] (.names)                                             0.196     8.334
+G6280.out[0] (.names)                                            0.261     8.595
+out:G6280.outpad[0] (.output)                                    3.608    12.203
+data arrival time                                                         12.203
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -12.203
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -12.203
+
+
+#Path 10
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6281.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+new_n510.in[2] (.names)                                          0.332     7.877
+new_n510.out[0] (.names)                                         0.261     8.138
+G6281.in[3] (.names)                                             0.196     8.334
+G6281.out[0] (.names)                                            0.261     8.595
+out:G6281.outpad[0] (.output)                                    3.497    12.093
+data arrival time                                                         12.093
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -12.093
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -12.093
+
+
+#Path 11
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6278.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+G6278.in[0] (.names)                                             0.332     7.877
+G6278.out[0] (.names)                                            0.261     8.138
+out:G6278.outpad[0] (.output)                                    3.643    11.781
+data arrival time                                                         11.781
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -11.781
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -11.781
+
+
+#Path 12
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6277.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+new_n275.in[3] (.names)                                          0.196     7.285
+new_n275.out[0] (.names)                                         0.261     7.546
+G6277.in[0] (.names)                                             0.196     7.742
+G6277.out[0] (.names)                                            0.261     8.003
+out:G6277.outpad[0] (.output)                                    3.609    11.612
+data arrival time                                                         11.612
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -11.612
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -11.612
+
+
+#Path 13
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6276.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+G6276.in[3] (.names)                                             0.196     7.285
+G6276.out[0] (.names)                                            0.261     7.546
+out:G6276.outpad[0] (.output)                                    3.497    11.043
+data arrival time                                                         11.043
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -11.043
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -11.043
+
+
+#Path 14
+Startpoint: G16.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6275.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G16.inpad[0] (.input)                                            0.000     0.000
+new_n85.in[0] (.names)                                           2.010     2.010
+new_n85.out[0] (.names)                                          0.261     2.271
+new_n92.in[5] (.names)                                           0.332     2.603
+new_n92.out[0] (.names)                                          0.261     2.864
+new_n105.in[1] (.names)                                          0.332     3.196
+new_n105.out[0] (.names)                                         0.261     3.457
+new_n138.in[3] (.names)                                          0.332     3.789
+new_n138.out[0] (.names)                                         0.261     4.050
+new_n161.in[3] (.names)                                          0.332     4.383
+new_n161.out[0] (.names)                                         0.261     4.644
+new_n215.in[3] (.names)                                          0.332     4.975
+new_n215.out[0] (.names)                                         0.261     5.236
+new_n244.in[3] (.names)                                          0.100     5.336
+new_n244.out[0] (.names)                                         0.261     5.597
+new_n280.in[0] (.names)                                          0.333     5.930
+new_n280.out[0] (.names)                                         0.261     6.191
+new_n311.in[0] (.names)                                          0.100     6.291
+new_n311.out[0] (.names)                                         0.261     6.552
+new_n347.in[0] (.names)                                          0.196     6.748
+new_n347.out[0] (.names)                                         0.261     7.009
+G6275.in[3] (.names)                                             0.196     7.205
+G6275.out[0] (.names)                                            0.261     7.466
+out:G6275.outpad[0] (.output)                                    3.464    10.930
+data arrival time                                                         10.930
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -10.930
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.930
+
+
+#Path 15
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6274.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+new_n420.in[1] (.names)                                          0.100     6.828
+new_n420.out[0] (.names)                                         0.261     7.089
+G6274.in[2] (.names)                                             0.100     7.189
+G6274.out[0] (.names)                                            0.261     7.450
+out:G6274.outpad[0] (.output)                                    3.379    10.828
+data arrival time                                                         10.828
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -10.828
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.828
+
+
+#Path 16
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6272.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+G6272.in[1] (.names)                                             0.100     6.828
+G6272.out[0] (.names)                                            0.261     7.089
+out:G6272.outpad[0] (.output)                                    3.373    10.462
+data arrival time                                                         10.462
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -10.462
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.462
+
+
+#Path 17
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6273.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+new_n422.in[2] (.names)                                          0.468     6.467
+new_n422.out[0] (.names)                                         0.261     6.728
+G6273.in[1] (.names)                                             0.100     6.828
+G6273.out[0] (.names)                                            0.261     7.089
+out:G6273.outpad[0] (.output)                                    3.368    10.456
+data arrival time                                                         10.456
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -10.456
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.456
+
+
+#Path 18
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6271.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+G6271.in[1] (.names)                                             0.468     6.467
+G6271.out[0] (.names)                                            0.261     6.728
+out:G6271.outpad[0] (.output)                                    3.518    10.246
+data arrival time                                                         10.246
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -10.246
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.246
+
+
+#Path 19
+Startpoint: G20.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6270.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G20.inpad[0] (.input)                                            0.000     0.000
+new_n299.in[0] (.names)                                          2.052     2.052
+new_n299.out[0] (.names)                                         0.261     2.313
+new_n296.in[2] (.names)                                          0.331     2.644
+new_n296.out[0] (.names)                                         0.261     2.905
+new_n326.in[1] (.names)                                          0.100     3.005
+new_n326.out[0] (.names)                                         0.261     3.266
+new_n397.in[3] (.names)                                          0.332     3.598
+new_n397.out[0] (.names)                                         0.261     3.859
+new_n396.in[5] (.names)                                          0.100     3.959
+new_n396.out[0] (.names)                                         0.261     4.220
+new_n429.in[1] (.names)                                          0.332     4.552
+new_n429.out[0] (.names)                                         0.261     4.813
+new_n427.in[1] (.names)                                          0.332     5.145
+new_n427.out[0] (.names)                                         0.261     5.406
+new_n425.in[0] (.names)                                          0.332     5.738
+new_n425.out[0] (.names)                                         0.261     5.999
+G6270.in[1] (.names)                                             0.332     6.331
+G6270.out[0] (.names)                                            0.261     6.592
+out:G6270.outpad[0] (.output)                                    3.540    10.132
+data arrival time                                                         10.132
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                        -10.132
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.132
+
+
+#Path 20
+Startpoint: G8.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6269.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G8.inpad[0] (.input)                                             0.000     0.000
+new_n228.in[4] (.names)                                          2.142     2.142
+new_n228.out[0] (.names)                                         0.261     2.403
+new_n227.in[0] (.names)                                          0.332     2.735
+new_n227.out[0] (.names)                                         0.261     2.996
+new_n254.in[1] (.names)                                          0.100     3.096
+new_n254.out[0] (.names)                                         0.261     3.357
+new_n290.in[0] (.names)                                          0.333     3.690
+new_n290.out[0] (.names)                                         0.261     3.951
+new_n321.in[0] (.names)                                          0.100     4.051
+new_n321.out[0] (.names)                                         0.261     4.312
+new_n392.in[3] (.names)                                          0.333     4.645
+new_n392.out[0] (.names)                                         0.261     4.906
+new_n426.in[5] (.names)                                          0.100     5.006
+new_n426.out[0] (.names)                                         0.261     5.267
+G6269.in[2] (.names)                                             0.332     5.599
+G6269.out[0] (.names)                                            0.261     5.860
+out:G6269.outpad[0] (.output)                                    3.371     9.231
+data arrival time                                                          9.231
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -9.231
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -9.231
+
+
+#Path 21
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6267.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+new_n441.in[1] (.names)                                          2.009     2.009
+new_n441.out[0] (.names)                                         0.261     2.270
+new_n440.in[0] (.names)                                          0.477     2.747
+new_n440.out[0] (.names)                                         0.261     3.008
+new_n437.in[2] (.names)                                          0.100     3.108
+new_n437.out[0] (.names)                                         0.261     3.369
+new_n435.in[0] (.names)                                          0.100     3.469
+new_n435.out[0] (.names)                                         0.261     3.730
+new_n432.in[2] (.names)                                          0.333     4.063
+new_n432.out[0] (.names)                                         0.261     4.324
+new_n430.in[0] (.names)                                          0.100     4.424
+new_n430.out[0] (.names)                                         0.261     4.685
+G6267.in[1] (.names)                                             0.333     5.018
+G6267.out[0] (.names)                                            0.261     5.279
+out:G6267.outpad[0] (.output)                                    3.620     8.899
+data arrival time                                                          8.899
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -8.899
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -8.899
+
+
+#Path 22
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6268.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+new_n441.in[1] (.names)                                          2.009     2.009
+new_n441.out[0] (.names)                                         0.261     2.270
+new_n440.in[0] (.names)                                          0.477     2.747
+new_n440.out[0] (.names)                                         0.261     3.008
+new_n437.in[2] (.names)                                          0.100     3.108
+new_n437.out[0] (.names)                                         0.261     3.369
+new_n435.in[0] (.names)                                          0.100     3.469
+new_n435.out[0] (.names)                                         0.261     3.730
+new_n432.in[2] (.names)                                          0.333     4.063
+new_n432.out[0] (.names)                                         0.261     4.324
+new_n430.in[0] (.names)                                          0.100     4.424
+new_n430.out[0] (.names)                                         0.261     4.685
+G6268.in[1] (.names)                                             0.333     5.018
+G6268.out[0] (.names)                                            0.261     5.279
+out:G6268.outpad[0] (.output)                                    3.549     8.828
+data arrival time                                                          8.828
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -8.828
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -8.828
+
+
+#Path 23
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6266.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+new_n441.in[1] (.names)                                          2.009     2.009
+new_n441.out[0] (.names)                                         0.261     2.270
+new_n440.in[0] (.names)                                          0.477     2.747
+new_n440.out[0] (.names)                                         0.261     3.008
+new_n437.in[2] (.names)                                          0.100     3.108
+new_n437.out[0] (.names)                                         0.261     3.369
+new_n435.in[0] (.names)                                          0.100     3.469
+new_n435.out[0] (.names)                                         0.261     3.730
+new_n432.in[2] (.names)                                          0.333     4.063
+new_n432.out[0] (.names)                                         0.261     4.324
+G6266.in[3] (.names)                                             0.342     4.667
+G6266.out[0] (.names)                                            0.261     4.928
+out:G6266.outpad[0] (.output)                                    3.675     8.602
+data arrival time                                                          8.602
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -8.602
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -8.602
+
+
+#Path 24
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6264.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+new_n441.in[1] (.names)                                          2.009     2.009
+new_n441.out[0] (.names)                                         0.261     2.270
+new_n440.in[0] (.names)                                          0.477     2.747
+new_n440.out[0] (.names)                                         0.261     3.008
+new_n437.in[2] (.names)                                          0.100     3.108
+new_n437.out[0] (.names)                                         0.261     3.369
+new_n435.in[0] (.names)                                          0.100     3.469
+new_n435.out[0] (.names)                                         0.261     3.730
+G6264.in[1] (.names)                                             0.470     4.200
+G6264.out[0] (.names)                                            0.261     4.461
+out:G6264.outpad[0] (.output)                                    3.604     8.065
+data arrival time                                                          8.065
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -8.065
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -8.065
+
+
+#Path 25
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6265.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+new_n441.in[1] (.names)                                          2.009     2.009
+new_n441.out[0] (.names)                                         0.261     2.270
+new_n440.in[0] (.names)                                          0.477     2.747
+new_n440.out[0] (.names)                                         0.261     3.008
+new_n437.in[2] (.names)                                          0.100     3.108
+new_n437.out[0] (.names)                                         0.261     3.369
+new_n435.in[0] (.names)                                          0.100     3.469
+new_n435.out[0] (.names)                                         0.261     3.730
+G6265.in[1] (.names)                                             0.470     4.200
+G6265.out[0] (.names)                                            0.261     4.461
+out:G6265.outpad[0] (.output)                                    3.544     8.005
+data arrival time                                                          8.005
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -8.005
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -8.005
+
+
+#Path 26
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6263.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+new_n441.in[1] (.names)                                          2.009     2.009
+new_n441.out[0] (.names)                                         0.261     2.270
+new_n440.in[0] (.names)                                          0.477     2.747
+new_n440.out[0] (.names)                                         0.261     3.008
+new_n437.in[2] (.names)                                          0.100     3.108
+new_n437.out[0] (.names)                                         0.261     3.369
+G6263.in[3] (.names)                                             0.341     3.710
+G6263.out[0] (.names)                                            0.261     3.971
+out:G6263.outpad[0] (.output)                                    3.691     7.663
+data arrival time                                                          7.663
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -7.663
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -7.663
+
+
+#Path 27
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6262.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+new_n441.in[1] (.names)                                          2.009     2.009
+new_n441.out[0] (.names)                                         0.261     2.270
+new_n440.in[0] (.names)                                          0.477     2.747
+new_n440.out[0] (.names)                                         0.261     3.008
+G6262.in[1] (.names)                                             0.341     3.349
+G6262.out[0] (.names)                                            0.261     3.610
+out:G6262.outpad[0] (.output)                                    3.673     7.283
+data arrival time                                                          7.283
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -7.283
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -7.283
+
+
+#Path 28
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6261.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+new_n441.in[1] (.names)                                          2.009     2.009
+new_n441.out[0] (.names)                                         0.261     2.270
+new_n440.in[0] (.names)                                          0.477     2.747
+new_n440.out[0] (.names)                                         0.261     3.008
+G6261.in[1] (.names)                                             0.341     3.349
+G6261.out[0] (.names)                                            0.261     3.610
+out:G6261.outpad[0] (.output)                                    3.628     7.238
+data arrival time                                                          7.238
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -7.238
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -7.238
+
+
+#Path 29
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6260.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+new_n441.in[1] (.names)                                          2.009     2.009
+new_n441.out[0] (.names)                                         0.261     2.270
+G6260.in[2] (.names)                                             0.100     2.370
+G6260.out[0] (.names)                                            0.261     2.631
+out:G6260.outpad[0] (.output)                                    3.528     6.160
+data arrival time                                                          6.160
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -6.160
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -6.160
+
+
+#Path 30
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6258.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+G6258.in[0] (.names)                                             2.009     2.009
+G6258.out[0] (.names)                                            0.261     2.270
+out:G6258.outpad[0] (.output)                                    3.749     6.019
+data arrival time                                                          6.019
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -6.019
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -6.019
+
+
+#Path 31
+Startpoint: G17.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6257.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G17.inpad[0] (.input)                                            0.000     0.000
+G6257.in[0] (.names)                                             1.997     1.997
+G6257.out[0] (.names)                                            0.261     2.258
+out:G6257.outpad[0] (.output)                                    3.746     6.004
+data arrival time                                                          6.004
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -6.004
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -6.004
+
+
+#Path 32
+Startpoint: G18.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:G6259.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+G18.inpad[0] (.input)                                            0.000     0.000
+G6259.in[1] (.names)                                             2.009     2.009
+G6259.out[0] (.names)                                            0.261     2.270
+out:G6259.outpad[0] (.output)                                    3.651     5.921
+data arrival time                                                          5.921
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -5.921
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -5.921
+
+
+#End of timing report

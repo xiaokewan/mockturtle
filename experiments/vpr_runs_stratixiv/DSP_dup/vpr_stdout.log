@@ -1,0 +1,561 @@
+VPR FPGA Placement and Routing.
+Version: 8.1.0-dev+unkown
+Revision: unkown
+Compiled: 2025-02-16T14:22:44
+Compiler: GNU 11.4.0 on Linux-6.8.0-47-generic x86_64
+Build Info: release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+vpr /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratixiv_arch.timing.xml /media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/DSP_dup.blif --route_chan_width 250
+
+Using up to 1 parallel worker(s)
+
+Architecture file: /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratixiv_arch.timing.xml
+Circuit name: DSP_dup
+
+# Loading Architecture Description
+# Loading Architecture Description took 0.37 seconds (max_rss 79.9 MiB, delta_rss +64.5 MiB)
+
+Timing analysis: ON
+Circuit netlist file: DSP_dup.net
+Circuit placement file: DSP_dup.place
+Circuit routing file: DSP_dup.route
+Circuit SDC file: DSP_dup.sdc
+Vpr floorplanning constraints file: not specified
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+VPR was run with the following options:
+
+NetlistOpts.abosrb_buffer_luts            : true
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+NetlistOpts.netlist_verbosity             : 1
+NetlistOpts.const_gen_inference           : COMB_SEQ
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: CRITICALITY_TIMING_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.constraints_file: No constraints file given
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 250
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlacerOpts.delay_offset: 0.000000
+PlacerOpts.delay_ramp_delta_threshold: -1
+PlacerOpts.delay_ramp_slope: 0.000000
+PlacerOpts.tsu_rel_margin: 1.000000
+PlacerOpts.tsu_abs_margin: 0.000000
+PlacerOpts.post_place_timing_report_file: 
+PlacerOpts.allowed_tiles_for_delay_model: 
+PlacerOpts.delay_model_reducer: MIN
+PlacerOpts.delay_model_type: DELTA
+PlacerOpts.rlim_escape_fraction: 0.000000
+PlacerOpts.move_stats_file: 
+PlacerOpts.placement_saves_per_temperature: 0
+PlacerOpts.effort_scaling: CIRCUIT
+PlacerOpts.place_delta_delay_matrix_calculation_method: ASTAR_ROUTE
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 0.500000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.flat_routing: false
+RouterOpts.has_choking_spot: false
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 250
+RouterOpts.check_route: FULL
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.do_check_rr_graph: true
+RouterOpts.verify_binary_search: false
+RouterOpts.min_channel_width_hint: 0
+RouterOpts.read_rr_edge_metadata: false
+RouterOpts.exit_after_first_routing_iteration: false
+RouterOpts.astar_fac: 1.200000
+RouterOpts.router_profiler_astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.init_wirelength_abort_threshold: 0.850000
+RouterOpts.save_routing_per_iteration: false
+RouterOpts.congested_routing_iteration_threshold_frac: 1.000000
+RouterOpts.high_fanout_threshold: 64
+RouterOpts.router_debug_net: -2
+RouterOpts.router_debug_sink_rr: -2
+RouterOpts.router_debug_iteration: -2
+RouterOpts.max_convergence_count: 1
+RouterOpts.reconvergence_cpd_threshold: 0.990000
+RouterOpts.update_lower_bound_delays: true
+RouterOpts.first_iteration_timing_report_file: 
+RouterOpts.incr_reroute_delay_ripup: AUTO
+RouterOpts.route_bb_update: DYNAMIC
+RouterOpts.lookahead_type: MAP
+RouterOpts.initial_timing: LOOKAHEAD
+RouterOpts.router_heap: BINARY_HEAP
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+AnalysisOpts.timing_report_npaths: 100
+AnalysisOpts.timing_report_skew: false
+AnalysisOpts.echo_dot_timing_graph_node: -1
+AnalysisOpts.timing_report_detail: NETLIST
+AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
+AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
+
+# Building complex block graph
+# Building complex block graph took 4.13 seconds (max_rss 953.6 MiB, delta_rss +873.7 MiB)
+Circuit file: /media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/DSP_dup.blif
+# Load circuit
+Found constant-zero generator 'new_n11806'
+Found constant-zero generator 'new_n11975'
+Found constant-zero generator 'new_n12119'
+Found constant-zero generator 'new_n12217'
+Found constant-zero generator 'new_n12460'
+Found constant-zero generator 'new_n12575'
+Found constant-zero generator 'new_n12586'
+Found constant-zero generator 'new_n12990'
+Found constant-zero generator 'new_n13102'
+Found constant-zero generator 'new_n13103'
+Found constant-zero generator 'new_n13157'
+Found constant-zero generator 'new_n13451'
+Found constant-zero generator 'new_n13469'
+Found constant-zero generator 'new_n14019'
+Found constant-zero generator 'new_n14894'
+Found constant-zero generator 'new_n15104'
+Found constant-zero generator 'new_n15159'
+Found constant-zero generator 'new_n15162'
+Found constant-zero generator 'new_n15174'
+Found constant-zero generator 'new_n15177'
+Found constant-zero generator 'new_n15184'
+Found constant-zero generator 'new_n15188'
+Found constant-zero generator 'new_n15190'
+Found constant-zero generator 'new_n15200'
+Found constant-zero generator 'new_n15212'
+Found constant-zero generator 'new_n15215'
+Found constant-zero generator 'new_n15272'
+Found constant-zero generator 'new_n15279'
+Found constant-zero generator 'new_n15285'
+Found constant-zero generator 'new_n15331'
+Found constant-zero generator 'new_n15332'
+Found constant-zero generator 'new_n15335'
+Found constant-zero generator 'new_n15336'
+Found constant-zero generator 'new_n15337'
+Found constant-zero generator 'new_n15366'
+Found constant-zero generator 'new_n15367'
+Found constant-zero generator 'new_n15368'
+Found constant-zero generator 'new_n15371'
+Found constant-zero generator 'new_n15402'
+Found constant-zero generator 'new_n15415'
+Found constant-zero generator 'new_n15416'
+Found constant-zero generator 'new_n15419'
+Found constant-zero generator 'new_n15420'
+Found constant-zero generator 'new_n15422'
+Found constant-zero generator 'new_n15423'
+Found constant-zero generator 'new_n15424'
+Found constant-zero generator 'new_n15425'
+Found constant-zero generator 'new_n15426'
+Found constant-zero generator 'new_n15427'
+Found constant-zero generator 'new_n15438'
+Found constant-zero generator 'new_n15439'
+Found constant-zero generator 'new_n15440'
+Found constant-zero generator 'new_n15457'
+Found constant-zero generator 'new_n15460'
+Found constant-zero generator 'new_n15461'
+Found constant-zero generator 'new_n15462'
+Found constant-zero generator 'new_n15468'
+Found constant-zero generator 'new_n15471'
+Found constant-zero generator 'new_n15472'
+Found constant-zero generator 'new_n15473'
+Found constant-zero generator 'new_n15477'
+Found constant-zero generator 'new_n15478'
+Found constant-zero generator 'new_n15480'
+Found constant-zero generator 'new_n15481'
+Found constant-zero generator 'new_n15482'
+Found constant-zero generator 'new_n15509'
+Found constant-zero generator 'new_n15510'
+Found constant-zero generator 'new_n15513'
+Found constant-zero generator 'new_n15519'
+Found constant-zero generator 'new_n15520'
+Found constant-zero generator 'new_n15521'
+Found constant-zero generator 'new_n15525'
+Found constant-zero generator 'new_n15527'
+Found constant-zero generator 'new_n15528'
+Found constant-zero generator 'new_n15529'
+Found constant-zero generator 'new_n15538'
+Found constant-zero generator 'new_n15539'
+Found constant-zero generator 'new_n15540'
+Found constant-zero generator 'new_n15551'
+Found constant-zero generator 'new_n15588'
+Found constant-zero generator 'new_n15656'
+Found constant-zero generator 'new_n15728'
+Found constant-zero generator 'new_n15770'
+Found constant-zero generator 'new_n15806'
+Found constant-zero generator 'new_n15822'
+Found constant-zero generator 'new_n15851'
+Found constant-zero generator 'new_n15864'
+Found constant-zero generator 'new_n15915'
+Found constant-zero generator 'new_n15922'
+Found constant-zero generator 'new_n15977'
+Found constant-zero generator 'new_n15984'
+Found constant-zero generator 'new_n15985'
+Found constant-zero generator 'new_n15987'
+Found constant-zero generator 'new_n15995'
+Found constant-zero generator 'new_n16190'
+Found constant-zero generator 'new_n16241'
+Found constant-zero generator 'new_n16263'
+Found constant-zero generator 'new_n16274'
+Found constant-zero generator 'new_n16312'
+Found constant-zero generator 'new_n16318'
+Found constant-zero generator 'new_n16415'
+Found constant-zero generator 'new_n16499'
+Found constant-zero generator 'new_n16888'
+Found constant-zero generator 'new_n17608'
+Found constant-zero generator 'new_n17611'
+Found constant-zero generator 'new_n17614'
+Found constant-zero generator 'new_n17692'
+Found constant-zero generator 'new_n17724'
+Found constant-zero generator 'new_n17824'
+Found constant-zero generator 'new_n17853'
+Found constant-zero generator 'new_n18953'
+Found constant-zero generator 'new_n19024'
+Found constant-zero generator 'new_n19031'
+Found constant-zero generator 'new_n19037'
+Found constant-zero generator 'po0828'
+Found constant-zero generator 'new_n19055'
+Found constant-zero generator 'new_n19105'
+Found constant-zero generator 'new_n19109'
+Found constant-zero generator 'new_n19158'
+Found constant-zero generator 'new_n19169'
+Found constant-zero generator 'new_n19174'
+Found constant-zero generator 'new_n19406'
+Found constant-zero generator 'new_n19412'
+Found constant-zero generator 'new_n19547'
+Found constant-zero generator 'new_n19552'
+Found constant-zero generator 'new_n19727'
+Found constant-zero generator 'new_n19873'
+Found constant-zero generator 'new_n20150'
+Found constant-zero generator 'new_n20666'
+Found constant-zero generator 'new_n20669'
+Found constant-zero generator 'new_n20671'
+Found constant-zero generator 'new_n20673'
+Found constant-zero generator 'new_n20675'
+Found constant-zero generator 'new_n20677'
+Found constant-zero generator 'new_n20679'
+Found constant-zero generator 'new_n20681'
+Found constant-zero generator 'new_n20683'
+Found constant-zero generator 'new_n20697'
+Found constant-one generator 'po1725'
+Found constant-one generator 'po1731'
+Found constant-one generator 'po1732'
+Found constant-one generator 'po1778'
+Found constant-zero generator 'new_n21421'
+Found constant-zero generator 'new_n21520'
+Found constant-zero generator 'new_n21522'
+Found constant-zero generator 'new_n21721'
+Found constant-zero generator 'new_n21724'
+Found constant-zero generator 'new_n21727'
+Found constant-zero generator 'new_n21730'
+Found constant-zero generator 'new_n21733'
+Found constant-zero generator 'new_n21741'
+Found constant-zero generator 'new_n21744'
+Found constant-zero generator 'new_n21747'
+Found constant-zero generator 'new_n21750'
+Found constant-zero generator 'new_n21753'
+Found constant-zero generator 'new_n21756'
+Found constant-zero generator 'new_n21759'
+Found constant-zero generator 'po0012'
+Found constant-one generator 'po0054'
+Found constant-one generator 'po0055'
+Found constant-one generator 'po0056'
+Found constant-one generator 'po0057'
+Found constant-one generator 'po0058'
+Found constant-one generator 'po0059'
+Found constant-one generator 'po0060'
+Found constant-one generator 'po0061'
+Found constant-one generator 'po0072'
+Found constant-one generator 'po0073'
+Found constant-one generator 'po0074'
+Found constant-one generator 'po0075'
+Found constant-one generator 'po0076'
+Found constant-one generator 'po0077'
+Found constant-one generator 'po0078'
+Found constant-one generator 'po0079'
+Found constant-one generator 'po0080'
+Found constant-one generator 'po0091'
+Found constant-one generator 'po0092'
+Found constant-one generator 'po0093'
+Found constant-one generator 'po0094'
+Found constant-one generator 'po0095'
+Found constant-one generator 'po0096'
+Found constant-one generator 'po0097'
+Found constant-one generator 'po0098'
+Found constant-one generator 'po0099'
+Found constant-one generator 'po0293'
+# Load circuit took 0.11 seconds (max_rss 969.8 MiB, delta_rss +16.2 MiB)
+# Clean circuit
+Absorbed 109 LUT buffers
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred   23 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 3612
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 3614
+Swept block(s)      : 2
+Constant Pins Marked: 23
+# Clean circuit took 0.00 seconds (max_rss 969.8 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.02 seconds (max_rss 971.1 MiB, delta_rss +1.3 MiB)
+# Verify circuit
+# Verify circuit took 0.00 seconds (max_rss 971.1 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 19951
+    .input :    4223
+    .output:    3954
+    0-LUT  :     185
+    6-LUT  :   11589
+  Nets  : 15997
+    Avg Fanout:     3.4
+    Max Fanout:   596.0
+    Min Fanout:     1.0
+  Netlist Clocks: 0
+# Build Timing Graph
+  Timing Graph Nodes: 71108
+  Timing Graph Edges: 106268
+  Timing Graph Levels: 30
+# Build Timing Graph took 0.06 seconds (max_rss 974.9 MiB, delta_rss +3.8 MiB)
+Netlist contains 0 clocks
+# Load Timing Constraints
+
+SDC file 'DSP_dup.sdc' not found
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on a virtual external clock 'virtual_io_clock'
+   * optimize virtual clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'virtual_io_clock' (Virtual Clock)
+
+# Load Timing Constraints took 0.01 seconds (max_rss 975.0 MiB, delta_rss +0.2 MiB)
+# Packing
+Warning 1: Block type 'M144K' grid location specification startx (33 = 33) falls outside device horizontal range [0,9]
+Warning 2: Block type 'EMPTY' grid location specification startx (33 = 33) falls outside device horizontal range [0,9]
+Begin packing '/media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/DSP_dup.blif'.
+
+After removing unused inputs...
+	total blocks: 19951, total nets: 15997, total inputs: 4223, total outputs: 3954
+Begin prepacking.
+
+There is one chain in this architecture called "LAB_carry_chain" with the following starting points:
+	LAB[0]/alm[0]/lut[0]/lcell_comb[0].cin[0]
+
+
+There is one chain in this architecture called "share_chain" with the following starting points:
+	LAB[0]/alm[0]/lut[0]/lcell_comb[0].sharein[0]
+
+0 attraction groups were created during prepacking.
+Finish prepacking.
+Using inter-cluster delay: 1.01382e-09
+✅ Final Pin Utilization: io:1.00,1.00 LAB:0.80,1.00
+Packing with pin utilization targets: io:1,1 PLL:1,1 LAB:0.8,1 DSP:1,1 M9K:1,1 M144K:1,1
+Packing with high fanout thresholds: io:128 PLL:128 LAB:32 DSP:128 M9K:128 M144K:128
+Starting Clustering - Clustering Progress: 
+-------------------   --------------------------   ---------
+Molecules processed   Number of clusters created   FPGA size
+-------------------   --------------------------   ---------
+   798/19951     3%                           43    14 x 10    
+  1596/19951     7%                           85    17 x 13    
+  2394/19951    11%                          126    19 x 14    
+  3192/19951    15%                          167    21 x 16    
+  3990/19951    19%                          210    23 x 17    
+  4788/19951    23%                          251    24 x 18    
+  5586/19951    27%                          294    26 x 19    
+  6384/19951    31%                          336    27 x 20    
+  7182/19951    35%                          382    29 x 21    
+  7980/19951    39%                          427    30 x 22    
+  8778/19951    43%                          470    31 x 23    
+  9576/19951    47%                          513    32 x 24    
+ 10374/19951    51%                          559    34 x 25    
+ 11172/19951    55%                          601    35 x 26    
+ 11970/19951    59%                          916    39 x 29    
+ 12768/19951    63%                         1714   151 x 112   
+ 13566/19951    67%                         2512   266 x 197   
+ 14364/19951    71%                         3310   381 x 282   
+ 15162/19951    75%                         4108   495 x 367   
+ 15960/19951    79%                         4906   610 x 452   
+ 16758/19951    83%                         5704   724 x 536   
+ 17556/19951    87%                         6502   839 x 621   
+ 18354/19951    91%                         7300   953 x 706   
+ 19152/19951    95%                         8098   1068 x 791   
+ 19950/19951    99%                         8896   1182 x 876   
+Incr Slack updates 1 in 0.000763798 sec
+Full Max Req/Worst Slack updates 1 in 3.8782e-05 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 0.00255396 sec
+FPGA sized to 1183 x 876 (auto)
+Device Utilization: 0.00 (target 1.00)
+	Block Utilization: 1.00 Type: io
+	Block Utilization: 0.00 Type: LAB
+
+Start the iterative improvement process
+the iterative improvement process is done
+Final Clustering Statistics: 
+----------   --------   ------------------------------------   --------------------------
+Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output pins used
+----------   --------   ------------------------------------   --------------------------
+     EMPTY          0                                      0                            0   
+        io       8177                               0.483551                     0.516449   
+       PLL          0                                      0                            0   
+       LAB        721                                36.1151                      11.6907   
+       DSP          0                                      0                            0   
+       M9K          0                                      0                            0   
+     M144K          0                                      0                            0   
+Absorbed logical nets 3345 out of 15997 nets, 12652 nets not absorbed.
+
+Netlist conversion complete.
+
+# Packing took 23347.93 seconds (max_rss 1394.9 MiB, delta_rss +419.5 MiB)
+# Load packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'DSP_dup.net'.
+Detected 185 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0.692382 seconds).
+Warning 3: Treated 169 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load packing took 0.75 seconds (max_rss 1394.9 MiB, delta_rss +0.0 MiB)
+Warning 4: Netlist contains 558 global net to non-global architecture pin connections
+Warning 5: Logic block #675 (new_n11806) has only 1 output pin 'new_n11806.data_out[6]'. It may be a constant generator.
+Warning 6: Logic block #676 (new_n12575) has only 1 output pin 'new_n12575.data_out[6]'. It may be a constant generator.
+Warning 7: Logic block #677 (new_n14019) has only 1 output pin 'new_n14019.data_out[6]'. It may be a constant generator.
+Warning 8: Logic block #680 (new_n15402) has only 1 output pin 'new_n15402.data_out[6]'. It may be a constant generator.
+Warning 9: Logic block #681 (new_n15416) has only 1 output pin 'new_n15416.data_out[6]'. It may be a constant generator.
+Warning 10: Logic block #683 (new_n15513) has only 1 output pin 'new_n15513.data_out[6]'. It may be a constant generator.
+Warning 11: Logic block #684 (new_n15984) has only 1 output pin 'new_n15984.data_out[6]'. It may be a constant generator.
+Warning 12: Logic block #685 (new_n15985) has only 1 output pin 'new_n15985.data_out[6]'. It may be a constant generator.
+Warning 13: Logic block #686 (new_n15995) has only 1 output pin 'new_n15995.data_out[6]'. It may be a constant generator.
+Warning 14: Logic block #687 (new_n17824) has only 1 output pin 'new_n17824.data_out[6]'. It may be a constant generator.
+Warning 15: Logic block #688 (po0828) has only 1 output pin 'po0828.data_out[6]'. It may be a constant generator.
+Warning 16: Logic block #689 (po1725) has only 1 output pin 'po1725.data_out[6]'. It may be a constant generator.
+Warning 17: Logic block #690 (po1731) has only 1 output pin 'po1731.data_out[6]'. It may be a constant generator.
+Warning 18: Logic block #691 (po1732) has only 1 output pin 'po1732.data_out[6]'. It may be a constant generator.
+Warning 19: Logic block #692 (po1778) has only 1 output pin 'po1778.data_out[6]'. It may be a constant generator.
+Warning 20: Logic block #693 (po0012) has only 1 output pin 'po0012.data_out[6]'. It may be a constant generator.
+Warning 21: Logic block #694 (po0054) has only 1 output pin 'po0054.data_out[6]'. It may be a constant generator.
+Warning 22: Logic block #695 (po0055) has only 1 output pin 'po0055.data_out[6]'. It may be a constant generator.
+Warning 23: Logic block #696 (po0056) has only 1 output pin 'po0056.data_out[6]'. It may be a constant generator.
+Warning 24: Logic block #697 (po0057) has only 1 output pin 'po0057.data_out[6]'. It may be a constant generator.
+Warning 25: Logic block #698 (po0058) has only 1 output pin 'po0058.data_out[6]'. It may be a constant generator.
+Warning 26: Logic block #699 (po0059) has only 1 output pin 'po0059.data_out[6]'. It may be a constant generator.
+Warning 27: Logic block #700 (po0060) has only 1 output pin 'po0060.data_out[6]'. It may be a constant generator.
+Warning 28: Logic block #701 (po0061) has only 1 output pin 'po0061.data_out[6]'. It may be a constant generator.
+Warning 29: Logic block #702 (po0072) has only 1 output pin 'po0072.data_out[6]'. It may be a constant generator.
+Warning 30: Logic block #703 (po0073) has only 1 output pin 'po0073.data_out[6]'. It may be a constant generator.
+Warning 31: Logic block #704 (po0074) has only 1 output pin 'po0074.data_out[6]'. It may be a constant generator.
+Warning 32: Logic block #705 (po0075) has only 1 output pin 'po0075.data_out[6]'. It may be a constant generator.
+Warning 33: Logic block #706 (po0076) has only 1 output pin 'po0076.data_out[6]'. It may be a constant generator.
+Warning 34: Logic block #707 (po0077) has only 1 output pin 'po0077.data_out[6]'. It may be a constant generator.
+Warning 35: Logic block #708 (po0078) has only 1 output pin 'po0078.data_out[6]'. It may be a constant generator.
+Warning 36: Logic block #709 (po0079) has only 1 output pin 'po0079.data_out[6]'. It may be a constant generator.
+Warning 37: Logic block #710 (po0080) has only 1 output pin 'po0080.data_out[6]'. It may be a constant generator.
+Warning 38: Logic block #711 (po0091) has only 1 output pin 'po0091.data_out[6]'. It may be a constant generator.
+Warning 39: Logic block #712 (po0092) has only 1 output pin 'po0092.data_out[6]'. It may be a constant generator.
+Warning 40: Logic block #713 (po0093) has only 1 output pin 'po0093.data_out[6]'. It may be a constant generator.
+Warning 41: Logic block #714 (po0094) has only 1 output pin 'po0094.data_out[6]'. It may be a constant generator.
+Warning 42: Logic block #715 (po0095) has only 1 output pin 'po0095.data_out[6]'. It may be a constant generator.
+Warning 43: Logic block #716 (po0096) has only 1 output pin 'po0096.data_out[6]'. It may be a constant generator.
+Warning 44: Logic block #717 (po0097) has only 1 output pin 'po0097.data_out[6]'. It may be a constant generator.
+Warning 45: Logic block #718 (po0098) has only 1 output pin 'po0098.data_out[6]'. It may be a constant generator.
+Warning 46: Logic block #719 (po0099) has only 1 output pin 'po0099.data_out[6]'. It may be a constant generator.
+Warning 47: Logic block #720 (po0293) has only 1 output pin 'po0293.data_out[6]'. It may be a constant generator.
+
+Pb types usage...
+  io         : 8177
+   pad       : 8177
+    inpad    : 4223
+    outpad   : 3954
+  LAB        : 721
+   alm       : 6300
+    lut      : 11774
+     lut6    : 11774
+      lut    : 11774
+
+# Create Device
+## Build Device Grid
+FPGA sized to 1183 x 876: 1036308 grid tiles (auto)
+
+Resource usage...
+	Netlist
+		8177	blocks of type: io
+	Architecture
+		8180	blocks of type: io
+	Netlist
+		0	blocks of type: PLL
+	Architecture
+		16	blocks of type: PLL
+	Netlist
+		721	blocks of type: LAB
+	Architecture
+		939144	blocks of type: LAB
+	Netlist
+		0	blocks of type: DSP
+	Architecture
+		6540	blocks of type: DSP
+	Netlist
+		0	blocks of type: M9K
+	Architecture
+		39240	blocks of type: M9K
+	Netlist
+		0	blocks of type: M144K
+	Architecture
+		2943	blocks of type: M144K
+
+Device Utilization: 0.00 (target 1.00)
+	Physical Tile io:
+	Block Utilization: 1.00 Logical Block: io
+	Physical Tile PLL:
+	Block Utilization: 0.00 Logical Block: PLL
+	Physical Tile LAB:
+	Block Utilization: 0.00 Logical Block: LAB
+	Physical Tile DSP:
+	Block Utilization: 0.00 Logical Block: DSP
+	Physical Tile M9K:
+	Block Utilization: 0.00 Logical Block: M9K
+	Physical Tile M144K:
+	Block Utilization: 0.00 Logical Block: M144K
+
+FPGA size limited by block type(s): io
+
+## Build Device Grid took 27.97 seconds (max_rss 1394.9 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph

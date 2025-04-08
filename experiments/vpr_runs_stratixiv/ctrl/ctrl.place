@@ -1,0 +1,41 @@
+Netlist_File: ctrl.net Netlist_ID: SHA256:b6eafea59afb24dfe834272225dcf39a0d0bf23ca4eace911538278c2168a091
+Array size: 13 x 10 logic blocks
+
+#block name	x	y	subblk	layer	block number
+#----------	--	--	------	-----	------------
+new_n40		2	5	0	0	#0
+invB		10	4	0	0	#1
+sign		3	2	0	0	#2
+out:alu_op[0]	1	6	0	0	#3
+out:invA	1	6	1	0	#4
+out:invB	11	3	1	0	#5
+out:sel_reg_dst[0]	9	1	1	0	#6
+out:sel_reg_dst[1]	11	2	1	0	#7
+out:sel_alu_opB[0]	2	1	0	0	#8
+out:sel_alu_opB[1]	2	8	0	0	#9
+out:alu_op[1]	10	1	0	0	#10
+out:alu_op[2]	4	8	0	0	#11
+out:alu_op_ext[0]	1	2	1	0	#12
+out:alu_op_ext[1]	2	1	1	0	#13
+out:alu_op_ext[2]	1	7	1	0	#14
+out:alu_op_ext[3]	4	8	1	0	#15
+out:halt	1	3	1	0	#16
+out:reg_write	1	7	0	0	#17
+out:sel_pc_opA	11	3	0	0	#18
+out:sel_pc_opB	11	2	0	0	#19
+out:beqz	2	8	1	0	#20
+out:bnez	4	1	1	0	#21
+out:bgez	3	1	0	0	#22
+out:bltz	3	8	1	0	#23
+out:jump	10	1	1	0	#24
+out:Cin		3	8	0	0	#25
+out:mem_write	1	2	0	0	#26
+out:sel_wb	3	1	1	0	#27
+out:sign	4	1	0	0	#28
+opcode[0]	1	3	0	0	#29
+opcode[1]	11	7	0	0	#30
+opcode[2]	9	8	0	0	#31
+opcode[3]	11	7	1	0	#32
+opcode[4]	9	1	0	0	#33
+op_ext[0]	11	6	0	0	#34
+op_ext[1]	11	6	1	0	#35

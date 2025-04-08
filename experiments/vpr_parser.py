@@ -14,7 +14,7 @@ def parse_log_file(filepath):
     wirelength_regex = r"Total wirelength: ([\d]+)"
     packing_time_regex = r"# Packing took ([\d.]+) seconds"
     routing_time_regex = r"# Routing took ([\d.]+) seconds"
-    placement_time_regex = r"Placement Total  timing analysis took ([\d.]+) seconds"
+    placement_time_regex = r"# Placement took ([\d.]+) seconds"
     fpga_size_regex = r"FPGA sized to (\d+) x (\d+) \(auto\)"
     block_count_regex = r"Circuit Statistics:\s+Blocks:\s+(\d+)"
     net_count_regex = r"Nets\s+:\s+(\d+)"

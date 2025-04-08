@@ -1,0 +1,1398 @@
+VPR FPGA Placement and Routing.
+Version: 8.1.0-dev+unkown
+Revision: unkown
+Compiled: 2025-02-16T14:22:44
+Compiler: GNU 11.4.0 on Linux-6.8.0-47-generic x86_64
+Build Info: release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+vpr /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratixiv_arch.timing.xml /media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/iwls05_mem_ctrl.blif --route_chan_width 250
+
+Using up to 1 parallel worker(s)
+
+Architecture file: /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratixiv_arch.timing.xml
+Circuit name: iwls05_mem_ctrl
+
+# Loading Architecture Description
+# Loading Architecture Description took 0.38 seconds (max_rss 80.4 MiB, delta_rss +64.9 MiB)
+
+Timing analysis: ON
+Circuit netlist file: iwls05_mem_ctrl.net
+Circuit placement file: iwls05_mem_ctrl.place
+Circuit routing file: iwls05_mem_ctrl.route
+Circuit SDC file: iwls05_mem_ctrl.sdc
+Vpr floorplanning constraints file: not specified
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+VPR was run with the following options:
+
+NetlistOpts.abosrb_buffer_luts            : true
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+NetlistOpts.netlist_verbosity             : 1
+NetlistOpts.const_gen_inference           : COMB_SEQ
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: CRITICALITY_TIMING_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.constraints_file: No constraints file given
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 250
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlacerOpts.delay_offset: 0.000000
+PlacerOpts.delay_ramp_delta_threshold: -1
+PlacerOpts.delay_ramp_slope: 0.000000
+PlacerOpts.tsu_rel_margin: 1.000000
+PlacerOpts.tsu_abs_margin: 0.000000
+PlacerOpts.post_place_timing_report_file: 
+PlacerOpts.allowed_tiles_for_delay_model: 
+PlacerOpts.delay_model_reducer: MIN
+PlacerOpts.delay_model_type: DELTA
+PlacerOpts.rlim_escape_fraction: 0.000000
+PlacerOpts.move_stats_file: 
+PlacerOpts.placement_saves_per_temperature: 0
+PlacerOpts.effort_scaling: CIRCUIT
+PlacerOpts.place_delta_delay_matrix_calculation_method: ASTAR_ROUTE
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 0.500000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.flat_routing: false
+RouterOpts.has_choking_spot: false
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 250
+RouterOpts.check_route: FULL
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.do_check_rr_graph: true
+RouterOpts.verify_binary_search: false
+RouterOpts.min_channel_width_hint: 0
+RouterOpts.read_rr_edge_metadata: false
+RouterOpts.exit_after_first_routing_iteration: false
+RouterOpts.astar_fac: 1.200000
+RouterOpts.router_profiler_astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.init_wirelength_abort_threshold: 0.850000
+RouterOpts.save_routing_per_iteration: false
+RouterOpts.congested_routing_iteration_threshold_frac: 1.000000
+RouterOpts.high_fanout_threshold: 64
+RouterOpts.router_debug_net: -2
+RouterOpts.router_debug_sink_rr: -2
+RouterOpts.router_debug_iteration: -2
+RouterOpts.max_convergence_count: 1
+RouterOpts.reconvergence_cpd_threshold: 0.990000
+RouterOpts.update_lower_bound_delays: true
+RouterOpts.first_iteration_timing_report_file: 
+RouterOpts.incr_reroute_delay_ripup: AUTO
+RouterOpts.route_bb_update: DYNAMIC
+RouterOpts.lookahead_type: MAP
+RouterOpts.initial_timing: LOOKAHEAD
+RouterOpts.router_heap: BINARY_HEAP
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+AnalysisOpts.timing_report_npaths: 100
+AnalysisOpts.timing_report_skew: false
+AnalysisOpts.echo_dot_timing_graph_node: -1
+AnalysisOpts.timing_report_detail: NETLIST
+AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
+AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
+
+# Building complex block graph
+# Building complex block graph took 4.11 seconds (max_rss 954.6 MiB, delta_rss +874.1 MiB)
+Circuit file: /media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/iwls05_mem_ctrl.blif
+# Load circuit
+Found constant-one generator 'po0166'
+Found constant-zero generator 'po1151'
+# Load circuit took 0.05 seconds (max_rss 954.6 MiB, delta_rss +0.0 MiB)
+# Clean circuit
+Absorbed 226 LUT buffers
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 1083
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 1083
+Swept block(s)      : 0
+Constant Pins Marked: 0
+# Clean circuit took 0.00 seconds (max_rss 954.6 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.01 seconds (max_rss 954.6 MiB, delta_rss +0.0 MiB)
+# Verify circuit
+# Verify circuit took 0.00 seconds (max_rss 954.6 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 6317
+    .input :    1198
+    .output:    1226
+    0-LUT  :       2
+    6-LUT  :    3891
+  Nets  : 5091
+    Avg Fanout:     3.8
+    Max Fanout:   635.0
+    Min Fanout:     1.0
+  Netlist Clocks: 0
+# Build Timing Graph
+  Timing Graph Nodes: 24243
+  Timing Graph Edges: 37078
+  Timing Graph Levels: 20
+# Build Timing Graph took 0.01 seconds (max_rss 954.6 MiB, delta_rss +0.0 MiB)
+Netlist contains 0 clocks
+# Load Timing Constraints
+
+SDC file 'iwls05_mem_ctrl.sdc' not found
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on a virtual external clock 'virtual_io_clock'
+   * optimize virtual clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'virtual_io_clock' (Virtual Clock)
+
+# Load Timing Constraints took 0.00 seconds (max_rss 954.6 MiB, delta_rss +0.0 MiB)
+# Packing
+Warning 1: Block type 'M144K' grid location specification startx (33 = 33) falls outside device horizontal range [0,9]
+Warning 2: Block type 'EMPTY' grid location specification startx (33 = 33) falls outside device horizontal range [0,9]
+Begin packing '/media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/iwls05_mem_ctrl.blif'.
+
+After removing unused inputs...
+	total blocks: 6317, total nets: 5091, total inputs: 1198, total outputs: 1226
+Begin prepacking.
+
+There is one chain in this architecture called "LAB_carry_chain" with the following starting points:
+	LAB[0]/alm[0]/lut[0]/lcell_comb[0].cin[0]
+
+
+There is one chain in this architecture called "share_chain" with the following starting points:
+	LAB[0]/alm[0]/lut[0]/lcell_comb[0].sharein[0]
+
+0 attraction groups were created during prepacking.
+Finish prepacking.
+Using inter-cluster delay: 1.01382e-09
+✅ Final Pin Utilization: io:1.00,1.00 LAB:0.80,1.00
+Packing with pin utilization targets: io:1,1 PLL:1,1 LAB:0.8,1 DSP:1,1 M9K:1,1 M144K:1,1
+Packing with high fanout thresholds: io:128 PLL:128 LAB:32 DSP:128 M9K:128 M144K:128
+Starting Clustering - Clustering Progress: 
+-------------------   --------------------------   ---------
+Molecules processed   Number of clusters created   FPGA size
+-------------------   --------------------------   ---------
+   252/6317      3%                           13    11 x 8     
+   504/6317      7%                           26    12 x 9     
+   756/6317     11%                           39    13 x 10    
+  1008/6317     15%                           53    15 x 11    
+  1260/6317     19%                           66    16 x 12    
+  1512/6317     23%                           81    17 x 13    
+  1764/6317     27%                           97    17 x 13    
+  2016/6317     31%                          113    19 x 14    
+  2268/6317     35%                          128    19 x 14    
+  2520/6317     39%                          146    20 x 15    
+  2772/6317     43%                          160    21 x 16    
+  3024/6317     47%                          175    21 x 16    
+  3276/6317     51%                          192    23 x 17    
+  3528/6317     55%                          217    23 x 17    
+  3780/6317     59%                          236    24 x 18    
+  4032/6317     63%                          390    28 x 21    
+  4284/6317     67%                          642    65 x 48    
+  4536/6317     71%                          894   101 x 75    
+  4788/6317     75%                         1146   137 x 101   
+  5040/6317     79%                         1398   173 x 128   
+  5292/6317     83%                         1650   209 x 155   
+  5544/6317     87%                         1902   246 x 182   
+  5796/6317     91%                         2154   282 x 209   
+  6048/6317     95%                         2406   318 x 236   
+  6300/6317     99%                         2658   354 x 262   
+Incr Slack updates 1 in 0.000191504 sec
+Full Max Req/Worst Slack updates 1 in 1.3126e-05 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 0.000435905 sec
+FPGA sized to 356 x 264 (auto)
+Device Utilization: 0.02 (target 1.00)
+	Block Utilization: 1.00 Type: io
+	Block Utilization: 0.00 Type: LAB
+
+Start the iterative improvement process
+the iterative improvement process is done
+Final Clustering Statistics: 
+----------   --------   ------------------------------------   --------------------------
+Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output pins used
+----------   --------   ------------------------------------   --------------------------
+     EMPTY          0                                      0                            0   
+        io       2424                               0.505776                     0.494224   
+       PLL          0                                      0                            0   
+       LAB        252                                37.2421                      9.46032   
+       DSP          0                                      0                            0   
+       M9K          0                                      0                            0   
+     M144K          0                                      0                            0   
+Absorbed logical nets 1509 out of 5091 nets, 3582 nets not absorbed.
+
+Netlist conversion complete.
+
+# Packing took 73.26 seconds (max_rss 993.9 MiB, delta_rss +39.4 MiB)
+# Load packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'iwls05_mem_ctrl.net'.
+Detected 2 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0.244772 seconds).
+Warning 3: Treated 2 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load packing took 0.57 seconds (max_rss 1032.2 MiB, delta_rss +38.2 MiB)
+Warning 4: Netlist contains 2 global net to non-global architecture pin connections
+Warning 5: Logic block #250 (po0166) has only 1 output pin 'po0166.data_out[6]'. It may be a constant generator.
+Warning 6: Logic block #251 (po1151) has only 1 output pin 'po1151.data_out[6]'. It may be a constant generator.
+
+Pb types usage...
+  io         : 2424
+   pad       : 2424
+    inpad    : 1198
+    outpad   : 1226
+  LAB        : 252
+   alm       : 2252
+    lut      : 3893
+     lut6    : 3893
+      lut    : 3893
+
+# Create Device
+## Build Device Grid
+FPGA sized to 356 x 264: 93984 grid tiles (auto)
+
+Resource usage...
+	Netlist
+		2424	blocks of type: io
+	Architecture
+		2424	blocks of type: io
+	Netlist
+		0	blocks of type: PLL
+	Architecture
+		16	blocks of type: PLL
+	Netlist
+		252	blocks of type: LAB
+	Architecture
+		83720	blocks of type: LAB
+	Netlist
+		0	blocks of type: DSP
+	Architecture
+		585	blocks of type: DSP
+	Netlist
+		0	blocks of type: M9K
+	Architecture
+		3380	blocks of type: M9K
+	Netlist
+		0	blocks of type: M144K
+	Architecture
+		256	blocks of type: M144K
+
+Device Utilization: 0.02 (target 1.00)
+	Physical Tile io:
+	Block Utilization: 1.00 Logical Block: io
+	Physical Tile PLL:
+	Block Utilization: 0.00 Logical Block: PLL
+	Physical Tile LAB:
+	Block Utilization: 0.00 Logical Block: LAB
+	Physical Tile DSP:
+	Block Utilization: 0.00 Logical Block: DSP
+	Physical Tile M9K:
+	Block Utilization: 0.00 Logical Block: M9K
+	Physical Tile M144K:
+	Block Utilization: 0.00 Logical Block: M144K
+
+FPGA size limited by block type(s): io
+
+## Build Device Grid took 0.76 seconds (max_rss 1032.2 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph
+SOURCE->OPIN and IPIN->SINK edge count:12337607
+OPIN->CHANX/CHANY edge count before creating direct connections: 60952700
+OPIN->CHANX/CHANY edge count after creating direct connections: 64710476
+CHAN->CHAN type edge count:174552020
+## Build routing resource graph took 133.52 seconds (max_rss 9631.5 MiB, delta_rss +8599.3 MiB)
+  RR Graph Nodes: 24859282
+  RR Graph Edges: 251600103
+# Create Device took 137.40 seconds (max_rss 9631.5 MiB, delta_rss +8599.3 MiB)
+
+# Computing router lookahead map
+## Computing wire lookahead
+## Computing wire lookahead took 1420.05 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+## Computing src/opin lookahead
+## Computing src/opin lookahead took 0.00 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+# Computing router lookahead map took 1420.05 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+# Computing placement delta delay look-up
+RR graph channel widths unchanged, skipping RR graph rebuild
+## Computing delta delays
+## Computing delta delays took 2525.86 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+# Computing placement delta delay look-up took 2525.97 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+
+Bounding box mode is Cube
+
+Using simple RL 'Softmax agent' for choosing move and block types
+# Placement
+## Initial Placement
+Initial placement iteration 0 has finished successfully
+## Initial Placement took 0.01 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+
+There are 10609 point to point connections in this circuit.
+
+
+BB estimate of min-dist (placement) wire length: 788664
+
+Completed placement consistency check successfully.
+Initial placement cost: 1 bb_cost: 3154.65 td_cost: 1.19944e-05
+Initial placement estimated Critical Path Delay (CPD): 44.7562 ns
+Initial placement estimated setup Total Negative Slack (sTNS): -24168.6 ns
+Initial placement estimated setup Worst Negative Slack (sWNS): -44.7562 ns
+
+Initial placement estimated setup slack histogram:
+[ -4.5e-08: -4.1e-08)   8 (  0.7%) |*
+[ -4.1e-08: -3.7e-08)  21 (  1.7%) |***
+[ -3.7e-08: -3.3e-08) 134 ( 10.9%) |******************
+[ -3.3e-08: -2.9e-08) 119 (  9.7%) |****************
+[ -2.9e-08: -2.5e-08) 102 (  8.3%) |*************
+[ -2.5e-08: -2.1e-08)  38 (  3.1%) |*****
+[ -2.1e-08: -1.7e-08) 223 ( 18.2%) |*****************************
+[ -1.7e-08: -1.3e-08) 358 ( 29.2%) |***********************************************
+[ -1.3e-08: -8.6e-09)  71 (  5.8%) |*********
+[ -8.6e-09: -4.6e-09) 150 ( 12.3%) |********************
+Placement contains 0 placement macros involving 0 blocks (average macro size -nan)
+
+Moves per temperature: 18571
+Warning 7: Starting t: 784 of 2676 configurations accepted.
+
+---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
+Tnum   Time       T Av Cost Av BB Cost Av TD Cost     CPD       sTNS     sWNS Ac Rate Std Dev  R lim Crit Exp Tot Moves  Alpha
+      (sec)                                          (ns)       (ns)     (ns)                                                 
+---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
+   1    0.0 8.2e-04   0.942    2438.88 1.0144e-05  36.812  -2.03e+04  -36.812   0.906  0.0425  355.0     1.00     18571  0.200
+   2    0.0 7.4e-04   0.995    2276.87 1.4038e-05  24.486  -1.92e+04  -24.486   0.896  0.0033  355.0     1.00     37142  0.900
+   3    0.0 6.6e-04   0.983    2276.17 1.4167e-05  24.315  -1.94e+04  -24.315   0.893  0.0058  355.0     1.00     55713  0.900
+   4    0.0 6.0e-04   0.987    2270.62 1.3564e-05  24.930  -1.95e+04  -24.930   0.878  0.0049  355.0     1.00     74284  0.900
+   5    0.0 5.4e-04   0.990    2251.44 1.3465e-05  25.157  -1.99e+04  -25.157   0.865  0.0034  355.0     1.00     92855  0.900
+   6    0.0 4.8e-04   0.990    2259.96 1.3562e-05  24.318  -1.92e+04  -24.318   0.854  0.0048  355.0     1.00    111426  0.900
+   7    0.0 4.4e-04   0.989    2241.83 1.3357e-05  24.696  -1.96e+04  -24.696   0.844  0.0044  355.0     1.00    129997  0.900
+   8    0.0 3.9e-04   0.978    2220.69 1.2722e-05  25.621  -1.97e+04  -25.621   0.830  0.0062  355.0     1.00    148568  0.900
+   9    0.0 3.5e-04   0.986    2206.00 1.2799e-05  24.964  -1.94e+04  -24.964   0.807  0.0071  355.0     1.00    167139  0.900
+  10    0.0 3.2e-04   0.980    2203.08 1.2303e-05  26.051  -1.97e+04  -26.051   0.802  0.0080  355.0     1.00    185710  0.900
+  11    0.0 2.9e-04   0.983    2181.60 1.2437e-05  25.208  -1.94e+04  -25.208   0.781  0.0065  355.0     1.00    204281  0.900
+  12    0.1 2.7e-04   0.986    2189.27 1.162e-05   26.654  -1.98e+04  -26.654   0.765  0.0055  355.0     1.00    222852  0.950
+  13    0.0 2.6e-04   0.994    2174.05 1.2226e-05  24.687   -1.9e+04  -24.687   0.754  0.0036  355.0     1.00    241423  0.950
+  14    0.1 2.4e-04   0.983    2137.26 1.1759e-05  25.383  -1.91e+04  -25.383   0.737  0.0063  355.0     1.00    259994  0.950
+  15    0.0 2.3e-04   0.980    2110.26 1.1448e-05  25.996  -1.97e+04  -25.996   0.735  0.0080  355.0     1.00    278565  0.950
+  16    0.1 2.2e-04   0.980    2080.99 1.0683e-05  26.614  -1.92e+04  -26.614   0.718  0.0063  355.0     1.00    297136  0.950
+  17    0.0 2.1e-04   0.985    2061.62 1.1076e-05  25.623  -1.91e+04  -25.623   0.701  0.0046  355.0     1.00    315707  0.950
+  18    0.0 2.0e-04   0.984    2043.49 1.0981e-05  25.507  -1.92e+04  -25.507   0.696  0.0059  355.0     1.00    334278  0.950
+  19    0.0 1.9e-04   0.988    2025.68 1.0595e-05  25.946  -1.92e+04  -25.946   0.684  0.0040  355.0     1.00    352849  0.950
+  20    0.1 1.8e-04   0.979    2004.91 9.8776e-06  27.519  -1.94e+04  -27.519   0.672  0.0083  355.0     1.00    371420  0.950
+  21    0.0 1.7e-04   0.984    1970.41 9.818e-06   26.632   -1.9e+04  -26.632   0.655  0.0052  355.0     1.00    389991  0.950
+  22    0.0 1.6e-04   0.985    1950.16 9.9171e-06  26.330  -1.92e+04  -26.330   0.642  0.0067  355.0     1.00    408562  0.950
+  23    0.0 1.5e-04   0.978    1899.05 9.5261e-06  26.295  -1.87e+04  -26.295   0.621  0.0071  355.0     1.00    427133  0.950
+  24    0.0 1.5e-04   0.977    1858.00 9.7081e-06  25.450  -1.85e+04  -25.450   0.613  0.0098  355.0     1.00    445704  0.950
+  25    0.0 1.4e-04   0.981    1821.00 8.9947e-06  26.569  -1.87e+04  -26.569   0.584  0.0100  355.0     1.00    464275  0.950
+  26    0.0 1.3e-04   0.984    1779.38 8.4138e-06  27.718  -1.88e+04  -27.718   0.574  0.0075  355.0     1.00    482846  0.950
+  27    0.0 1.3e-04   0.985    1752.38 8.4e-06     27.279  -1.86e+04  -27.279   0.554  0.0075  355.0     1.00    501417  0.950
+  28    0.0 1.2e-04   0.981    1713.81 8.2511e-06  26.676  -1.82e+04  -26.676   0.533  0.0075  355.0     1.00    519988  0.950
+  29    0.0 1.1e-04   0.986    1689.77 7.8982e-06  27.146  -1.78e+04  -27.146   0.509  0.0064  355.0     1.00    538559  0.950
+  30    0.0 1.1e-04   0.978    1655.10 7.269e-06   28.685  -1.76e+04  -28.685   0.493  0.0087  355.0     1.00    557130  0.950
+  31    0.0 1.0e-04   0.976    1605.30 7.4446e-06  27.184  -1.79e+04  -27.184   0.460  0.0113  355.0     1.00    575701  0.950
+  32    0.0 9.7e-05   0.984    1574.84 7.0398e-06  27.840  -1.76e+04  -27.840   0.438  0.0081  355.0     1.00    594272  0.950
+  33    0.0 9.2e-05   0.980    1531.31 7.0369e-06  26.975  -1.74e+04  -26.975   0.422  0.0065  354.4     1.01    612843  0.950
+  34    0.0 8.8e-05   0.981    1510.55 6.0962e-06  28.101  -1.72e+04  -28.101   0.402  0.0085  347.9     1.14    631414  0.950
+  35    0.0 8.3e-05   0.985    1484.96 5.5027e-06  26.457  -1.71e+04  -26.457   0.397  0.0065  334.8     1.40    649985  0.950
+  36    0.0 7.9e-05   0.981    1462.69 4.8117e-06  25.592   -1.7e+04  -25.592   0.392  0.0088  320.3     1.69    668556  0.950
+  37    0.0 7.5e-05   0.979    1439.80 3.3961e-06  28.237  -1.71e+04  -28.237   0.376  0.0083  304.9     1.99    687127  0.950
+  38    0.0 7.1e-05   0.980    1412.14 3.1266e-06  25.915  -1.68e+04  -25.915   0.361  0.0091  285.3     2.38    705698  0.950
+  39    0.0 6.8e-05   0.984    1405.26 2.3722e-06  25.735  -1.64e+04  -25.735   0.354  0.0064  262.7     2.82    724269  0.950
+  40    0.0 6.4e-05   0.982    1393.67 1.8227e-06  26.494  -1.69e+04  -26.494   0.347  0.0087  240.0     3.27    742840  0.950
+  41    0.0 6.1e-05   0.982    1372.89 1.7671e-06  24.711  -1.64e+04  -24.711   0.339  0.0065  217.8     3.71    761411  0.950
+  42    0.0 5.8e-05   0.979    1369.50 1.5503e-06  24.085  -1.63e+04  -24.085   0.321  0.0094  195.8     4.15    779982  0.950
+  43    0.0 5.5e-05   0.983    1359.38 1.1666e-06  24.733  -1.63e+04  -24.733   0.312  0.0069  172.4     4.61    798553  0.950
+  44    0.0 5.3e-05   0.979    1345.14 1.0032e-06  24.336  -1.62e+04  -24.336   0.317  0.0096  150.4     5.05    817124  0.950
+  45    0.0 5.0e-05   0.978    1326.43 1.1624e-06  23.221  -1.63e+04  -23.221   0.306  0.0111  131.9     5.41    835695  0.950
+  46    0.0 4.7e-05   0.982    1312.63 5.7737e-07  25.272  -1.57e+04  -25.272   0.306  0.0078  114.3     5.76    854266  0.950
+  47    0.0 4.5e-05   0.982    1302.09 9.5692e-07  22.488  -1.57e+04  -22.488   0.296  0.0083   98.9     6.06    872837  0.950
+  48    0.0 4.3e-05   0.982    1288.76 4.3691e-07  25.237  -1.57e+04  -25.237   0.293  0.0080   84.6     6.35    891408  0.950
+  49    0.0 4.1e-05   0.971    1273.76 1.0263e-06  21.764  -1.57e+04  -21.764   0.285  0.0074   72.2     6.59    909979  0.950
+  50    0.0 3.9e-05   0.985    1271.12 3.4111e-07  25.644  -1.56e+04  -25.644   0.292  0.0080   61.1     6.81    928550  0.950
+  51    0.0 3.7e-05   0.983    1261.23 9.8093e-07  21.846  -1.57e+04  -21.846   0.444  0.0102   52.0     6.99    947121  0.950
+  52    0.0 3.5e-05   0.986    1246.36 9.7704e-07  21.533  -1.55e+04  -21.533   0.438  0.0076   52.2     6.99    965692  0.950
+  53    0.0 3.3e-05   0.991    1233.22 8.5825e-07  21.785  -1.55e+04  -21.785   0.434  0.0043   52.1     6.99    984263  0.950
+  54    0.0 3.1e-05   0.989    1220.87 7.8401e-07  22.009  -1.54e+04  -22.009   0.424  0.0044   51.8     7.00   1002834  0.950
+  55    0.0 3.0e-05   0.989    1214.61 5.2085e-07  25.179  -1.64e+04  -25.179   0.416  0.0059   50.9     7.01   1021405  0.950
+  56    0.0 2.8e-05   0.989    1214.68 7.9184e-07  22.048  -1.55e+04  -22.048   0.411  0.0049   49.7     7.04   1039976  0.950
+  57    0.0 2.7e-05   0.994    1209.02 7.6439e-07  21.947  -1.55e+04  -21.947   0.408  0.0034   48.3     7.07   1058547  0.950
+  58    0.0 2.6e-05   0.991    1203.68 5.2472e-07  23.179  -1.54e+04  -23.179   0.405  0.0054   46.7     7.10   1077118  0.950
+  59    0.0 2.4e-05   0.994    1196.16 6.9259e-07  22.066  -1.52e+04  -22.066   0.389  0.0028   45.0     7.13   1095689  0.950
+  60    0.0 2.3e-05   0.994    1193.95 8.2176e-07  21.294  -1.52e+04  -21.294   0.383  0.0025   42.8     7.17   1114260  0.950
+  61    0.0 2.2e-05   0.989    1189.74 8.0867e-07  21.243  -1.52e+04  -21.243   0.382  0.0045   40.3     7.22   1132831  0.950
+  62    0.0 2.1e-05   0.992    1185.03 7.7518e-07  21.269  -1.51e+04  -21.269   0.380  0.0033   38.0     7.27   1151402  0.950
+  63    0.0 2.0e-05   0.992    1178.30 8.0705e-07  21.242  -1.52e+04  -21.242   0.376  0.0046   35.7     7.31   1169973  0.950
+  64    0.0 1.9e-05   0.988    1170.57 6.1469e-07  22.919  -1.58e+04  -22.919   0.380  0.0056   33.4     7.36   1188544  0.950
+  65    0.0 1.8e-05   0.996    1169.26 5.4934e-07  23.400   -1.6e+04  -23.400   0.370  0.0023   31.4     7.40   1207115  0.950
+  66    0.0 1.7e-05   0.990    1164.24 5.5592e-07  23.169  -1.59e+04  -23.169   0.367  0.0035   29.2     7.44   1225686  0.950
+  67    0.0 1.6e-05   0.988    1165.19 4.5194e-07  24.953  -1.61e+04  -24.953   0.376  0.0066   27.1     7.48   1244257  0.950
+  68    0.0 1.5e-05   0.988    1161.05 3.8695e-07  24.582   -1.6e+04  -24.582   0.363  0.0083   25.4     7.52   1262828  0.950
+  69    0.0 1.5e-05   0.986    1156.21 2.9141e-07  27.130  -1.68e+04  -27.130   0.368  0.0072   23.4     7.56   1281399  0.950
+  70    0.0 1.4e-05   0.982    1151.97 4.9278e-07  23.743  -1.59e+04  -23.743   0.357  0.0059   21.7     7.59   1299970  0.950
+  71    0.0 1.3e-05   0.984    1147.73 4.2755e-07  23.886  -1.58e+04  -23.886   0.359  0.0055   19.9     7.63   1318541  0.950
+  72    0.0 1.2e-05   0.984    1144.50 4.2928e-07  23.813  -1.58e+04  -23.813   0.349  0.0045   18.3     7.66   1337112  0.950
+  73    0.0 1.2e-05   0.993    1142.02 4.1492e-07  24.125  -1.59e+04  -24.125   0.345  0.0057   16.6     7.69   1355683  0.950
+  74    0.0 1.1e-05   0.992    1138.30 4.934e-07   25.025  -1.68e+04  -25.025   0.349  0.0041   15.1     7.72   1374254  0.950
+  75    0.0 1.1e-05   0.983    1137.76 4.007e-07   23.986  -1.59e+04  -23.986   0.341  0.0060   13.7     7.75   1392825  0.950
+  76    0.0 1.0e-05   0.988    1138.56 4.9542e-07  24.965  -1.68e+04  -24.965   0.344  0.0071   12.3     7.78   1411396  0.950
+  77    0.0 9.7e-06   0.987    1139.09 4.745e-07   25.113  -1.69e+04  -25.113   0.346  0.0055   11.1     7.80   1429967  0.950
+  78    0.0 9.2e-06   0.968    1143.12 2.7109e-07  25.353  -1.59e+04  -25.353   0.343  0.0076   10.1     7.82   1448538  0.950
+  79    0.0 8.7e-06   0.977    1142.50 3.4893e-07  24.443   -1.6e+04  -24.443   0.333  0.0087    9.1     7.84   1467109  0.950
+  80    0.0 8.3e-06   0.980    1141.51 4.5199e-07  23.525  -1.59e+04  -23.525   0.338  0.0099    8.1     7.86   1485680  0.950
+  81    0.0 7.9e-06   0.983    1140.96 4.247e-07   25.627  -1.69e+04  -25.627   0.333  0.0061    7.3     7.88   1504251  0.950
+  82    0.0 7.5e-06   0.972    1141.43 4.4169e-07  23.691   -1.6e+04  -23.691   0.333  0.0109    6.5     7.89   1522822  0.950
+  83    0.0 7.1e-06   0.977    1141.70 4.4733e-07  23.576  -1.59e+04  -23.576   0.334  0.0104    5.8     7.90   1541393  0.950
+  84    0.0 6.7e-06   0.979    1137.07 3.8118e-07  24.023  -1.58e+04  -24.023   0.331  0.0098    5.2     7.92   1559964  0.950
+  85    0.0 6.4e-06   0.974    1134.36 4.8675e-07  24.972  -1.68e+04  -24.972   0.334  0.0079    4.6     7.93   1578535  0.950
+  86    0.0 6.1e-06   0.959    1132.99 2.2474e-07  25.902  -1.58e+04  -25.902   0.332  0.0141    4.1     7.94   1597106  0.950
+  87    0.0 5.8e-06   0.978    1132.79 4.5337e-07  25.199  -1.67e+04  -25.199   0.334  0.0065    3.7     7.95   1615677  0.950
+  88    0.0 5.5e-06   0.970    1130.89 3.5446e-07  24.322  -1.59e+04  -24.322   0.332  0.0137    3.3     7.95   1634248  0.950
+  89    0.0 5.2e-06   0.980    1130.88 4.7211e-07  25.174  -1.68e+04  -25.174   0.367  0.0093    2.9     7.96   1652819  0.950
+  90    0.0 5.0e-06   0.974    1134.02 4.2676e-07  24.993  -1.65e+04  -24.993   0.352  0.0109    2.7     7.97   1671390  0.950
+  91    0.0 4.7e-06   0.968    1134.33 4.0101e-07  23.975  -1.58e+04  -23.975   0.353  0.0132    2.5     7.97   1689961  0.950
+  92    0.0 4.5e-06   0.942    1133.36 1.7057e-07  27.271  -1.58e+04  -27.271   0.356  0.0176    2.3     7.97   1708532  0.950
+  93    0.0 4.3e-06   0.976    1133.10 3.3246e-07  24.593  -1.57e+04  -24.593   0.349  0.0092    2.1     7.98   1727103  0.950
+  94    0.0 4.0e-06   0.934    1131.05 1.593e-07   27.447  -1.58e+04  -27.447   0.324  0.0151    1.9     7.98   1745674  0.950
+  95    0.0 3.8e-06   0.974    1130.26 4.3594e-07  23.762  -1.58e+04  -23.762   0.313  0.0106    1.7     7.99   1764245  0.950
+  96    0.0 3.6e-06   0.941    1130.83 1.6644e-07  27.351  -1.58e+04  -27.351   0.312  0.0206    1.5     7.99   1782816  0.950
+  97    0.0 3.5e-06   0.942    1132.58 1.615e-07   27.351  -1.57e+04  -27.351   0.315  0.0210    1.3     7.99   1801387  0.950
+  98    0.0 3.3e-06   0.970    1130.48 2.3675e-07  25.755  -1.58e+04  -25.755   0.301  0.0138    1.1     8.00   1819958  0.950
+  99    0.0 3.1e-06   0.973    1129.57 3.9176e-07  23.916  -1.58e+04  -23.916   0.298  0.0112    1.0     8.00   1838529  0.950
+ 100    0.0 3.0e-06   0.971    1128.15 3.9524e-07  23.881  -1.58e+04  -23.881   0.299  0.0115    1.0     8.00   1857100  0.950
+ 101    0.0 2.8e-06   0.977    1129.17 3.8122e-07  23.916  -1.58e+04  -23.916   0.287  0.0111    1.0     8.00   1875671  0.950
+ 102    0.0 2.7e-06   0.973    1127.04 3.8068e-07  23.900  -1.58e+04  -23.900   0.282  0.0101    1.0     8.00   1894242  0.950
+ 103    0.0 2.5e-06   0.978    1129.20 4.7299e-07  24.934  -1.67e+04  -24.934   0.283  0.0070    1.0     8.00   1912813  0.950
+ 104    0.0 2.4e-06   0.974    1130.42 4.6483e-07  24.941  -1.67e+04  -24.941   0.277  0.0088    1.0     8.00   1931384  0.950
+ 105    0.0 2.3e-06   0.973    1126.31 4.0144e-07  24.934  -1.65e+04  -24.934   0.274  0.0063    1.0     8.00   1949955  0.950
+ 106    0.0 2.2e-06   0.977    1126.92 3.909e-07   25.717  -1.67e+04  -25.717   0.275  0.0078    1.0     8.00   1968526  0.950
+ 107    0.0 2.1e-06   0.982    1126.72 4.7727e-07  24.941  -1.67e+04  -24.941   0.266  0.0077    1.0     8.00   1987097  0.950
+ 108    0.0 2.0e-06   0.975    1127.56 4.6129e-07  24.941  -1.67e+04  -24.941   0.261  0.0075    1.0     8.00   2005668  0.950
+ 109    0.0 1.9e-06   0.975    1127.36 4.7051e-07  24.934  -1.67e+04  -24.934   0.260  0.0093    1.0     8.00   2024239  0.950
+ 110    0.0 1.8e-06   0.967    1127.42 3.6197e-07  25.865  -1.66e+04  -25.865   0.254  0.0099    1.0     8.00   2042810  0.950
+ 111    0.0 1.7e-06   0.971    1126.94 4.6634e-07  25.071  -1.68e+04  -25.071   0.253  0.0110    1.0     8.00   2061381  0.950
+ 112    0.0 1.6e-06   0.950    1124.84 2.1647e-07  25.887  -1.57e+04  -25.887   0.246  0.0116    1.0     8.00   2079952  0.950
+ 113    0.0 1.5e-06   0.984    1126.87 4.2225e-07  24.941  -1.65e+04  -24.941   0.236  0.0077    1.0     8.00   2098523  0.950
+ 114    0.0 1.4e-06   0.953    1126.89 2.2377e-07  25.794  -1.58e+04  -25.794   0.238  0.0130    1.0     8.00   2117094  0.950
+ 115    0.0 1.4e-06   0.970    1127.52 4.0268e-07  23.717  -1.57e+04  -23.717   0.236  0.0097    1.0     8.00   2135665  0.950
+ 116    0.1 0.0e+00   0.948    1149.82 2.3666e-07  25.419  -1.57e+04  -25.419   0.057  0.0098    1.0     8.00   2154236  0.950
+## Placement Quench took 0.06 seconds (max_rss 9631.5 MiB)
+post-quench CPD = 24.9339 (ns) 
+
+BB estimate of min-dist (placement) wire length: 287265
+
+Completed placement consistency check successfully.
+
+Swaps called: 2156912
+
+Aborted Move Reasons:
+  No moves aborted
+
+Placement estimated critical path delay (least slack): 24.9339 ns, Fmax: 40.106 MHz
+Placement estimated setup Worst Negative Slack (sWNS): -24.9339 ns
+Placement estimated setup Total Negative Slack (sTNS): -16799.2 ns
+
+Placement estimated setup slack histogram:
+[ -2.5e-08: -2.3e-08)  62 (  5.1%) |************
+[ -2.3e-08: -2.1e-08)  57 (  4.7%) |***********
+[ -2.1e-08: -1.9e-08) 156 ( 12.7%) |******************************
+[ -1.9e-08: -1.7e-08) 243 ( 19.9%) |***********************************************
+[ -1.7e-08: -1.5e-08)  70 (  5.7%) |*************
+[ -1.5e-08: -1.3e-08) 115 (  9.4%) |**********************
+[ -1.3e-08: -1.1e-08) 133 ( 10.9%) |**************************
+[ -1.1e-08: -8.6e-09)  91 (  7.4%) |*****************
+[ -8.6e-09: -6.6e-09)  52 (  4.2%) |**********
+[ -6.6e-09: -4.5e-09) 245 ( 20.0%) |***********************************************
+
+Placement estimated geomean non-virtual intra-domain period: nan ns (nan MHz)
+Placement estimated fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
+
+Placement cost: 0.937004, bb_cost: 1149.06, td_cost: 5.12959e-07, 
+
+Placement resource usage:
+  io  implemented as io : 2424
+  LAB implemented as LAB: 252
+
+Placement number of temperatures: 116
+Placement total # of swap attempts: 2156912
+	Swaps accepted:  938889 (43.5 %)
+	Swaps rejected: 1143081 (53.0 %)
+	Swaps aborted:   74942 ( 3.5 %)
+
+
+Placement perturbation distribution by block and move type: 
+------------------ ----------------- ---------------- ---------------- --------------- ------------ 
+    Block Type         Move Type       (%) of Total      Accepted(%)     Rejected(%)    Aborted(%)
+------------------ ----------------- ---------------- ---------------- --------------- ------------ 
+io                 Uniform                22.68            34.68           65.32          0.00         
+                   Median                 22.54            48.76           44.87          6.37         
+                   Centroid               22.46            50.05           45.78          4.17         
+                   W. Centroid            22.55            50.32           45.44          4.24         
+                   W. Median              0.11             8.76            73.24          18.00        
+                   Crit. Uniform          0.04             1.26            98.74          0.00         
+                   Feasible Region        0.04             0.84            72.56          26.59        
+
+LAB                Uniform                2.34             2.77            97.23          0.00         
+                   Median                 2.34             34.29           60.84          4.88         
+                   Centroid               2.34             25.54           74.46          0.00         
+                   W. Centroid            2.37             25.60           74.40          0.00         
+                   W. Median              0.01             1.58            86.17          12.25        
+                   Crit. Uniform          0.08             0.17            99.83          0.00         
+                   Feasible Region        0.08             0.22            99.78          0.00         
+
+
+Placement Quench timing analysis took 0.0178583 seconds (0.0171362 STA, 0.000722179 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
+Placement Total  timing analysis took 2.15323 seconds (2.06436 STA, 0.0888715 slack) (118 full updates: 118 setup, 0 hold, 0 combined).
+update_td_costs: connections 0 nets 0 sum_nets 0 total 0
+# Placement took 5.59 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+
+# Routing
+RR graph channel widths unchanged, skipping RR graph rebuild
+Confirming router algorithm: TIMING_DRIVEN.
+## Initializing router criticalities
+Initial Net Connection Criticality Histogram:
+[        0:      0.1)    2 (  0.0%) |
+[      0.1:      0.2)    0 (  0.0%) |
+[      0.2:      0.3)    0 (  0.0%) |
+[      0.3:      0.4)  551 (  5.2%) |********
+[      0.4:      0.5)  905 (  8.5%) |*************
+[      0.5:      0.6) 2059 ( 19.4%) |******************************
+[      0.6:      0.7) 1528 ( 14.4%) |**********************
+[      0.7:      0.8)  761 (  7.2%) |***********
+[      0.8:      0.9) 3194 ( 30.1%) |**********************************************
+[      0.9:        1) 1611 ( 15.2%) |***********************
+## Initializing router criticalities took 0.10 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.6     0.0    0 7322033    3580   10609    7464 ( 0.030%)  324207 ( 0.7%)   26.084 -1.759e+04    -26.084      0.000      0.000      N/A
+Incr Slack updates 118 in 0.0164506 sec
+Full Max Req/Worst Slack updates 70 in 0.000904812 sec
+Incr Max Req/Worst Slack updates 48 in 0.000908224 sec
+Incr Criticality updates 2 in 0.000617349 sec
+Full Criticality updates 116 in 0.0663564 sec
+   2    0.5     0.5   57 5805789    2459    8821    2039 ( 0.008%)  315627 ( 0.7%)   25.973 -1.779e+04    -25.973      0.000      0.000      N/A
+   3    0.3     0.6    4 2623265    1170    5258    1190 ( 0.005%)  316683 ( 0.7%)   25.973 -1.772e+04    -25.973      0.000      0.000      N/A
+   4    0.2     0.8    4 1842073     761    3809     864 ( 0.003%)  316516 ( 0.7%)   25.973 -1.776e+04    -25.973      0.000      0.000      N/A
+   5    0.2     1.1    3 1498446     565    3164     553 ( 0.002%)  316796 ( 0.7%)   26.111 -1.775e+04    -26.111      0.000      0.000      N/A
+   6    0.2     1.4    0 1053172     408    2217     373 ( 0.002%)  316953 ( 0.7%)   26.112 -1.775e+04    -26.112      0.000      0.000      N/A
+   7    0.1     1.9    2  746621     283    1608     211 ( 0.001%)  317383 ( 0.7%)   26.112 -1.775e+04    -26.112      0.000      0.000      N/A
+   8    0.1     2.4    0  524578     199    1056     126 ( 0.001%)  317469 ( 0.7%)   26.112 -1.776e+04    -26.112      0.000      0.000      N/A
+   9    0.1     3.1    0  257766     105     518      41 ( 0.000%)  317654 ( 0.7%)   26.112 -1.776e+04    -26.112      0.000      0.000      N/A
+  10    0.1     4.1    0  128317      54     241      20 ( 0.000%)  317712 ( 0.7%)   26.112 -1.776e+04    -26.112      0.000      0.000       15
+  11    0.1     5.3    0   63608      29     119      10 ( 0.000%)  317714 ( 0.7%)   26.112 -1.776e+04    -26.112      0.000      0.000       14
+  12    0.1     6.9    0   49300      15      69       2 ( 0.000%)  317760 ( 0.7%)   26.112 -1.776e+04    -26.112      0.000      0.000       14
+  13    0.1     9.0    0   31599       8      40       0 ( 0.000%)  317766 ( 0.7%)   26.112 -1.776e+04    -26.112      0.000      0.000       13
+Restoring best routing
+Critical path: 26.112 ns
+Successfully routed after 13 routing iterations.
+Final Net Connection Criticality Histogram:
+[        0:      0.1)    2 (  0.0%) |
+[      0.1:      0.2)  213 (  2.0%) |***
+[      0.2:      0.3)  556 (  5.2%) |*******
+[      0.3:      0.4) 1586 ( 14.9%) |*******************
+[      0.4:      0.5) 1550 ( 14.6%) |*******************
+[      0.5:      0.6) 3774 ( 35.6%) |**********************************************
+[      0.6:      0.7) 1487 ( 14.0%) |******************
+[      0.7:      0.8)  974 (  9.2%) |************
+[      0.8:      0.9)  330 (  3.1%) |****
+[      0.9:        1)  139 (  1.3%) |**
+Router Stats: total_nets_routed: 9636 total_connections_routed: 37529 total_heap_pushes: 21946567 total_heap_pops: 2193978 total_internal_heap_pushes: 0 total_internal_heap_pops: 0 total_external_heap_pushes: 21946567 total_external_heap_pops: 2193978 total_external_SOURCE_pushes: 34039 total_external_SOURCE_pops: 25735 total_internal_SOURCE_pushes: 0 total_internal_SOURCE_pops: 0 rt_node_SOURCE_pushes: 34039 rt_node_SOURCE_high_fanout_pushes: 680 rt_node_SOURCE_entire_tree_pushes: 33359 total_external_SINK_pushes: 180374 total_external_SINK_pops: 169805 total_internal_SINK_pushes: 0 total_internal_SINK_pops: 0 rt_node_SINK_pushes: 0 rt_node_SINK_high_fanout_pushes: 0 rt_node_SINK_entire_tree_pushes: 0 total_external_IPIN_pushes: 195293 total_external_IPIN_pops: 180468 total_internal_IPIN_pushes: 0 total_internal_IPIN_pops: 0 rt_node_IPIN_pushes: 0 rt_node_IPIN_high_fanout_pushes: 0 rt_node_IPIN_entire_tree_pushes: 0 total_external_OPIN_pushes: 869629 total_external_OPIN_pops: 824917 total_internal_OPIN_pushes: 0 total_internal_OPIN_pops: 0 rt_node_OPIN_pushes: 43024 rt_node_OPIN_high_fanout_pushes: 1467 rt_node_OPIN_entire_tree_pushes: 41557 total_external_CHANX_pushes: 10198799 total_external_CHANX_pops: 525852 total_internal_CHANX_pushes: 0 total_internal_CHANX_pops: 0 rt_node_CHANX_pushes: 280296 rt_node_CHANX_high_fanout_pushes: 20832 rt_node_CHANX_entire_tree_pushes: 259464 total_external_CHANY_pushes: 10468433 total_external_CHANY_pops: 467201 total_internal_CHANY_pushes: 0 total_internal_CHANY_pops: 0 rt_node_CHANY_pushes: 405603 rt_node_CHANY_high_fanout_pushes: 29897 rt_node_CHANY_entire_tree_pushes: 375706 total_number_of_adding_all_rt: 1520822 total_number_of_adding_high_fanout_rt: 4201 total_number_of_adding_all_rt_from_calling_high_fanout_rt: 3090 
+# Routing took 3.04 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+
+Checking to ensure routing is legal...
+# Checking to ensure non-configurable edges are legal
+# Checking to ensure non-configurable edges are legal took 0.57 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+Completed routing consistency check successfully.
+
+Serial number (magic cookie) for the routing is: 1324667695
+Circuit successfully routed with a channel width factor of 250.
+# Synchronize the packed netlist to routing optimization
+## Annotating rr_node with routed nets
+## Annotating rr_node with routed nets took 0.03 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+Found 17612 mismatches between routing and packing results.
+Fixed 9261 routing traces due to mismatch between routing and packing results.
+# Synchronize the packed netlist to routing optimization took 0.12 seconds (max_rss 9631.5 MiB, delta_rss +0.0 MiB)
+Final Clustering Statistics: 
+----------   --------   ------------------------------------   --------------------------
+Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output pins used
+----------   --------   ------------------------------------   --------------------------
+     EMPTY          0                                      0                            0   
+        io       2424                               0.505776                     0.494224   
+       PLL          0                                      0                            0   
+       LAB        252                                37.2421                      9.46032   
+       DSP          0                                      0                            0   
+       M9K          0                                      0                            0   
+     M144K          0                                      0                            0   
+Absorbed logical nets 1509 out of 5091 nets, 3582 nets not absorbed.
+
+
+Average number of bends per net: 2.83324  Maximum # of bends: 56
+
+Number of global nets: 2
+Number of routed nets (nonglobal): 3580
+Wire length results (in units of 1 clb segments)...
+	Total wirelength: 317766, average net length: 88.7615
+	Maximum net length: 1954
+
+Wire length results in terms of physical segments...
+	Total wiring segments used: 36483, average wire segments per net: 10.1908
+	Maximum segments used by a net: 173
+	Total local nets with reserved CLB opins: 0
+Total number of nets absorbed: 345
+
+Routing channel utilization histogram:
+[        1:      inf)      0 (  0.0%) |
+[      0.9:        1)      0 (  0.0%) |
+[      0.8:      0.9)      0 (  0.0%) |
+[      0.7:      0.8)      0 (  0.0%) |
+[      0.5:      0.6)      0 (  0.0%) |
+[      0.4:      0.5)     14 (  0.0%) |
+[      0.3:      0.4)     48 (  0.0%) |
+[      0.2:      0.3)    102 (  0.1%) |
+[      0.1:      0.2)    494 (  0.3%) |
+[        0:      0.1) 186072 ( 99.6%) |********************************************
+Maximum routing channel utilization:      0.46 at (120,23)
+
+X - Directed channels:   j max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0      21   9.110      250
+                         1      40  18.803      250
+                         2      25   7.376      250
+                         3      15   4.562      250
+                         4      13   3.688      250
+                         5       5   1.517      250
+                         6       4   0.924      250
+                         7      10   1.787      250
+                         8       7   1.104      250
+                         9       2   0.065      250
+                        10       3   0.244      250
+                        11       3   0.542      250
+                        12       5   1.301      250
+                        13       7   2.067      250
+                        14       7   1.222      250
+                        15      11   3.008      250
+                        16      38   2.270      250
+                        17      67   6.062      250
+                        18      78   5.166      250
+                        19      90   7.669      250
+                        20     104   6.124      250
+                        21      94   6.157      250
+                        22      91   5.455      250
+                        23     114   6.632      250
+                        24      72   5.222      250
+                        25      47   3.567      250
+                        26      53   3.933      250
+                        27      52   3.096      250
+                        28      41   3.213      250
+                        29      44   4.719      250
+                        30      49   3.124      250
+                        31      39   2.697      250
+                        32      28   3.247      250
+                        33      40   6.626      250
+                        34      24   4.267      250
+                        35      21   3.843      250
+                        36       8   2.534      250
+                        37       7   1.514      250
+                        38       5   1.492      250
+                        39       3   1.076      250
+                        40       3   0.719      250
+                        41       5   0.952      250
+                        42       3   0.225      250
+                        43       3   0.778      250
+                        44       2   0.037      250
+                        45       2   0.233      250
+                        46       2   0.433      250
+                        47       3   0.935      250
+                        48       2   0.096      250
+                        49       4   1.008      250
+                        50       8   0.615      250
+                        51      22   1.683      250
+                        52       2   0.660      250
+                        53       3   0.525      250
+                        54       3   0.635      250
+                        55       5   0.506      250
+                        56       1   0.284      250
+                        57       3   0.368      250
+                        58       3   0.331      250
+                        59       7   0.492      250
+                        60       7   0.677      250
+                        61       6   0.669      250
+                        62       4   1.607      250
+                        63      22   1.494      250
+                        64      19   0.626      250
+                        65       4   0.649      250
+                        66       7   2.006      250
+                        67       4   0.837      250
+                        68       2   0.480      250
+                        69       4   0.537      250
+                        70       3   0.980      250
+                        71       2   0.264      250
+                        72       2   0.329      250
+                        73       2   0.093      250
+                        74       3   0.202      250
+                        75       2   0.559      250
+                        76       3   0.539      250
+                        77       3   0.115      250
+                        78       5   0.955      250
+                        79       2   0.817      250
+                        80       4   0.713      250
+                        81       7   1.056      250
+                        82      27   2.775      250
+                        83       4   1.098      250
+                        84       4   1.140      250
+                        85       4   0.871      250
+                        86      17   1.292      250
+                        87       3   1.093      250
+                        88       4   0.486      250
+                        89       2   0.275      250
+                        90       2   0.371      250
+                        91       3   0.556      250
+                        92       2   0.154      250
+                        93       3   0.413      250
+                        94       3   0.851      250
+                        95       3   0.407      250
+                        96      11   1.556      250
+                        97       2   0.292      250
+                        98       2   0.556      250
+                        99       2   0.287      250
+                       100       9   1.669      250
+                       101       7   0.548      250
+                       102      12   0.775      250
+                       103       4   1.031      250
+                       104      12   1.180      250
+                       105      16   0.919      250
+                       106       4   0.506      250
+                       107       4   1.037      250
+                       108       4   1.416      250
+                       109       3   0.424      250
+                       110       4   0.831      250
+                       111       3   0.475      250
+                       112       5   1.287      250
+                       113       4   1.317      250
+                       114       4   0.871      250
+                       115       2   0.157      250
+                       116       8   1.624      250
+                       117      11   0.562      250
+                       118       6   0.480      250
+                       119       2   0.573      250
+                       120       6   1.233      250
+                       121       6   1.239      250
+                       122       2   0.500      250
+                       123       3   0.256      250
+                       124       5   1.171      250
+                       125       3   0.944      250
+                       126       7   2.343      250
+                       127       7   2.447      250
+                       128      20   3.728      250
+                       129      11   2.666      250
+                       130      25   2.669      250
+                       131      28   3.770      250
+                       132      42   4.003      250
+                       133      34   3.390      250
+                       134      29   4.452      250
+                       135      12   4.722      250
+                       136      20   4.208      250
+                       137      28   5.242      250
+                       138      15   3.402      250
+                       139      12   3.539      250
+                       140       6   2.730      250
+                       141       4   1.553      250
+                       142       4   1.191      250
+                       143       5   1.708      250
+                       144       6   1.579      250
+                       145       9   1.893      250
+                       146      24   2.553      250
+                       147      18   2.357      250
+                       148      17   2.815      250
+                       149       8   1.820      250
+                       150       9   1.118      250
+                       151      14   3.000      250
+                       152      43   4.385      250
+                       153      25   3.694      250
+                       154      10   1.486      250
+                       155      17   3.643      250
+                       156      10   2.079      250
+                       157      11   1.287      250
+                       158       8   1.006      250
+                       159      15   0.685      250
+                       160      12   1.716      250
+                       161       6   2.685      250
+                       162      12   1.823      250
+                       163       3   0.379      250
+                       164       8   2.736      250
+                       165       8   3.374      250
+                       166       9   2.750      250
+                       167       9   1.739      250
+                       168      27   6.115      250
+                       169      29   5.565      250
+                       170       4   0.775      250
+                       171      11   2.795      250
+                       172       4   0.567      250
+                       173       2   0.652      250
+                       174       3   0.455      250
+                       175       2   0.340      250
+                       176       4   0.975      250
+                       177       4   1.135      250
+                       178       3   0.309      250
+                       179       1   0.025      250
+                       180       2   0.772      250
+                       181       4   0.489      250
+                       182       3   0.545      250
+                       183       2   0.677      250
+                       184       2   0.174      250
+                       185       4   0.559      250
+                       186       1   0.006      250
+                       187       2   0.449      250
+                       188       3   0.090      250
+                       189       2   0.202      250
+                       190       2   0.022      250
+                       191       2   0.275      250
+                       192       3   0.247      250
+                       193       3   0.169      250
+                       194       2   0.034      250
+                       195       2   0.152      250
+                       196       1   0.096      250
+                       197       3   0.222      250
+                       198       2   0.267      250
+                       199       3   0.475      250
+                       200       2   0.244      250
+                       201       3   0.435      250
+                       202       2   0.112      250
+                       203       4   0.169      250
+                       204       3   0.110      250
+                       205       4   0.160      250
+                       206       2   0.135      250
+                       207       2   0.031      250
+                       208       7   0.699      250
+                       209       3   0.315      250
+                       210       5   0.225      250
+                       211       3   0.250      250
+                       212       1   0.211      250
+                       213       4   0.346      250
+                       214       3   0.138      250
+                       215       3   0.399      250
+                       216       2   0.213      250
+                       217       5   0.478      250
+                       218       3   0.427      250
+                       219       2   0.326      250
+                       220       3   0.320      250
+                       221       1   0.028      250
+                       222       2   0.022      250
+                       223       4   0.039      250
+                       224       3   0.433      250
+                       225       2   0.357      250
+                       226       1   0.303      250
+                       227       3   0.823      250
+                       228       2   0.396      250
+                       229       3   0.525      250
+                       230       2   0.073      250
+                       231       2   0.343      250
+                       232       3   0.281      250
+                       233       3   0.699      250
+                       234       2   0.421      250
+                       235       2   0.433      250
+                       236       2   0.025      250
+                       237       1   0.166      250
+                       238       2   0.048      250
+                       239       2   0.205      250
+                       240       5   1.003      250
+                       241       3   0.640      250
+                       242       3   0.410      250
+                       243       3   1.261      250
+                       244       3   0.784      250
+                       245       5   1.146      250
+                       246       1   0.129      250
+                       247       6   1.292      250
+                       248      13   1.567      250
+                       249       5   0.913      250
+                       250       2   0.208      250
+                       251       5   0.657      250
+                       252       2   0.140      250
+                       253       3   0.376      250
+                       254       3   0.396      250
+                       255       5   1.393      250
+                       256       6   1.230      250
+                       257      11   1.767      250
+                       258       7   1.278      250
+                       259       7   3.028      250
+                       260      12   3.264      250
+                       261      38   6.149      250
+                       262      23   6.163      250
+Y - Directed channels:   i max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0      13   5.348      250
+                         1       7   2.053      250
+                         2       4   1.004      250
+                         3       5   0.814      250
+                         4       5   0.822      250
+                         5       3   0.155      250
+                         6       2   0.186      250
+                         7       2   0.080      250
+                         8       2   0.117      250
+                         9       3   0.064      250
+                        10       3   0.030      250
+                        11       2   0.083      250
+                        12       2   0.208      250
+                        13       1   0.167      250
+                        14       2   0.030      250
+                        15       1   0.258      250
+                        16       3   0.697      250
+                        17       4   0.936      250
+                        18      10   0.307      250
+                        19      12   0.731      250
+                        20      22   0.833      250
+                        21      10   0.451      250
+                        22      10   1.902      250
+                        23      25   3.265      250
+                        24      20   2.545      250
+                        25      15   1.140      250
+                        26      23   1.508      250
+                        27      10   0.208      250
+                        28       2   0.121      250
+                        29       4   0.405      250
+                        30       4   0.242      250
+                        31       2   0.106      250
+                        32       2   0.246      250
+                        33       4   0.629      250
+                        34       4   0.242      250
+                        35      16   0.447      250
+                        36      18   1.614      250
+                        37       2   0.508      250
+                        38       5   0.580      250
+                        39       2   0.239      250
+                        40       2   0.299      250
+                        41       3   0.125      250
+                        42       2   0.144      250
+                        43       2   0.110      250
+                        44       3   0.083      250
+                        45       2   0.470      250
+                        46      16   1.508      250
+                        47       8   0.383      250
+                        48       3   0.417      250
+                        49       6   0.462      250
+                        50       3   0.091      250
+                        51       2   0.182      250
+                        52       4   0.833      250
+                        53       4   0.534      250
+                        54       3   0.235      250
+                        55       7   0.955      250
+                        56       7   0.447      250
+                        57       3   0.178      250
+                        58       3   0.208      250
+                        59       4   0.417      250
+                        60       1   0.152      250
+                        61       2   0.125      250
+                        62       4   0.417      250
+                        63       3   0.057      250
+                        64      18   1.818      250
+                        65      12   1.068      250
+                        66       3   0.398      250
+                        67       1   0.212      250
+                        68       2   0.348      250
+                        69       3   0.178      250
+                        70       2   0.034      250
+                        71       5   0.220      250
+                        72       3   0.364      250
+                        73       3   0.163      250
+                        74       3   0.913      250
+                        75       2   0.402      250
+                        76       2   0.129      250
+                        77       2   0.504      250
+                        78       5   2.068      250
+                        79       6   1.761      250
+                        80       9   2.682      250
+                        81      29   6.731      250
+                        82      22   2.864      250
+                        83      26   3.939      250
+                        84      19   2.231      250
+                        85       6   1.716      250
+                        86       4   1.955      250
+                        87       3   0.875      250
+                        88       4   1.352      250
+                        89       4   1.379      250
+                        90       6   2.258      250
+                        91       5   1.216      250
+                        92       2   0.163      250
+                        93       4   0.352      250
+                        94       6   1.625      250
+                        95       4   1.189      250
+                        96       3   0.845      250
+                        97      18   3.553      250
+                        98      16   3.095      250
+                        99       5   0.852      250
+                       100       5   1.879      250
+                       101       8   1.292      250
+                       102       4   1.951      250
+                       103       5   1.636      250
+                       104       5   1.542      250
+                       105       5   2.447      250
+                       106       5   1.129      250
+                       107       6   2.788      250
+                       108       6   2.367      250
+                       109       6   1.894      250
+                       110      20   3.705      250
+                       111      22   5.159      250
+                       112      40   7.614      250
+                       113      78  14.227      250
+                       114      82  13.436      250
+                       115      77   6.341      250
+                       116     111  16.246      250
+                       117     124  21.201      250
+                       118     104  11.030      250
+                       119     113  11.568      250
+                       120     158  15.231      250
+                       121     151  14.223      250
+                       122     109   7.250      250
+                       123      91   8.731      250
+                       124      75   8.667      250
+                       125      44   4.231      250
+                       126       6   2.648      250
+                       127       5   0.989      250
+                       128       5   1.682      250
+                       129       4   0.894      250
+                       130       2   0.625      250
+                       131       2   0.795      250
+                       132       2   0.792      250
+                       133       4   0.458      250
+                       134       4   0.867      250
+                       135       3   0.356      250
+                       136       5   1.481      250
+                       137       5   2.402      250
+                       138       4   1.042      250
+                       139      19   4.818      250
+                       140      21   3.655      250
+                       141       4   1.625      250
+                       142       6   2.682      250
+                       143      17   2.364      250
+                       144      17   1.705      250
+                       145       2   0.455      250
+                       146       4   0.989      250
+                       147       4   0.212      250
+                       148       2   0.174      250
+                       149       3   0.523      250
+                       150       4   0.129      250
+                       151       2   0.337      250
+                       152       3   0.587      250
+                       153       5   0.833      250
+                       154       4   0.189      250
+                       155       3   0.693      250
+                       156       3   0.701      250
+                       157       3   0.542      250
+                       158       2   0.152      250
+                       159       2   0.277      250
+                       160       3   0.364      250
+                       161       2   0.205      250
+                       162       2   0.053      250
+                       163       2   0.633      250
+                       164       2   0.098      250
+                       165       4   0.689      250
+                       166       3   0.572      250
+                       167       2   0.629      250
+                       168       1   0.186      250
+                       169       2   0.341      250
+                       170       3   0.693      250
+                       171       5   0.644      250
+                       172       4   0.432      250
+                       173       3   0.515      250
+                       174       2   0.261      250
+                       175       3   0.129      250
+                       176       2   0.322      250
+                       177       4   0.845      250
+                       178       1   0.273      250
+                       179       1   0.136      250
+                       180       3   1.303      250
+                       181       4   0.913      250
+                       182      21   6.140      250
+                       183      24   3.485      250
+                       184       5   1.360      250
+                       185       5   1.894      250
+                       186       6   2.610      250
+                       187       2   0.417      250
+                       188       4   1.295      250
+                       189       3   1.129      250
+                       190       2   0.182      250
+                       191       3   0.545      250
+                       192       4   1.318      250
+                       193       3   0.152      250
+                       194       3   0.038      250
+                       195       2   0.583      250
+                       196       2   0.125      250
+                       197       3   0.284      250
+                       198       4   0.280      250
+                       199       3   0.727      250
+                       200      10   2.333      250
+                       201       5   2.417      250
+                       202       3   0.720      250
+                       203      14   2.295      250
+                       204      23   3.553      250
+                       205       3   1.189      250
+                       206       2   0.083      250
+                       207       3   1.178      250
+                       208       2   0.530      250
+                       209       2   0.841      250
+                       210       4   1.061      250
+                       211       3   0.867      250
+                       212       2   0.568      250
+                       213       3   0.644      250
+                       214       2   0.038      250
+                       215       3   1.174      250
+                       216       3   2.152      250
+                       217       4   1.042      250
+                       218       4   1.345      250
+                       219       5   1.686      250
+                       220      28   3.489      250
+                       221      19   5.413      250
+                       222       4   2.227      250
+                       223      17   1.280      250
+                       224      20   6.072      250
+                       225      10   1.905      250
+                       226       5   1.451      250
+                       227       5   0.962      250
+                       228       5   1.420      250
+                       229       3   0.735      250
+                       230       2   0.152      250
+                       231       2   0.295      250
+                       232       4   1.447      250
+                       233       2   0.258      250
+                       234       1   0.330      250
+                       235       3   0.697      250
+                       236       3   0.583      250
+                       237       3   0.390      250
+                       238       2   1.042      250
+                       239       5   0.659      250
+                       240      24   1.076      250
+                       241      27   1.360      250
+                       242       2   0.235      250
+                       243       4   0.443      250
+                       244       3   0.470      250
+                       245       3   1.076      250
+                       246       2   0.076      250
+                       247       4   1.030      250
+                       248       5   2.201      250
+                       249       8   1.996      250
+                       250      20   5.163      250
+                       251      17   3.447      250
+                       252      22   3.761      250
+                       253      16   3.148      250
+                       254       2   0.152      250
+                       255      24   2.542      250
+                       256      29   5.258      250
+                       257      26   4.390      250
+                       258       6   1.545      250
+                       259       7   1.610      250
+                       260       6   2.136      250
+                       261       5   2.000      250
+                       262       2   0.451      250
+                       263       3   0.852      250
+                       264       2   0.398      250
+                       265       2   0.436      250
+                       266       3   0.318      250
+                       267       3   0.833      250
+                       268       4   1.121      250
+                       269       7   0.750      250
+                       270      19   2.322      250
+                       271      27   4.223      250
+                       272       5   2.148      250
+                       273       4   0.720      250
+                       274       4   1.193      250
+                       275       2   0.345      250
+                       276       2   0.170      250
+                       277       5   0.814      250
+                       278       5   0.970      250
+                       279       3   0.432      250
+                       280      25   1.231      250
+                       281      22   1.015      250
+                       282       3   0.148      250
+                       283       4   1.383      250
+                       284       3   0.299      250
+                       285       3   0.489      250
+                       286       2   0.265      250
+                       287       2   0.159      250
+                       288       4   0.955      250
+                       289       2   0.402      250
+                       290       3   0.545      250
+                       291       2   0.420      250
+                       292       4   0.170      250
+                       293       2   0.557      250
+                       294       1   0.386      250
+                       295       3   0.504      250
+                       296       2   0.072      250
+                       297      15   1.572      250
+                       298      11   0.633      250
+                       299      16   0.409      250
+                       300      21   1.394      250
+                       301       2   0.928      250
+                       302       2   0.295      250
+                       303       4   0.841      250
+                       304      18   3.447      250
+                       305      28   4.595      250
+                       306       2   0.273      250
+                       307       2   0.458      250
+                       308       3   0.405      250
+                       309       3   0.235      250
+                       310       3   0.761      250
+                       311       2   0.663      250
+                       312       3   0.303      250
+                       313       2   0.220      250
+                       314       2   0.223      250
+                       315       3   0.712      250
+                       316       6   1.208      250
+                       317       6   0.799      250
+                       318       5   1.205      250
+                       319      26   2.023      250
+                       320      38   6.485      250
+                       321      56   6.659      250
+                       322      37   6.239      250
+                       323      20   2.117      250
+                       324      22   3.265      250
+                       325       7   1.466      250
+                       326      19   2.992      250
+                       327      21   1.803      250
+                       328       3   0.572      250
+                       329       4   1.504      250
+                       330       3   0.451      250
+                       331       5   1.197      250
+                       332      20   1.758      250
+                       333      27   3.216      250
+                       334       5   2.598      250
+                       335       4   1.284      250
+                       336      24   5.057      250
+                       337      32   8.602      250
+                       338       4   1.008      250
+                       339       2   0.049      250
+                       340       4   0.398      250
+                       341       4   1.068      250
+                       342       2   0.288      250
+                       343       3   0.269      250
+                       344       3   1.583      250
+                       345       3   0.549      250
+                       346       4   1.152      250
+                       347       3   0.504      250
+                       348       9   3.223      250
+                       349      11   4.905      250
+                       350       8   3.136      250
+                       351      11   3.557      250
+                       352      67  21.818      250
+                       353     101  42.727      250
+                       354      31  10.716      250
+
+Total tracks in x-direction: 65750, in y-direction: 88750
+
+Logic area (in minimum width transistor areas, excludes I/Os and empty grid tiles)...
+	Total logic block area (Warning, need to add pitch of routing to blocks with height > 3): 0
+	Total used logic block area: 0
+
+Routing area (in minimum width transistor areas)...
+	Total routing area: 1.49788e+09, per logic tile: 15937.6
+
+Total Number of Wiring Segments by Direction: direction length number
+                                              --------- ------ -------
+                                                      X      4 5070114
+                                                      Y      4 5080050
+                                                      X     16 206224
+                                                      Y     16 208960
+
+X - Directed Wiring Segment usage by length: length utilization
+                                             ------ -----------
+                                             4     0.00178
+                                            16      0.0334
+
+Y - Directed Wiring Segment usage by length: length utilization
+                                             ------ -----------
+                                             4      0.0025
+                                            16      0.0377
+
+Segment occupancy by length: Length utilization
+                             ------ -----------
+                             L4         0.00214
+                             L16          0.0356
+
+Segment occupancy by type: name type utilization
+                           ---- ---- -----------
+                             L4    0     0.00214
+                            L16    1      0.0356
+
+Final hold Worst Negative Slack (hWNS): 0 ns
+Final hold Total Negative Slack (hTNS): 0 ns
+
+Final hold slack histogram:
+[  4.3e-09:  5.6e-09) 448 ( 36.6%) |***********************************************
+[  5.6e-09:  6.9e-09) 240 ( 19.6%) |*************************
+[  6.9e-09:  8.2e-09) 152 ( 12.4%) |****************
+[  8.2e-09:  9.5e-09) 146 ( 11.9%) |***************
+[  9.5e-09:  1.1e-08) 169 ( 13.8%) |******************
+[  1.1e-08:  1.2e-08)  51 (  4.2%) |*****
+[  1.2e-08:  1.3e-08)  11 (  0.9%) |*
+[  1.3e-08:  1.5e-08)   5 (  0.4%) |*
+[  1.5e-08:  1.6e-08)   0 (  0.0%) |
+[  1.6e-08:  1.7e-08)   2 (  0.2%) |
+
+Final critical path delay (least slack): 26.112 ns, Fmax: 38.2966 MHz
+Final setup Worst Negative Slack (sWNS): -26.112 ns
+Final setup Total Negative Slack (sTNS): -17763.7 ns
+
+Final setup slack histogram:
+[ -2.6e-08: -2.4e-08)  59 (  4.8%) |***********
+[ -2.4e-08: -2.2e-08)  71 (  5.8%) |**************
+[ -2.2e-08:   -2e-08) 137 ( 11.2%) |***************************
+[   -2e-08: -1.8e-08) 241 ( 19.7%) |***********************************************
+[ -1.8e-08: -1.5e-08)  90 (  7.4%) |*****************
+[ -1.5e-08: -1.3e-08) 157 ( 12.8%) |******************************
+[ -1.3e-08: -1.1e-08)  95 (  7.8%) |******************
+[ -1.1e-08: -8.9e-09)  92 (  7.5%) |******************
+[ -8.9e-09: -6.7e-09)  40 (  3.3%) |********
+[ -6.7e-09: -4.6e-09) 242 ( 19.8%) |***********************************************
+
+Final geomean non-virtual intra-domain period: nan ns (nan MHz)
+Final fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
+
+Incr Slack updates 1 in 0.000213334 sec
+Full Max Req/Worst Slack updates 1 in 1.6942e-05 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 0.00140968 sec
+Flow timing analysis took 2.79603 seconds (2.69048 STA, 0.105551 slack) (134 full updates: 119 setup, 0 hold, 15 combined).
+VPR succeeded
+The entire flow of VPR took 4173.36 seconds (max_rss 9631.5 MiB)
+Incr Slack updates 14 in 0.00192237 sec
+Full Max Req/Worst Slack updates 2 in 2.7523e-05 sec
+Incr Max Req/Worst Slack updates 12 in 0.000233865 sec
+Incr Criticality updates 8 in 0.00204539 sec
+Full Criticality updates 6 in 0.00352787 sec

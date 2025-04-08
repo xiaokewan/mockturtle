@@ -1,0 +1,392 @@
+VPR FPGA Placement and Routing.
+Version: 8.1.0-dev+unkown
+Revision: unkown
+Compiled: 2025-02-16T14:22:44
+Compiler: GNU 11.4.0 on Linux-6.8.0-47-generic x86_64
+Build Info: release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+vpr /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratixiv_arch.timing.xml /media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/DSP.blif --route_chan_width 250
+
+Using up to 1 parallel worker(s)
+
+Architecture file: /home/xiaokewan/Software/vtr-verilog-to-routing-master/vtr_flow/arch/titan/stratixiv_arch.timing.xml
+Circuit name: DSP
+
+# Loading Architecture Description
+# Loading Architecture Description took 0.37 seconds (max_rss 80.2 MiB, delta_rss +64.9 MiB)
+
+Timing analysis: ON
+Circuit netlist file: DSP.net
+Circuit placement file: DSP.place
+Circuit routing file: DSP.route
+Circuit SDC file: DSP.sdc
+Vpr floorplanning constraints file: not specified
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+VPR was run with the following options:
+
+NetlistOpts.abosrb_buffer_luts            : true
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+NetlistOpts.netlist_verbosity             : 1
+NetlistOpts.const_gen_inference           : COMB_SEQ
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: CRITICALITY_TIMING_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.constraints_file: No constraints file given
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 250
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlacerOpts.delay_offset: 0.000000
+PlacerOpts.delay_ramp_delta_threshold: -1
+PlacerOpts.delay_ramp_slope: 0.000000
+PlacerOpts.tsu_rel_margin: 1.000000
+PlacerOpts.tsu_abs_margin: 0.000000
+PlacerOpts.post_place_timing_report_file: 
+PlacerOpts.allowed_tiles_for_delay_model: 
+PlacerOpts.delay_model_reducer: MIN
+PlacerOpts.delay_model_type: DELTA
+PlacerOpts.rlim_escape_fraction: 0.000000
+PlacerOpts.move_stats_file: 
+PlacerOpts.placement_saves_per_temperature: 0
+PlacerOpts.effort_scaling: CIRCUIT
+PlacerOpts.place_delta_delay_matrix_calculation_method: ASTAR_ROUTE
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 0.500000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.flat_routing: false
+RouterOpts.has_choking_spot: false
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 250
+RouterOpts.check_route: FULL
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.do_check_rr_graph: true
+RouterOpts.verify_binary_search: false
+RouterOpts.min_channel_width_hint: 0
+RouterOpts.read_rr_edge_metadata: false
+RouterOpts.exit_after_first_routing_iteration: false
+RouterOpts.astar_fac: 1.200000
+RouterOpts.router_profiler_astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.init_wirelength_abort_threshold: 0.850000
+RouterOpts.save_routing_per_iteration: false
+RouterOpts.congested_routing_iteration_threshold_frac: 1.000000
+RouterOpts.high_fanout_threshold: 64
+RouterOpts.router_debug_net: -2
+RouterOpts.router_debug_sink_rr: -2
+RouterOpts.router_debug_iteration: -2
+RouterOpts.max_convergence_count: 1
+RouterOpts.reconvergence_cpd_threshold: 0.990000
+RouterOpts.update_lower_bound_delays: true
+RouterOpts.first_iteration_timing_report_file: 
+RouterOpts.incr_reroute_delay_ripup: AUTO
+RouterOpts.route_bb_update: DYNAMIC
+RouterOpts.lookahead_type: MAP
+RouterOpts.initial_timing: LOOKAHEAD
+RouterOpts.router_heap: BINARY_HEAP
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+AnalysisOpts.timing_report_npaths: 100
+AnalysisOpts.timing_report_skew: false
+AnalysisOpts.echo_dot_timing_graph_node: -1
+AnalysisOpts.timing_report_detail: NETLIST
+AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
+AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
+
+# Building complex block graph
+# Building complex block graph took 4.16 seconds (max_rss 954.1 MiB, delta_rss +873.9 MiB)
+Circuit file: /media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/DSP.blif
+# Load circuit
+Found constant-zero generator 'po0012'
+Found constant-one generator 'po0054'
+Found constant-one generator 'po0055'
+Found constant-one generator 'po0056'
+Found constant-one generator 'po0057'
+Found constant-one generator 'po0058'
+Found constant-one generator 'po0059'
+Found constant-one generator 'po0060'
+Found constant-one generator 'po0061'
+Found constant-one generator 'po0072'
+Found constant-one generator 'po0073'
+Found constant-one generator 'po0074'
+Found constant-one generator 'po0075'
+Found constant-one generator 'po0076'
+Found constant-one generator 'po0077'
+Found constant-one generator 'po0078'
+Found constant-one generator 'po0079'
+Found constant-one generator 'po0080'
+Found constant-one generator 'po0091'
+Found constant-one generator 'po0092'
+Found constant-one generator 'po0093'
+Found constant-one generator 'po0094'
+Found constant-one generator 'po0095'
+Found constant-one generator 'po0096'
+Found constant-one generator 'po0097'
+Found constant-one generator 'po0098'
+Found constant-one generator 'po0099'
+Found constant-one generator 'po0293'
+# Load circuit took 0.15 seconds (max_rss 969.5 MiB, delta_rss +15.4 MiB)
+# Clean circuit
+Absorbed 109 LUT buffers
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 3612
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 3612
+Swept block(s)      : 0
+Constant Pins Marked: 0
+# Clean circuit took 0.00 seconds (max_rss 969.5 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.02 seconds (max_rss 970.6 MiB, delta_rss +1.1 MiB)
+# Verify circuit
+# Verify circuit took 0.00 seconds (max_rss 970.6 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 19310
+    .input :    4223
+    .output:    3954
+    0-LUT  :      28
+    6-LUT  :   11105
+  Nets  : 15356
+    Avg Fanout:     3.4
+    Max Fanout:   452.0
+    Min Fanout:     1.0
+  Netlist Clocks: 0
+# Build Timing Graph
+  Timing Graph Nodes: 67764
+  Timing Graph Edges: 100862
+  Timing Graph Levels: 30
+# Build Timing Graph took 0.07 seconds (max_rss 973.8 MiB, delta_rss +2.4 MiB)
+Netlist contains 0 clocks
+# Load Timing Constraints
+
+SDC file 'DSP.sdc' not found
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on a virtual external clock 'virtual_io_clock'
+   * optimize virtual clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'virtual_io_clock' (Virtual Clock)
+
+# Load Timing Constraints took 0.01 seconds (max_rss 974.0 MiB, delta_rss +0.2 MiB)
+# Packing
+Warning 1: Block type 'M144K' grid location specification startx (33 = 33) falls outside device horizontal range [0,9]
+Warning 2: Block type 'EMPTY' grid location specification startx (33 = 33) falls outside device horizontal range [0,9]
+Begin packing '/media/xiaokewan/TOSHIBA/Code_phd/mockturtle/experiments/benchmarks/blif_folder/DSP.blif'.
+
+After removing unused inputs...
+	total blocks: 19310, total nets: 15356, total inputs: 4223, total outputs: 3954
+Begin prepacking.
+
+There is one chain in this architecture called "LAB_carry_chain" with the following starting points:
+	LAB[0]/alm[0]/lut[0]/lcell_comb[0].cin[0]
+
+
+There is one chain in this architecture called "share_chain" with the following starting points:
+	LAB[0]/alm[0]/lut[0]/lcell_comb[0].sharein[0]
+
+0 attraction groups were created during prepacking.
+Finish prepacking.
+Using inter-cluster delay: 1.01382e-09
+✅ Final Pin Utilization: io:1.00,1.00 LAB:0.80,1.00
+Packing with pin utilization targets: io:1,1 PLL:1,1 LAB:0.8,1 DSP:1,1 M9K:1,1 M144K:1,1
+Packing with high fanout thresholds: io:128 PLL:128 LAB:32 DSP:128 M9K:128 M144K:128
+Starting Clustering - Clustering Progress: 
+-------------------   --------------------------   ---------
+Molecules processed   Number of clusters created   FPGA size
+-------------------   --------------------------   ---------
+   772/19310     3%                           43    14 x 10    
+  1544/19310     7%                           84    17 x 13    
+  2316/19310    11%                          123    19 x 14    
+  3088/19310    15%                          165    21 x 16    
+  3860/19310    19%                          206    23 x 17    
+  4632/19310    23%                          247    24 x 18    
+  5404/19310    27%                          288    26 x 19    
+  6176/19310    31%                          329    27 x 20    
+  6948/19310    35%                          372    28 x 21    
+  7720/19310    39%                          414    30 x 22    
+  8492/19310    43%                          454    31 x 23    
+  9264/19310    47%                          495    32 x 24    
+ 10036/19310    51%                          538    33 x 24    
+ 10808/19310    55%                          582    35 x 26    
+ 11580/19310    59%                         1104    73 x 54    
+ 12352/19310    63%                         1876   183 x 136   
+ 13124/19310    67%                         2648   294 x 218   
+ 13896/19310    71%                         3420   405 x 300   
+ 14668/19310    75%                         4192   516 x 382   
+ 15440/19310    79%                         4964   627 x 464   
+ 16212/19310    83%                         5736   738 x 547   
+ 16984/19310    87%                         6508   849 x 629   
+ 17756/19310    91%                         7280   960 x 711   
+ 18528/19310    95%                         8052   1070 x 793   
+ 19300/19310    99%                         8824   1181 x 875   
+Incr Slack updates 1 in 0.000769829 sec
+Full Max Req/Worst Slack updates 1 in 4.0957e-05 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 0.0026556 sec
+FPGA sized to 1183 x 876 (auto)
+Device Utilization: 0.00 (target 1.00)
+	Block Utilization: 1.00 Type: io
+	Block Utilization: 0.00 Type: LAB
+
+Start the iterative improvement process
+the iterative improvement process is done
+Final Clustering Statistics: 
+----------   --------   ------------------------------------   --------------------------
+Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output pins used
+----------   --------   ------------------------------------   --------------------------
+     EMPTY          0                                      0                            0   
+        io       8177                               0.483551                     0.516449   
+       PLL          0                                      0                            0   
+       LAB        658                                36.9863                      11.8693   
+       DSP          0                                      0                            0   
+       M9K          0                                      0                            0   
+     M144K          0                                      0                            0   
+Absorbed logical nets 3323 out of 15356 nets, 12033 nets not absorbed.
+
+Netlist conversion complete.
+
+# Packing took 24160.67 seconds (max_rss 1366.9 MiB, delta_rss +392.3 MiB)
+# Load packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'DSP.net'.
+Detected 28 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0.634979 seconds).
+Warning 3: Treated 28 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load packing took 0.69 seconds (max_rss 1366.9 MiB, delta_rss +0.0 MiB)
+Warning 4: Netlist contains 28 global net to non-global architecture pin connections
+Warning 5: Logic block #630 (po0012) has only 1 output pin 'po0012.data_out[6]'. It may be a constant generator.
+Warning 6: Logic block #631 (po0054) has only 1 output pin 'po0054.data_out[6]'. It may be a constant generator.
+Warning 7: Logic block #632 (po0055) has only 1 output pin 'po0055.data_out[6]'. It may be a constant generator.
+Warning 8: Logic block #633 (po0056) has only 1 output pin 'po0056.data_out[6]'. It may be a constant generator.
+Warning 9: Logic block #634 (po0057) has only 1 output pin 'po0057.data_out[6]'. It may be a constant generator.
+Warning 10: Logic block #635 (po0058) has only 1 output pin 'po0058.data_out[6]'. It may be a constant generator.
+Warning 11: Logic block #636 (po0059) has only 1 output pin 'po0059.data_out[6]'. It may be a constant generator.
+Warning 12: Logic block #637 (po0060) has only 1 output pin 'po0060.data_out[6]'. It may be a constant generator.
+Warning 13: Logic block #638 (po0061) has only 1 output pin 'po0061.data_out[6]'. It may be a constant generator.
+Warning 14: Logic block #639 (po0072) has only 1 output pin 'po0072.data_out[6]'. It may be a constant generator.
+Warning 15: Logic block #640 (po0073) has only 1 output pin 'po0073.data_out[6]'. It may be a constant generator.
+Warning 16: Logic block #641 (po0074) has only 1 output pin 'po0074.data_out[6]'. It may be a constant generator.
+Warning 17: Logic block #642 (po0075) has only 1 output pin 'po0075.data_out[6]'. It may be a constant generator.
+Warning 18: Logic block #643 (po0076) has only 1 output pin 'po0076.data_out[6]'. It may be a constant generator.
+Warning 19: Logic block #644 (po0077) has only 1 output pin 'po0077.data_out[6]'. It may be a constant generator.
+Warning 20: Logic block #645 (po0078) has only 1 output pin 'po0078.data_out[6]'. It may be a constant generator.
+Warning 21: Logic block #646 (po0079) has only 1 output pin 'po0079.data_out[6]'. It may be a constant generator.
+Warning 22: Logic block #647 (po0080) has only 1 output pin 'po0080.data_out[6]'. It may be a constant generator.
+Warning 23: Logic block #648 (po0091) has only 1 output pin 'po0091.data_out[6]'. It may be a constant generator.
+Warning 24: Logic block #649 (po0092) has only 1 output pin 'po0092.data_out[6]'. It may be a constant generator.
+Warning 25: Logic block #650 (po0093) has only 1 output pin 'po0093.data_out[6]'. It may be a constant generator.
+Warning 26: Logic block #651 (po0094) has only 1 output pin 'po0094.data_out[6]'. It may be a constant generator.
+Warning 27: Logic block #652 (po0095) has only 1 output pin 'po0095.data_out[6]'. It may be a constant generator.
+Warning 28: Logic block #653 (po0096) has only 1 output pin 'po0096.data_out[6]'. It may be a constant generator.
+Warning 29: Logic block #654 (po0097) has only 1 output pin 'po0097.data_out[6]'. It may be a constant generator.
+Warning 30: Logic block #655 (po0098) has only 1 output pin 'po0098.data_out[6]'. It may be a constant generator.
+Warning 31: Logic block #656 (po0099) has only 1 output pin 'po0099.data_out[6]'. It may be a constant generator.
+Warning 32: Logic block #657 (po0293) has only 1 output pin 'po0293.data_out[6]'. It may be a constant generator.
+
+Pb types usage...
+  io         : 8177
+   pad       : 8177
+    inpad    : 4223
+    outpad   : 3954
+  LAB        : 658
+   alm       : 5918
+    lut      : 11133
+     lut6    : 11133
+      lut    : 11133
+
+# Create Device
+## Build Device Grid
+FPGA sized to 1183 x 876: 1036308 grid tiles (auto)
+
+Resource usage...
+	Netlist
+		8177	blocks of type: io
+	Architecture
+		8180	blocks of type: io
+	Netlist
+		0	blocks of type: PLL
+	Architecture
+		16	blocks of type: PLL
+	Netlist
+		658	blocks of type: LAB
+	Architecture
+		939144	blocks of type: LAB
+	Netlist
+		0	blocks of type: DSP
+	Architecture
+		6540	blocks of type: DSP
+	Netlist
+		0	blocks of type: M9K
+	Architecture
+		39240	blocks of type: M9K
+	Netlist
+		0	blocks of type: M144K
+	Architecture
+		2943	blocks of type: M144K
+
+Device Utilization: 0.00 (target 1.00)
+	Physical Tile io:
+	Block Utilization: 1.00 Logical Block: io
+	Physical Tile PLL:
+	Block Utilization: 0.00 Logical Block: PLL
+	Physical Tile LAB:
+	Block Utilization: 0.00 Logical Block: LAB
+	Physical Tile DSP:
+	Block Utilization: 0.00 Logical Block: DSP
+	Physical Tile M9K:
+	Block Utilization: 0.00 Logical Block: M9K
+	Physical Tile M144K:
+	Block Utilization: 0.00 Logical Block: M144K
+
+FPGA size limited by block type(s): io
+
+## Build Device Grid took 27.30 seconds (max_rss 1366.9 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph
+SOURCE->OPIN and IPIN->SINK edge count:136804771
+OPIN->CHANX/CHANY edge count before creating direct connections: 672126696
+OPIN->CHANX/CHANY edge count after creating direct connections: 714330926

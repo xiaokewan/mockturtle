@@ -1,0 +1,2447 @@
+<?xml version="1.0"?>
+<block name="ctrl.net.post_routing" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:6c2439067677536e3de8729b42a7ec800d4a44cf1ca17a5250c98cedbe8b268d" atom_netlist_id="SHA256:e898e3e8d212ac0c25051154891aede887d2ec9ca3d5c18ffc9024809cacbd29">
+	<inputs>opcode[0] opcode[1] opcode[2] opcode[3] opcode[4] op_ext[0] op_ext[1]</inputs>
+	<outputs>out:sel_reg_dst[0] out:sel_reg_dst[1] out:sel_alu_opB[0] out:sel_alu_opB[1] out:alu_op[0] out:alu_op[1] out:alu_op[2] out:alu_op_ext[0] out:alu_op_ext[1] out:alu_op_ext[2] out:alu_op_ext[3] out:halt out:reg_write out:sel_pc_opA out:sel_pc_opB out:beqz out:bnez out:bgez out:bltz out:jump out:Cin out:invA out:invB out:sign out:mem_write out:sel_wb</outputs>
+	<clocks></clocks>
+	<block name="new_n40" instance="LAB[0]" mode="LAB">
+		<inputs>
+			<port name="data_in">op_ext[1] opcode[0] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open opcode[2] open open open open open open open open open open open opcode[1] open open open op_ext[0] open open open open open open opcode[3] open opcode[4] open open open open open open open open open open</port>
+			<port name="control_in">open open open open open open open</port>
+			<port name="cin">open</port>
+			<port name="sharein">open</port>
+		</inputs>
+		<outputs>
+			<port name="data_out">open open alm[1].data_out[1]-&gt;LAB_dataout alm[7].data_out[1]-&gt;LAB_dataout alm[4].data_out[2]-&gt;LAB_dataout alm[0].data_out[2]-&gt;LAB_dataout alm[8].data_out[2]-&gt;LAB_dataout open open open open open open alm[2].data_out[1]-&gt;LAB_dataout alm[3].data_out[1]-&gt;LAB_dataout alm[6].data_out[1]-&gt;LAB_dataout alm[0].data_out[1]-&gt;LAB_dataout alm[5].data_out[2]-&gt;LAB_dataout alm[9].data_out[2]-&gt;LAB_dataout alm[1].data_out[2]-&gt;LAB_dataout alm[2].data_out[2]-&gt;LAB_dataout alm[7].data_out[2]-&gt;LAB_dataout alm[6].data_out[2]-&gt;LAB_dataout open open open open open open open open open open open open alm[4].data_out[1]-&gt;LAB_dataout alm[5].data_out[1]-&gt;LAB_dataout open open alm[3].data_out[2]-&gt;LAB_dataout</port>
+			<port name="cout">open</port>
+			<port name="shareout">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open</port>
+		</clocks>
+		<block name="bgez" instance="alm[0]" mode="alm">
+			<inputs>
+				<port name="data_in">open LAB.data_in[56]-&gt;LAB_datain LAB.data_in[67]-&gt;LAB_datain LAB.data_in[69]-&gt;LAB_datain LAB.data_in[1]-&gt;LAB_datain LAB.data_in[44]-&gt;LAB_datain open open</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[0].lout[0]-&gt;lut0_out lut[1].lout[0]-&gt;lut1_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="bgez" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">open alm.data_in[3]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[1]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="bgez" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[3]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 open lut.lin[5]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="bgez" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 open lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">1 0 2 open 4 3</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">bgez</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="bnez" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">open alm.data_in[3]-&gt;in_comp1 alm.data_in[1]-&gt;in_comp1 open alm.data_in[2]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="bnez" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">open lut.lin[6]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="bnez" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">open lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">open 2 4 3 0 1</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">bnez</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="beqz" instance="alm[1]" mode="alm">
+			<inputs>
+				<port name="data_in">open LAB.data_in[56]-&gt;LAB_datain LAB.data_in[67]-&gt;LAB_datain LAB.data_in[69]-&gt;LAB_datain LAB.data_in[1]-&gt;LAB_datain LAB.data_in[44]-&gt;LAB_datain open open</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[0].lout[0]-&gt;lut0_out lut[1].lout[0]-&gt;lut1_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="beqz" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[4]-&gt;in_comp1 open alm.data_in[1]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="beqz" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">open lut.lin[5]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[0]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="beqz" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">open lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">open 2 3 4 1 0</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">beqz</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="reg_write" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[1]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 open open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="reg_write" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">open lut.lin[0]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="reg_write" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">open lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">open 1 4 0 3 2</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">reg_write</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="halt" instance="alm[2]" mode="alm">
+			<inputs>
+				<port name="data_in">open open LAB.data_in[56]-&gt;LAB_datain LAB.data_in[1]-&gt;LAB_datain LAB.data_in[69]-&gt;LAB_datain LAB.data_in[67]-&gt;LAB_datain LAB.data_in[44]-&gt;LAB_datain open</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[0].lout[0]-&gt;lut0_out lut[1].lout[0]-&gt;lut1_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="halt" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[3]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 open alm.data_in[4]-&gt;in_comp1 alm.data_in[6]-&gt;in_comp1 open alm.data_in[5]-&gt;in_comp1</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="halt" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">open lut.lin[0]-&gt;l_complete1 lut.lin[6]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="halt" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">open lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">open 0 3 1 2 4</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">halt</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="alu_op_ext[3]" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[2]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[6]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 open open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="alu_op_ext[3]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[2]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 open lut.lin[0]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="alu_op_ext[3]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 open lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">1 0 4 2 open 3</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">alu_op_ext[3]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="alu_op_ext[2]" instance="alm[3]" mode="alm">
+			<inputs>
+				<port name="data_in">open open LAB.data_in[67]-&gt;LAB_datain LAB.data_in[56]-&gt;LAB_datain LAB.data_in[1]-&gt;LAB_datain LAB.data_in[69]-&gt;LAB_datain LAB.data_in[44]-&gt;LAB_datain open</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[0].lout[0]-&gt;lut0_out lut[1].lout[0]-&gt;lut1_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="alu_op_ext[2]" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[6]-&gt;in_comp1 open alm.data_in[3]-&gt;in_comp1 open alm.data_in[2]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="alu_op_ext[2]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[6]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[0]-&gt;l_complete1 open</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="alu_op_ext[2]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 open</port>
+							<port_rotation_map name="in">4 2 0 3 1 open</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">alu_op_ext[2]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="alu_op_ext[1]" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[3]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[6]-&gt;in_comp1 open open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="alu_op_ext[1]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[2]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 open lut.lin[0]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="alu_op_ext[1]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 open lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">3 0 open 4 2 1</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">alu_op_ext[1]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="alu_op_ext[0]" instance="alm[4]" mode="alm">
+			<inputs>
+				<port name="data_in">LAB.data_in[56]-&gt;LAB_datain open open LAB.data_in[67]-&gt;LAB_datain LAB.data_in[69]-&gt;LAB_datain open LAB.data_in[44]-&gt;LAB_datain LAB.data_in[1]-&gt;LAB_datain</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[0].lout[0]-&gt;lut0_out lut[1].lout[0]-&gt;lut1_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="alu_op_ext[0]" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[3]-&gt;in_comp1 alm.data_in[0]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[6]-&gt;in_comp1 alm.data_in[7]-&gt;in_comp1 open open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="alu_op_ext[0]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">open lut.lin[0]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="alu_op_ext[0]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">open lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">open 3 0 4 1 2</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">alu_op_ext[0]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="alu_op[2]" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">open alm.data_in[4]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[6]-&gt;in_comp1 open alm.data_in[7]-&gt;in_comp1 alm.data_in[0]-&gt;in_comp1</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="alu_op[2]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">open lut.lin[5]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[6]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="alu_op[2]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">open lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">open 0 3 4 1 2</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">alu_op[2]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="sel_alu_opB[1]" instance="alm[5]" mode="alm">
+			<inputs>
+				<port name="data_in">open open LAB.data_in[67]-&gt;LAB_datain LAB.data_in[69]-&gt;LAB_datain LAB.data_in[44]-&gt;LAB_datain open LAB.data_in[1]-&gt;LAB_datain LAB.data_in[56]-&gt;LAB_datain</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[0].lout[0]-&gt;lut0_out lut[1].lout[0]-&gt;lut1_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="sel_alu_opB[1]" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[3]-&gt;in_comp1 alm.data_in[7]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[6]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 open open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="sel_alu_opB[1]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[3]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 open lut.lin[4]-&gt;l_complete1 lut.lin[0]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="sel_alu_opB[1]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 open lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">0 1 open 2 4 3</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">sel_alu_opB[1]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="sel_alu_opB[0]" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[3]-&gt;in_comp1 open alm.data_in[7]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[6]-&gt;in_comp1 open alm.data_in[2]-&gt;in_comp1</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="sel_alu_opB[0]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[0]-&gt;l_complete1 lut.lin[6]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 open</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="sel_alu_opB[0]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 open</port>
+							<port_rotation_map name="in">4 3 1 2 0 open</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">sel_alu_opB[0]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="mem_write" instance="alm[6]" mode="alm">
+			<inputs>
+				<port name="data_in">open LAB.data_in[56]-&gt;LAB_datain LAB.data_in[67]-&gt;LAB_datain LAB.data_in[69]-&gt;LAB_datain LAB.data_in[1]-&gt;LAB_datain LAB.data_in[44]-&gt;LAB_datain open open</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[1].lout[0]-&gt;lut1_out lut[0].lout[0]-&gt;lut0_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="bltz" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[1]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 open open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="bltz" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[1]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 open lut.lin[4]-&gt;l_complete1 lut.lin[0]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="bltz" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 open lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">3 0 open 2 4 1</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">bltz</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="mem_write" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">open open alm.data_in[1]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="mem_write" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[4]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 lut.lin[6]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 open</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="mem_write" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 open</port>
+							<port_rotation_map name="in">4 1 0 2 3 open</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">mem_write</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="invA" instance="alm[7]" mode="alm">
+			<inputs>
+				<port name="data_in">LAB.data_in[56]-&gt;LAB_datain LAB.data_in[67]-&gt;LAB_datain LAB.data_in[69]-&gt;LAB_datain LAB.data_in[1]-&gt;LAB_datain alm[8].data_out[0]-&gt;LAB_alm_feedback LAB.data_in[44]-&gt;LAB_datain open open</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[1].lout[0]-&gt;lut1_out lut[0].lout[0]-&gt;lut0_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="sel_wb" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">open alm.data_in[1]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[0]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="sel_wb" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[4]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 open lut.lin[1]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="sel_wb" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 open lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">3 0 1 4 open 2</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">sel_wb</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="invA" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">open open open alm.data_in[5]-&gt;in_comp1 open open alm.data_in[4]-&gt;in_comp1</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="invA" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">open lut.lin[6]-&gt;l_complete1 open open open lut.lin[3]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="invA" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">open lut6.in[1]-&gt;direct:lut6 open open open lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">open 1 open open open 0</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">invA</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="Cin" instance="alm[8]" mode="alm">
+			<inputs>
+				<port name="data_in">LAB.data_in[60]-&gt;LAB_datain LAB.data_in[69]-&gt;LAB_datain LAB.data_in[1]-&gt;LAB_datain LAB.data_in[0]-&gt;LAB_datain LAB.data_in[44]-&gt;LAB_datain open LAB.data_in[56]-&gt;LAB_datain LAB.data_in[67]-&gt;LAB_datain</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">lut[0].lout[0]-&gt;lut0_out open lut[1].lout[0]-&gt;lut1_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="new_n58" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[0]-&gt;in_comp1 alm.data_in[1]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[6]-&gt;in_comp1 alm.data_in[7]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="new_n58" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[0]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="new_n58" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">1 0 3 5 2 4</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">new_n58</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="Cin" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[6]-&gt;in_comp1 alm.data_in[7]-&gt;in_comp1 alm.data_in[1]-&gt;in_comp1 alm.data_in[0]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="Cin" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[3]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1 lut.lin[0]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="Cin" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">0 2 3 5 4 1</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">Cin</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="new_n40" instance="alm[9]" mode="alm">
+			<inputs>
+				<port name="data_in">LAB.data_in[69]-&gt;LAB_datain LAB.data_in[60]-&gt;LAB_datain LAB.data_in[1]-&gt;LAB_datain LAB.data_in[0]-&gt;LAB_datain LAB.data_in[44]-&gt;LAB_datain alm[9].data_out[0]-&gt;LAB_alm_feedback LAB.data_in[56]-&gt;LAB_datain LAB.data_in[67]-&gt;LAB_datain</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">lut[1].lout[0]-&gt;lut1_out open lut[0].lout[0]-&gt;lut0_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="alu_op[0]" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">open alm.data_in[7]-&gt;in_comp1 alm.data_in[0]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="alu_op[0]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[1]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1 open lut.lin[3]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="alu_op[0]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 open lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">0 1 4 open 3 2</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">alu_op[0]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="new_n40" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[1]-&gt;in_comp1 alm.data_in[0]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[6]-&gt;in_comp1 open alm.data_in[7]-&gt;in_comp1</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="new_n40" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[6]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[0]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="new_n40" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">4 3 1 2 5 0</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">new_n40</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+	</block>
+	<block name="invB" instance="LAB[1]" mode="LAB">
+		<inputs>
+			<port name="data_in">open open open open open open open open open opcode[2] open open open open open open open open open open open open open open open open open open open open open open opcode[0] open open open open open open open open open opcode[3] open open open open open open open open open opcode[4] op_ext[0] open open open op_ext[1] open open open open open open open open open open open open open open open open opcode[1] open open open open open</port>
+			<port name="control_in">open open open open open open open</port>
+			<port name="cin">open</port>
+			<port name="sharein">open</port>
+		</inputs>
+		<outputs>
+			<port name="data_out">open open open alm[0].data_out[5]-&gt;LAB_dataout alm[7].data_out[1]-&gt;LAB_dataout alm[1].data_out[2]-&gt;LAB_dataout open open open open open open open open open alm[7].data_out[5]-&gt;LAB_dataout open alm[1].data_out[1]-&gt;LAB_dataout open alm[6].data_out[2]-&gt;LAB_dataout alm[0].data_out[1]-&gt;LAB_dataout open open open open open open open open open open open open open open open open open open open</port>
+			<port name="cout">open</port>
+			<port name="shareout">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open</port>
+		</clocks>
+		<block name="alu_op[1]" instance="alm[0]" mode="alm">
+			<inputs>
+				<port name="data_in">LAB.data_in[9]-&gt;LAB_datain LAB.data_in[52]-&gt;LAB_datain LAB.data_in[42]-&gt;LAB_datain LAB.data_in[74]-&gt;LAB_datain LAB.data_in[32]-&gt;LAB_datain LAB.data_in[57]-&gt;LAB_datain open open</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[0].lout[0]-&gt;lut0_out open open open lut[1].lout[0]-&gt;lut1_out</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="alu_op[1]" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[0]-&gt;in_comp1 alm.data_in[1]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 open open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="alu_op[1]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[3]-&gt;l_complete1 lut.lin[0]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 open</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="alu_op[1]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 open</port>
+							<port_rotation_map name="in">4 2 1 3 0 open</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">alu_op[1]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="sel_reg_dst[1]" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">open alm.data_in[1]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[0]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="sel_reg_dst[1]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">open lut.lin[3]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="sel_reg_dst[1]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">open lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">open 3 4 2 1 0</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">sel_reg_dst[1]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="sel_pc_opA" instance="alm[1]" mode="alm">
+			<inputs>
+				<port name="data_in">open open LAB.data_in[9]-&gt;LAB_datain LAB.data_in[52]-&gt;LAB_datain LAB.data_in[42]-&gt;LAB_datain LAB.data_in[32]-&gt;LAB_datain open open</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[0].lout[0]-&gt;lut0_out lut[1].lout[0]-&gt;lut1_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="sel_pc_opA" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">open open alm.data_in[2]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="sel_pc_opA" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[4]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 open open</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="sel_pc_opA" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 open open</port>
+							<port_rotation_map name="in">0 3 2 1 open open</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">sel_pc_opA</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="jump" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">open open open alm.data_in[3]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="jump" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[4]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 open open open lut.lin[5]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="jump" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 open open open lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">0 1 open open open 2</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">jump</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="open" instance="alm[2]" />
+		<block name="open" instance="alm[3]" />
+		<block name="open" instance="alm[4]" />
+		<block name="open" instance="alm[5]" />
+		<block name="invB" instance="alm[6]" mode="alm">
+			<inputs>
+				<port name="data_in">LAB.data_in[42]-&gt;LAB_datain LAB.data_in[74]-&gt;LAB_datain LAB.data_in[32]-&gt;LAB_datain alm[6].data_out[0]-&gt;LAB_alm_feedback LAB.data_in[57]-&gt;LAB_datain LAB.data_in[53]-&gt;LAB_datain LAB.data_in[9]-&gt;LAB_datain LAB.data_in[52]-&gt;LAB_datain</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">lut[1].lout[0]-&gt;lut1_out open lut[0].lout[0]-&gt;lut0_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="invB" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[2]-&gt;in_comp1 alm.data_in[3]-&gt;in_comp1 alm.data_in[6]-&gt;in_comp1 alm.data_in[1]-&gt;in_comp1 alm.data_in[7]-&gt;in_comp1 alm.data_in[0]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="invB" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[4]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1 lut.lin[0]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="invB" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">4 5 3 1 2 0</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">invB</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="new_n60" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">open open alm.data_in[7]-&gt;in_comp1 alm.data_in[5]-&gt;in_comp1 alm.data_in[0]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="new_n60" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[3]-&gt;l_complete1 lut.lin[5]-&gt;l_complete1 lut.lin[4]-&gt;l_complete1 open lut.lin[2]-&gt;l_complete1 open</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="new_n60" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 lut6.in[2]-&gt;direct:lut6 open lut6.in[4]-&gt;direct:lut6 open</port>
+							<port_rotation_map name="in">0 1 3 open 2 open</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">new_n60</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="sel_reg_dst[0]" instance="alm[7]" mode="alm">
+			<inputs>
+				<port name="data_in">open LAB.data_in[52]-&gt;LAB_datain LAB.data_in[42]-&gt;LAB_datain LAB.data_in[74]-&gt;LAB_datain LAB.data_in[32]-&gt;LAB_datain LAB.data_in[9]-&gt;LAB_datain open open</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open lut[0].lout[0]-&gt;lut0_out open open open lut[1].lout[0]-&gt;lut1_out</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="sel_reg_dst[0]" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">alm.data_in[5]-&gt;in_comp1 alm.data_in[1]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 open open alm.data_in[3]-&gt;in_comp1</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="sel_reg_dst[0]" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[0]-&gt;l_complete1 lut.lin[2]-&gt;l_complete1 open lut.lin[6]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="sel_reg_dst[0]" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 lut6.in[1]-&gt;direct:lut6 open lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 lut6.in[5]-&gt;direct:lut6</port>
+							<port_rotation_map name="in">2 3 open 1 0 4</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">sel_reg_dst[0]</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="sel_pc_opB" instance="lut[1]" mode="names_lut">
+				<inputs>
+					<port name="lin">open alm.data_in[5]-&gt;in_comp1 alm.data_in[2]-&gt;in_comp1 alm.data_in[1]-&gt;in_comp1 alm.data_in[4]-&gt;in_comp1 open open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="sel_pc_opB" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">lut.lin[2]-&gt;l_complete1 open lut.lin[4]-&gt;l_complete1 lut.lin[1]-&gt;l_complete1 lut.lin[3]-&gt;l_complete1 open</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="sel_pc_opB" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">lut6.in[0]-&gt;direct:lut6 open lut6.in[2]-&gt;direct:lut6 lut6.in[3]-&gt;direct:lut6 lut6.in[4]-&gt;direct:lut6 open</port>
+							<port_rotation_map name="in">1 open 0 3 2 open</port_rotation_map>
+						</inputs>
+						<outputs>
+							<port name="out">sel_pc_opB</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="open" instance="alm[8]" />
+		<block name="open" instance="alm[9]" />
+	</block>
+	<block name="sign" instance="LAB[2]" mode="LAB">
+		<inputs>
+			<port name="data_in">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+			<port name="control_in">open open open open open open open</port>
+			<port name="cin">open</port>
+			<port name="sharein">open</port>
+		</inputs>
+		<outputs>
+			<port name="data_out">open open open open open open alm[6].data_out[2]-&gt;LAB_dataout open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+			<port name="cout">open</port>
+			<port name="shareout">open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open</port>
+		</clocks>
+		<block name="open" instance="alm[0]" />
+		<block name="open" instance="alm[1]" />
+		<block name="open" instance="alm[2]" />
+		<block name="open" instance="alm[3]" />
+		<block name="open" instance="alm[4]" />
+		<block name="open" instance="alm[5]" />
+		<block name="sign" instance="alm[6]" mode="alm">
+			<inputs>
+				<port name="data_in">open open open open open open open open</port>
+				<port name="control">open open open open open open open</port>
+				<port name="cin">open</port>
+				<port name="sharein">open</port>
+			</inputs>
+			<outputs>
+				<port name="data_out">open open lut[0].lout[0]-&gt;lut0_out open open open</port>
+				<port name="cout">open</port>
+				<port name="shareout">open</port>
+			</outputs>
+			<clocks>
+				<port name="clock">open open</port>
+			</clocks>
+			<block name="sign" instance="lut[0]" mode="names_lut">
+				<inputs>
+					<port name="lin">open open open open open open open</port>
+					<port name="cin">open</port>
+					<port name="sharein">open</port>
+				</inputs>
+				<outputs>
+					<port name="lout">lut6[0].out[0]-&gt;l_complete2 open</port>
+					<port name="cout">open</port>
+					<port name="shareout">open</port>
+				</outputs>
+				<clocks />
+				<block name="sign" instance="lut6[0]" mode="lut6">
+					<inputs>
+						<port name="in">open open open open open open</port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]-&gt;direct:lut6</port>
+					</outputs>
+					<clocks />
+					<block name="sign" instance="lut[0]">
+						<attributes />
+						<parameters />
+						<inputs>
+							<port name="in">open open open open open open</port>
+						</inputs>
+						<outputs>
+							<port name="out">sign</port>
+						</outputs>
+						<clocks />
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="lut[1]" />
+			<block name="open" instance="dff[0]" />
+			<block name="open" instance="dff[1]" />
+		</block>
+		<block name="open" instance="alm[7]" />
+		<block name="open" instance="alm[8]" />
+		<block name="open" instance="alm[9]" />
+	</block>
+	<block name="out:alu_op[0]" instance="io[3]" mode="io">
+		<inputs>
+			<port name="core_in">alu_op[0] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:alu_op[0]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:alu_op[0]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:invA" instance="io[4]" mode="io">
+		<inputs>
+			<port name="core_in">invA open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:invA" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:invA" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:invB" instance="io[5]" mode="io">
+		<inputs>
+			<port name="core_in">invB open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:invB" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:invB" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:sel_reg_dst[0]" instance="io[6]" mode="io">
+		<inputs>
+			<port name="core_in">sel_reg_dst[0] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:sel_reg_dst[0]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:sel_reg_dst[0]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:sel_reg_dst[1]" instance="io[7]" mode="io">
+		<inputs>
+			<port name="core_in">sel_reg_dst[1] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:sel_reg_dst[1]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:sel_reg_dst[1]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:sel_alu_opB[0]" instance="io[8]" mode="io">
+		<inputs>
+			<port name="core_in">sel_alu_opB[0] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:sel_alu_opB[0]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:sel_alu_opB[0]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:sel_alu_opB[1]" instance="io[9]" mode="io">
+		<inputs>
+			<port name="core_in">sel_alu_opB[1] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:sel_alu_opB[1]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:sel_alu_opB[1]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:alu_op[1]" instance="io[10]" mode="io">
+		<inputs>
+			<port name="core_in">alu_op[1] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:alu_op[1]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:alu_op[1]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:alu_op[2]" instance="io[11]" mode="io">
+		<inputs>
+			<port name="core_in">alu_op[2] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:alu_op[2]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:alu_op[2]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:alu_op_ext[0]" instance="io[12]" mode="io">
+		<inputs>
+			<port name="core_in">alu_op_ext[0] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:alu_op_ext[0]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:alu_op_ext[0]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:alu_op_ext[1]" instance="io[13]" mode="io">
+		<inputs>
+			<port name="core_in">alu_op_ext[1] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:alu_op_ext[1]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:alu_op_ext[1]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:alu_op_ext[2]" instance="io[14]" mode="io">
+		<inputs>
+			<port name="core_in">alu_op_ext[2] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:alu_op_ext[2]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:alu_op_ext[2]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:alu_op_ext[3]" instance="io[15]" mode="io">
+		<inputs>
+			<port name="core_in">alu_op_ext[3] open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:alu_op_ext[3]" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:alu_op_ext[3]" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:halt" instance="io[16]" mode="io">
+		<inputs>
+			<port name="core_in">halt open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:halt" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:halt" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:reg_write" instance="io[17]" mode="io">
+		<inputs>
+			<port name="core_in">reg_write open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:reg_write" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:reg_write" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:sel_pc_opA" instance="io[18]" mode="io">
+		<inputs>
+			<port name="core_in">sel_pc_opA open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:sel_pc_opA" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:sel_pc_opA" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:sel_pc_opB" instance="io[19]" mode="io">
+		<inputs>
+			<port name="core_in">sel_pc_opB open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:sel_pc_opB" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:sel_pc_opB" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:beqz" instance="io[20]" mode="io">
+		<inputs>
+			<port name="core_in">beqz open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:beqz" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:beqz" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:bnez" instance="io[21]" mode="io">
+		<inputs>
+			<port name="core_in">bnez open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:bnez" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:bnez" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:bgez" instance="io[22]" mode="io">
+		<inputs>
+			<port name="core_in">bgez open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:bgez" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:bgez" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:bltz" instance="io[23]" mode="io">
+		<inputs>
+			<port name="core_in">bltz open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:bltz" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:bltz" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:jump" instance="io[24]" mode="io">
+		<inputs>
+			<port name="core_in">jump open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:jump" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:jump" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:Cin" instance="io[25]" mode="io">
+		<inputs>
+			<port name="core_in">Cin open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:Cin" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:Cin" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:mem_write" instance="io[26]" mode="io">
+		<inputs>
+			<port name="core_in">mem_write open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:mem_write" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:mem_write" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:sel_wb" instance="io[27]" mode="io">
+		<inputs>
+			<port name="core_in">sel_wb open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:sel_wb" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:sel_wb" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="out:sign" instance="io[28]" mode="io">
+		<inputs>
+			<port name="core_in">sign open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="out:sign" instance="pad[0]" mode="outpad">
+			<inputs>
+				<port name="drive_off_chip">io.core_in[0]-&gt;drive_off_chip</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">open</port>
+			</outputs>
+			<clocks />
+			<block name="out:sign" instance="outpad[0]">
+				<attributes />
+				<parameters />
+				<inputs>
+					<port name="outpad">pad.drive_off_chip[0]-&gt;outpad</port>
+				</inputs>
+				<outputs />
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="opcode[0]" instance="io[29]" mode="io">
+		<inputs>
+			<port name="core_in">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">pad[0].recieve_off_chip[0]-&gt;recieve_off_chip open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="opcode[0]" instance="pad[0]" mode="inpad">
+			<inputs>
+				<port name="drive_off_chip">open</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">inpad[0].inpad[0]-&gt;inpad</port>
+			</outputs>
+			<clocks />
+			<block name="opcode[0]" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">opcode[0]</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="opcode[1]" instance="io[30]" mode="io">
+		<inputs>
+			<port name="core_in">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">pad[0].recieve_off_chip[0]-&gt;recieve_off_chip open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="opcode[1]" instance="pad[0]" mode="inpad">
+			<inputs>
+				<port name="drive_off_chip">open</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">inpad[0].inpad[0]-&gt;inpad</port>
+			</outputs>
+			<clocks />
+			<block name="opcode[1]" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">opcode[1]</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="opcode[2]" instance="io[31]" mode="io">
+		<inputs>
+			<port name="core_in">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">pad[0].recieve_off_chip[0]-&gt;recieve_off_chip open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="opcode[2]" instance="pad[0]" mode="inpad">
+			<inputs>
+				<port name="drive_off_chip">open</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">inpad[0].inpad[0]-&gt;inpad</port>
+			</outputs>
+			<clocks />
+			<block name="opcode[2]" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">opcode[2]</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="opcode[3]" instance="io[32]" mode="io">
+		<inputs>
+			<port name="core_in">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">pad[0].recieve_off_chip[0]-&gt;recieve_off_chip open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="opcode[3]" instance="pad[0]" mode="inpad">
+			<inputs>
+				<port name="drive_off_chip">open</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">inpad[0].inpad[0]-&gt;inpad</port>
+			</outputs>
+			<clocks />
+			<block name="opcode[3]" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">opcode[3]</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="opcode[4]" instance="io[33]" mode="io">
+		<inputs>
+			<port name="core_in">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">pad[0].recieve_off_chip[0]-&gt;recieve_off_chip open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="opcode[4]" instance="pad[0]" mode="inpad">
+			<inputs>
+				<port name="drive_off_chip">open</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">inpad[0].inpad[0]-&gt;inpad</port>
+			</outputs>
+			<clocks />
+			<block name="opcode[4]" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">opcode[4]</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="op_ext[0]" instance="io[34]" mode="io">
+		<inputs>
+			<port name="core_in">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">pad[0].recieve_off_chip[0]-&gt;recieve_off_chip open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="op_ext[0]" instance="pad[0]" mode="inpad">
+			<inputs>
+				<port name="drive_off_chip">open</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">inpad[0].inpad[0]-&gt;inpad</port>
+			</outputs>
+			<clocks />
+			<block name="op_ext[0]" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">op_ext[0]</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+	<block name="op_ext[1]" instance="io[35]" mode="io">
+		<inputs>
+			<port name="core_in">open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="core_out">pad[0].recieve_off_chip[0]-&gt;recieve_off_chip open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="clk">open open open open open</port>
+		</clocks>
+		<block name="op_ext[1]" instance="pad[0]" mode="inpad">
+			<inputs>
+				<port name="drive_off_chip">open</port>
+			</inputs>
+			<outputs>
+				<port name="recieve_off_chip">inpad[0].inpad[0]-&gt;inpad</port>
+			</outputs>
+			<clocks />
+			<block name="op_ext[1]" instance="inpad[0]">
+				<attributes />
+				<parameters />
+				<inputs />
+				<outputs>
+					<port name="inpad">op_ext[1]</port>
+				</outputs>
+				<clocks />
+			</block>
+		</block>
+		<block name="open" instance="io_cell[0]" />
+		<block name="open" instance="io_cell[1]" />
+		<block name="open" instance="io_cell[2]" />
+		<block name="open" instance="io_cell[3]" />
+		<block name="open" instance="io_cell[4]" />
+	</block>
+</block>

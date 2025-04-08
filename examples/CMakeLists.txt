@@ -9,3 +9,7 @@ foreach(filename ${FILENAMES})
     include(${basename}.cmake)
   endif()
 endforeach()
+
+
+# add_executable( fanout_aware_rewriting fanout_aware_rewriting.cpp )
+# target_link_libraries( fanout_aware_rewriting mockturtle )

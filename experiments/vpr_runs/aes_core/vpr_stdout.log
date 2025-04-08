@@ -371,3 +371,14 @@ SOURCE->OPIN and IPIN->SINK edge count:65640985
 OPIN->CHANX/CHANY edge count before creating direct connections: 370427920
 OPIN->CHANX/CHANY edge count after creating direct connections: 413898672
 CHAN->CHAN type edge count:891395039
+Warning 15: Node: 88798257 with RR_type: CHANX  at Location:CHANX:88798257 H4 length:2 (815,0,0)-> (814,0,0), had no out-going switches
+Warning 16: Node: 88798259 with RR_type: CHANX  at Location:CHANX:88798259 H4 length:2 (815,0,0)-> (814,0,0), had no out-going switches
+Warning 17: in check_rr_graph: fringe node 88798257 CHANX at (814,0) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 808.45 seconds (max_rss 41865.6 MiB, delta_rss +41394.4 MiB)
+  RR Graph Nodes: 127378620
+  RR Graph Edges: 1370934696
+# Create Device took 845.01 seconds (max_rss 41865.6 MiB, delta_rss +41394.4 MiB)
+
+# Computing router lookahead map
+## Computing wire lookahead

@@ -232,3 +232,124 @@ Molecules processed   Number of clusters created   FPGA size
   5274/7331     71%                         2612   360 x 267   
   5567/7331     75%                         2905   402 x 298   
   5860/7331     79%                         3198   444 x 329   
+  6153/7331     83%                         3491   486 x 360   
+  6446/7331     87%                         3784   529 x 392   
+  6739/7331     91%                         4077   571 x 423   
+  7032/7331     95%                         4370   613 x 454   
+  7325/7331     99%                         4663   655 x 485   
+Incr Slack updates 1 in 0.000296514 sec
+Full Max Req/Worst Slack updates 1 in 2.4386e-05 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 0.00124605 sec
+FPGA sized to 656 x 486 (auto)
+Device Utilization: 0.01 (target 1.00)
+	Block Utilization: 1.00 Type: io
+	Block Utilization: 0.00 Type: LAB
+
+Start the iterative improvement process
+the iterative improvement process is done
+Final Clustering Statistics: 
+----------   --------   ------------------------------------   --------------------------
+Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output pins used
+----------   --------   ------------------------------------   --------------------------
+     EMPTY          0                                      0                            0   
+        io       4506                               0.499556                     0.500444   
+       PLL          0                                      0                            0   
+       LAB        164                                34.8598                      14.6646   
+       DSP          0                                      0                            0   
+       M9K          0                                      0                            0   
+     M144K          0                                      0                            0   
+Absorbed logical nets 420 out of 5080 nets, 4660 nets not absorbed.
+
+Netlist conversion complete.
+
+# Packing took 853.61 seconds (max_rss 1063.9 MiB, delta_rss +110.2 MiB)
+# Load packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'ac97_ctrl.net'.
+Detected 2 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0.309289 seconds).
+Warning 3: Treated 2 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load packing took 0.34 seconds (max_rss 1102.1 MiB, delta_rss +38.2 MiB)
+Warning 4: Netlist contains 2 global net to non-global architecture pin connections
+Warning 5: Logic block #162 (po0033) has only 1 output pin 'po0033.data_out[6]'. It may be a constant generator.
+Warning 6: Logic block #163 (po0248) has only 1 output pin 'po0248.data_out[6]'. It may be a constant generator.
+
+Pb types usage...
+  io         : 4506
+   pad       : 4506
+    inpad    : 2255
+    outpad   : 2251
+  LAB        : 164
+   alm       : 1553
+    lut      : 2825
+     lut6    : 2825
+      lut    : 2825
+
+# Create Device
+## Build Device Grid
+FPGA sized to 656 x 486: 318816 grid tiles (auto)
+
+Resource usage...
+	Netlist
+		4506	blocks of type: io
+	Architecture
+		4512	blocks of type: io
+	Netlist
+		0	blocks of type: PLL
+	Architecture
+		16	blocks of type: PLL
+	Netlist
+		164	blocks of type: LAB
+	Architecture
+		287272	blocks of type: LAB
+	Netlist
+		0	blocks of type: DSP
+	Architecture
+		2040	blocks of type: DSP
+	Netlist
+		0	blocks of type: M9K
+	Architecture
+		11568	blocks of type: M9K
+	Netlist
+		0	blocks of type: M144K
+	Architecture
+		900	blocks of type: M144K
+
+Device Utilization: 0.01 (target 1.00)
+	Physical Tile io:
+	Block Utilization: 1.00 Logical Block: io
+	Physical Tile PLL:
+	Block Utilization: 0.00 Logical Block: PLL
+	Physical Tile LAB:
+	Block Utilization: 0.00 Logical Block: LAB
+	Physical Tile DSP:
+	Block Utilization: 0.00 Logical Block: DSP
+	Physical Tile M9K:
+	Block Utilization: 0.00 Logical Block: M9K
+	Physical Tile M144K:
+	Block Utilization: 0.00 Logical Block: M144K
+
+FPGA size limited by block type(s): io
+
+## Build Device Grid took 5.48 seconds (max_rss 1102.3 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph
+SOURCE->OPIN and IPIN->SINK edge count:41998132
+OPIN->CHANX/CHANY edge count before creating direct connections: 206757440
+OPIN->CHANX/CHANY edge count after creating direct connections: 219651150
+CHAN->CHAN type edge count:592098924
+## Build routing resource graph took 509.60 seconds (max_rss 30047.7 MiB, delta_rss +28945.4 MiB)
+  RR Graph Nodes: 84190592
+  RR Graph Edges: 853748206
+# Create Device took 527.44 seconds (max_rss 30047.7 MiB, delta_rss +28945.4 MiB)
+
+# Computing router lookahead map
+## Computing wire lookahead
+## Computing wire lookahead took 20288.78 seconds (max_rss 30047.7 MiB, delta_rss +0.0 MiB)
+## Computing src/opin lookahead
+## Computing src/opin lookahead took 0.00 seconds (max_rss 30047.7 MiB, delta_rss +0.0 MiB)
+# Computing router lookahead map took 20289.09 seconds (max_rss 30047.7 MiB, delta_rss +0.0 MiB)
+# Computing placement delta delay look-up
+RR graph channel widths unchanged, skipping RR graph rebuild
+## Computing delta delays
