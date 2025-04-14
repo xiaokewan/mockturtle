@@ -152,8 +152,24 @@ public:
 
   void update_fanout()
   {
+    _fanout.reset(); // reset fanout as this not changed after duplication
     compute_fanout();
   }
+
+  void notify_node_modified_manually( node const& n, std::vector<signal> const& previous_fanins )
+  {
+    // Remove old fanins
+    for ( auto const& f : previous_fanins )
+    {
+      _fanout[f].erase( std::remove( _fanout[f].begin(), _fanout[f].end(), n ), _fanout[f].end() );
+    }
+  
+    // Add updated fanins
+    this->foreach_fanin( n, [&]( auto const& f ) {
+      _fanout[f].push_back( n );
+    } );
+  }
+  
 
   std::vector<node> fanout( node const& n ) const /* deprecated */
   {

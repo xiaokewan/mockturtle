@@ -97,6 +97,7 @@ public:
   static constexpr auto min_fanin_size = 2u;
   static constexpr auto max_fanin_size = 2u;
 
+  bool disable_hashing = false;
   using base_type = aig_network;
   using storage = std::shared_ptr<aig_storage>;
   using node = uint64_t;
@@ -284,12 +285,16 @@ public:
     node.children[1] = b;
 
     /* structural hashing */
-    const auto it = _storage->hash.find( node );
-    if ( it != _storage->hash.end() )
+    if ( !disable_hashing )
     {
-      assert( !is_dead( it->second ) );
-      return { it->second, 0 };
+      const auto it = _storage->hash.find( node );
+      if ( it != _storage->hash.end() )
+      {
+        assert( !is_dead( it->second ) );
+        return { it->second, 0 };
+      }
     }
+    
 
     const auto index = _storage->nodes.size();
 
@@ -301,8 +306,11 @@ public:
 
     _storage->nodes.push_back( node );
 
-    _storage->hash[node] = index;
-
+    _storage->hash[node] = index;if ( !disable_hashing )
+    {
+      _storage->hash[node] = index;
+    }
+    
     /* increase ref-count to children */
     _storage->nodes[a.index].data[0].h1++;
     _storage->nodes[b.index].data[0].h1++;

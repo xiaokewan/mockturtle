@@ -60,3 +60,12 @@ endif()
 if(MOCKTURTLE_EXPERIMENTS)
   add_subdirectory(experiments)
 endif()
+
+
+# add_subdirectory(alice)
+# include_directories(${CMAKE_SOURCE_DIR}/alice/include)
+# include_directories(${CMAKE_SOURCE_DIR}/alice/include/alice)
+# add_executable(mockturtle_cli mockturtle_cli.cpp)  # Define the executable first
+# target_link_libraries(mockturtle_cli mockturtle alice)
+
+
